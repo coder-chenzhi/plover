@@ -1,0 +1,681 @@
+/usr/lib/jvm/java-8-openjdk-amd64/bin/java -javaagent:/home/chenzhi/Programs/idea-IC-191.7141.44/lib/idea_rt.jar=33757:/home/chenzhi/Programs/idea-IC-191.7141.44/bin -Dfile.encoding=UTF-8 -classpath /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/cldrdata.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/dnsns.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/icedtea-sound.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/jaccess.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/java-atk-wrapper.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/localedata.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/nashorn.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/sunec.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/sunjce_provider.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/sunpkcs11.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/zipfs.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/management-agent.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/home/chenzhi/Code/IdeaSpace/autologguard/auto-guard/target/classes:/home/chenzhi/Code/IdeaSpace/autologguard/commons/target/classes:/home/chenzhi/.m2/repository/org/eclipse/jdt/org.eclipse.jdt.core/3.18.0/org.eclipse.jdt.core-3.18.0.jar:/home/chenzhi/.m2/repository/org/eclipse/platform/org.eclipse.core.resources/3.13.800/org.eclipse.core.resources-3.13.800.jar:/home/chenzhi/.m2/repository/org/eclipse/platform/org.eclipse.core.expressions/3.7.0/org.eclipse.core.expressions-3.7.0.jar:/home/chenzhi/.m2/repository/org/eclipse/platform/org.eclipse.core.runtime/3.19.0/org.eclipse.core.runtime-3.19.0.jar:/home/chenzhi/.m2/repository/org/eclipse/platform/org.eclipse.osgi/3.16.0/org.eclipse.osgi-3.16.0.jar:/home/chenzhi/.m2/repository/org/eclipse/platform/org.eclipse.equinox.common/3.13.0/org.eclipse.equinox.common-3.13.0.jar:/home/chenzhi/.m2/repository/org/eclipse/platform/org.eclipse.core.jobs/3.10.800/org.eclipse.core.jobs-3.10.800.jar:/home/chenzhi/.m2/repository/org/eclipse/platform/org.eclipse.equinox.registry/3.9.0/org.eclipse.equinox.registry-3.9.0.jar:/home/chenzhi/.m2/repository/org/eclipse/platform/org.eclipse.equinox.preferences/3.8.0/org.eclipse.equinox.preferences-3.8.0.jar:/home/chenzhi/.m2/repository/org/eclipse/platform/org.eclipse.core.contenttype/3.7.800/org.eclipse.core.contenttype-3.7.800.jar:/home/chenzhi/.m2/repository/org/eclipse/platform/org.eclipse.equinox.app/1.5.0/org.eclipse.equinox.app-1.5.0.jar:/home/chenzhi/.m2/repository/org/eclipse/platform/org.eclipse.core.filesystem/1.7.700/org.eclipse.core.filesystem-1.7.700.jar:/home/chenzhi/.m2/repository/org/eclipse/platform/org.eclipse.text/3.10.300/org.eclipse.text-3.10.300.jar:/home/chenzhi/.m2/repository/org/eclipse/platform/org.eclipse.core.commands/3.9.700/org.eclipse.core.commands-3.9.700.jar:/home/chenzhi/.m2/repository/org/slf4j/slf4j-api/1.7.11/slf4j-api-1.7.11.jar:/home/chenzhi/.m2/repository/org/apache/logging/log4j/log4j-core/2.9.1/log4j-core-2.9.1.jar:/home/chenzhi/.m2/repository/org/apache/logging/log4j/log4j-api/2.9.1/log4j-api-2.9.1.jar:/home/chenzhi/.m2/repository/org/apache/logging/log4j/log4j-slf4j-impl/2.9.1/log4j-slf4j-impl-2.9.1.jar:/home/chenzhi/.m2/repository/com/alibaba/fastjson/1.2.73/fastjson-1.2.73.jar:/home/chenzhi/.m2/repository/com/google/guava/guava/19.0/guava-19.0.jar:/home/chenzhi/.m2/repository/ca/mcgill/sable/jasmin/3.0.1/jasmin-3.0.1.jar:/home/chenzhi/.m2/repository/ca/mcgill/sable/java_cup/0.9.2/java_cup-0.9.2.jar:/home/chenzhi/.m2/repository/ca/mcgill/sable/soot/4.0.0/soot-4.0.0.jar:/home/chenzhi/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/home/chenzhi/.m2/repository/org/smali/dexlib2/2.2.7/dexlib2-2.2.7.jar:/home/chenzhi/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/home/chenzhi/.m2/repository/org/ow2/asm/asm/7.1/asm-7.1.jar:/home/chenzhi/.m2/repository/org/ow2/asm/asm-tree/7.1/asm-tree-7.1.jar:/home/chenzhi/.m2/repository/org/ow2/asm/asm-util/7.1/asm-util-7.1.jar:/home/chenzhi/.m2/repository/org/ow2/asm/asm-analysis/7.1/asm-analysis-7.1.jar:/home/chenzhi/.m2/repository/org/ow2/asm/asm-commons/7.1/asm-commons-7.1.jar:/home/chenzhi/.m2/repository/xmlpull/xmlpull/1.1.3.4d_b4_min/xmlpull-1.1.3.4d_b4_min.jar:/home/chenzhi/.m2/repository/de/upb/cs/swt/axml/2.0.0/axml-2.0.0.jar:/home/chenzhi/.m2/repository/ca/mcgill/sable/polyglot/2006/polyglot-2006.jar:/home/chenzhi/.m2/repository/de/upb/cs/swt/heros/1.2.0/heros-1.2.0.jar:/home/chenzhi/.m2/repository/org/functionaljava/functionaljava/4.2/functionaljava-4.2.jar:/home/chenzhi/.m2/repository/org/mockito/mockito-core/3.2.0/mockito-core-3.2.0.jar:/home/chenzhi/.m2/repository/net/bytebuddy/byte-buddy/1.10.3/byte-buddy-1.10.3.jar:/home/chenzhi/.m2/repository/net/bytebuddy/byte-buddy-agent/1.10.3/byte-buddy-agent-1.10.3.jar:/home/chenzhi/.m2/repository/org/objenesis/objenesis/2.6/objenesis-2.6.jar:/home/chenzhi/.m2/repository/org/powermock/powermock-api-mockito2/2.0.4/powermock-api-mockito2-2.0.4.jar:/home/chenzhi/.m2/repository/org/powermock/powermock-api-support/2.0.4/powermock-api-support-2.0.4.jar:/home/chenzhi/.m2/repository/org/powermock/powermock-reflect/2.0.4/powermock-reflect-2.0.4.jar:/home/chenzhi/.m2/repository/org/powermock/powermock-core/2.0.4/powermock-core-2.0.4.jar:/home/chenzhi/.m2/repository/org/javassist/javassist/3.25.0-GA/javassist-3.25.0-GA.jar:/home/chenzhi/.m2/repository/org/powermock/powermock-module-junit4/2.0.4/powermock-module-junit4-2.0.4.jar:/home/chenzhi/.m2/repository/org/powermock/powermock-module-junit4-common/2.0.4/powermock-module-junit4-common-2.0.4.jar:/home/chenzhi/.m2/repository/javax/annotation/javax.annotation-api/1.3.2/javax.annotation-api-1.3.2.jar:/home/chenzhi/.m2/repository/javax/xml/bind/jaxb-api/2.4.0-b180725.0427/jaxb-api-2.4.0-b180725.0427.jar:/home/chenzhi/.m2/repository/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar:/home/chenzhi/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.4.0-b180830.0438/jaxb-runtime-2.4.0-b180830.0438.jar:/home/chenzhi/.m2/repository/org/glassfish/jaxb/txw2/2.4.0-b180830.0438/txw2-2.4.0-b180830.0438.jar:/home/chenzhi/.m2/repository/com/sun/istack/istack-commons-runtime/3.0.7/istack-commons-runtime-3.0.7.jar:/home/chenzhi/.m2/repository/org/jvnet/staxex/stax-ex/1.8/stax-ex-1.8.jar:/home/chenzhi/.m2/repository/com/sun/xml/fastinfoset/FastInfoset/1.2.15/FastInfoset-1.2.15.jar:/home/chenzhi/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar Calc
+2021-03-25 23:31:30 [INFO] - start to calc Recall:
+Start to analyze method: <org.apache.hadoop.hive.metastore.ReplChangeManager$CMClearer: void run()>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.vector.VectorGroupByOperator$ProcessingModeHashAggregate: void doProcessBatch(org.apache.hadoop.hive.ql.exec.vector.VectorizedRowBatch,boolean,boolean[])>
+Start to analyze method: <org.apache.hadoop.hive.ql.parse.SemanticAnalyzer: void replaceDefaultKeyword(org.apache.hadoop.hive.ql.parse.ASTNode,org.apache.hadoop.hive.ql.metadata.Table,java.util.List)>
+Start to analyze method: <org.apache.hadoop.hive.llap.daemon.impl.AMReporter: void unregisterTask(java.lang.String,int,org.apache.hadoop.hive.llap.daemon.impl.QueryIdentifier,org.apache.tez.dag.records.TezTaskAttemptID)>
+Start to analyze method: <org.apache.hadoop.hive.ql.io.orc.OrcInputFormat$SplitGenerator: java.util.List generateSplitsFromPpd(org.apache.hadoop.hive.metastore.Metastore$SplitInfos)>
+Start to analyze method: <org.apache.hadoop.hive.ql.parse.TezCompiler: void removeSemijoinOptimizationByBenefit(org.apache.hadoop.hive.ql.parse.OptimizeTezProcContext)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.vector.VectorGroupByOperator$ProcessingModeHashAggregate: void checkHashModeEfficiency()>
+Start to analyze method: <org.apache.hadoop.hive.ql.parse.SemanticAnalyzer: org.apache.hadoop.hive.ql.exec.Operator genFilterPlan(org.apache.hadoop.hive.ql.parse.QB,org.apache.hadoop.hive.ql.parse.ASTNode,org.apache.hadoop.hive.ql.exec.Operator,boolean)>
+Start to analyze method: <org.apache.hadoop.hive.metastore.ObjectStore: java.util.List listTableNamesByFilter(java.lang.String,java.lang.String,java.lang.String,short)>
+Unit: $stack32 = interfaceinvoke params.<java.util.Map: java.util.Set entrySet()>() AT LINE 3984 is not found in our analysis.
+Start to analyze method: <org.apache.hadoop.hive.accumulo.mr.AccumuloIndexedOutputFormat$AccumuloRecordWriter: int printMutation(org.apache.hadoop.io.Text,org.apache.accumulo.core.data.Mutation)>
+Unit: $stack13 = virtualinvoke m.<org.apache.accumulo.core.data.Mutation: java.util.List getUpdates()>() AT LINE 233 is not found in our analysis.
+Unit: itr = interfaceinvoke $stack13.<java.util.List: java.util.Iterator iterator()>() AT LINE 233 is not found in our analysis.
+Unit: $stack15 = interfaceinvoke itr.<java.util.Iterator: boolean hasNext()>() AT LINE 235 is not found in our analysis.
+Unit: if $stack15 == 0 goto $stack7 = virtualinvoke m.<org.apache.accumulo.core.data.Mutation: java.util.List getUpdates()>() AT LINE 235 is not found in our analysis.
+Unit: $stack17 = interfaceinvoke itr.<java.util.Iterator: java.lang.Object next()>() AT LINE 236 is not found in our analysis.
+Unit: cu = (org.apache.accumulo.core.data.ColumnUpdate) $stack17 AT LINE 236 is not found in our analysis.
+Unit: $stack28 = new org.apache.accumulo.core.security.ColumnVisibility AT LINE 239 is not found in our analysis.
+Unit: $stack30 = virtualinvoke cu.<org.apache.accumulo.core.data.ColumnUpdate: byte[] getColumnVisibility()>() AT LINE 239 is not found in our analysis.
+Unit: specialinvoke $stack28.<org.apache.accumulo.core.security.ColumnVisibility: void <init>(byte[])>($stack30) AT LINE 239 is not found in our analysis.
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.tez.ReduceRecordProcessor: void init(org.apache.tez.mapreduce.processor.MRTaskReporter,java.util.Map,java.util.Map)>
+Start to analyze method: <org.apache.hadoop.hive.ql.parse.TezCompiler: void removeCycleOperator(java.util.Set,org.apache.hadoop.hive.ql.parse.OptimizeTezProcContext)>
+Start to analyze method: <org.apache.hadoop.hive.ql.io.orc.OrcSplit: void write(java.io.DataOutput)>
+Start to analyze method: <org.apache.hadoop.hive.ql.optimizer.SimpleFetchOptimizer$FetchData: boolean isDataLengthWithInThreshold(org.apache.hadoop.hive.ql.parse.ParseContext,long)>
+Start to analyze method: <org.apache.hadoop.hive.llap.io.api.impl.LlapRecordReader: void setDone()>
+Start to analyze method: <org.apache.hadoop.hive.ql.parse.SemanticAnalyzer: org.apache.hadoop.hive.ql.exec.Operator genSelectPlan(java.lang.String,org.apache.hadoop.hive.ql.parse.QB,org.apache.hadoop.hive.ql.exec.Operator,org.apache.hadoop.hive.ql.exec.Operator)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.tez.HostAffinitySplitLocationProvider: int determineLocation(java.util.List,java.lang.String,long,java.lang.String)>
+Start to analyze method: <org.apache.hadoop.hive.ql.security.authorization.plugin.sqlstd.SQLStdHiveAuthorizationValidator: java.util.List filterListCmdObjects(java.util.List,org.apache.hadoop.hive.ql.security.authorization.plugin.HiveAuthzContext)>
+Start to analyze method: <org.apache.hive.hcatalog.mapreduce.FileOutputCommitterContainer: void moveTaskOutputs(org.apache.hadoop.fs.FileSystem,org.apache.hadoop.fs.Path,org.apache.hadoop.fs.Path,org.apache.hadoop.fs.Path,boolean,boolean)>
+Start to analyze method: <org.apache.hadoop.hive.llap.shufflehandler.ShuffleHandler$Shuffle: void verifyRequest(java.lang.String,org.jboss.netty.channel.ChannelHandlerContext,org.jboss.netty.handler.codec.http.HttpRequest,org.jboss.netty.handler.codec.http.HttpResponse,java.net.URL)>
+Start to analyze method: <org.apache.hadoop.hive.serde2.avro.AvroSerDe: org.apache.avro.Schema getSchemaFromCols(java.util.Properties,java.util.List,java.util.List,java.lang.String)>
+Start to analyze method: <org.apache.hadoop.hive.ql.parse.SemanticAnalyzer: org.apache.hadoop.hive.ql.exec.Operator genUDTFPlan(org.apache.hadoop.hive.ql.udf.generic.GenericUDTF,java.lang.String,java.util.ArrayList,org.apache.hadoop.hive.ql.parse.QB,org.apache.hadoop.hive.ql.exec.Operator,boolean)>
+Start to analyze method: <org.apache.hadoop.hive.llap.log.LlapRoutingAppenderPurgePolicy: void keyComplete(java.lang.String)>
+Start to analyze method: <org.apache.hadoop.hive.llap.cache.LowLevelCacheImpl: void unlockBuffer(org.apache.hadoop.hive.llap.cache.LlapDataBuffer,boolean)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.Operator: void initializeChildren(org.apache.hadoop.conf.Configuration)>
+Start to analyze method: <org.apache.hadoop.hive.llap.io.decode.OrcEncodedDataConsumer: void repositionInStreams(org.apache.orc.impl.TreeReaderFactory$TreeReader[],org.apache.hadoop.hive.common.io.encoded.EncodedColumnBatch,boolean,org.apache.hadoop.hive.llap.io.metadata.ConsumerStripeMetadata)>
+Start to analyze method: <org.apache.hadoop.hive.llap.io.encoded.SerDeEncodedDataReader: org.apache.hadoop.hive.llap.io.encoded.SerDeEncodedDataReader$ReaderWithOffsets createOffsetReader(org.apache.hadoop.mapred.RecordReader)>
+Start to analyze method: <org.apache.hadoop.hive.metastore.MetaStoreDirectSql: java.util.List getDefaultConstraints(java.lang.String,java.lang.String,java.lang.String)>
+Start to analyze method: <org.apache.hadoop.hive.ql.hooks.ATSHook: org.apache.hadoop.yarn.api.records.timeline.TimelineEntity createPreHookEvent(java.lang.String,java.lang.String,org.json.JSONObject,long,java.lang.String,java.lang.String,int,int,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.util.List,java.util.List,org.apache.hadoop.hive.conf.HiveConf,org.apache.hadoop.yarn.api.records.ApplicationId,java.lang.String)>
+Start to analyze method: <org.apache.hadoop.hive.metastore.MetaStoreDirectSql: java.util.List getPartitionsFromPartitionIds(java.lang.String,java.lang.String,java.lang.String,java.lang.Boolean,java.util.List)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.tez.DynamicPartitionPruner: java.lang.String processPayload(java.nio.ByteBuffer,java.lang.String)>
+Start to analyze method: <org.apache.hadoop.hive.ql.parse.TezCompiler: void removeSemijoinsParallelToMapJoin(org.apache.hadoop.hive.ql.parse.OptimizeTezProcContext)>
+All overhead in <org.apache.hadoop.hive.ql.txn.compactor.Cleaner: void run()> are not found in our analysis!
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.FileSinkOperator: void initializeOp(org.apache.hadoop.conf.Configuration)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.tez.DagUtils: void addCredentials(org.apache.hadoop.hive.ql.plan.MapWork,org.apache.tez.dag.api.DAG)>
+Start to analyze method: <org.apache.hadoop.hive.ql.metadata.Hive: void loadTable(org.apache.hadoop.fs.Path,java.lang.String,org.apache.hadoop.hive.ql.plan.LoadTableDesc$LoadFileType,boolean,boolean,boolean,boolean,java.lang.Long,int,boolean)>
+Start to analyze method: <org.apache.hadoop.hive.ql.optimizer.GenMapRedUtils: void setMapWork(org.apache.hadoop.hive.ql.plan.MapWork,org.apache.hadoop.hive.ql.parse.ParseContext,java.util.Set,org.apache.hadoop.hive.ql.parse.PrunedPartitionList,org.apache.hadoop.hive.ql.exec.TableScanOperator,java.lang.String,org.apache.hadoop.hive.conf.HiveConf,boolean)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.ReduceSinkOperator: int computeHashCode(java.lang.Object,int)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.vector.mapjoin.VectorMapJoinOuterMultiKeyOperator: void process(java.lang.Object,int)>
+Start to analyze method: <org.apache.hadoop.hive.llap.io.encoded.SerDeEncodedDataReader: boolean determineSplitIncludes(org.apache.hadoop.hive.llap.cache.SerDeLowLevelCacheImpl$StripeData,boolean[],boolean[])>
+Start to analyze method: <org.apache.hadoop.hive.metastore.ObjectStore: java.util.List getSchemaVersionsByColumns(java.lang.String,java.lang.String,java.lang.String)>
+Unit: $stack57 = interfaceinvoke parameters.<java.util.Map: java.util.Set entrySet()>() AT LINE 10643 is not found in our analysis.
+Start to analyze method: <org.apache.hadoop.hive.ql.optimizer.physical.Vectorizer$VectorizationDispatcher: java.lang.Object dispatch(org.apache.hadoop.hive.ql.lib.Node,java.util.Stack,java.lang.Object[])>
+Start to analyze method: <org.apache.hadoop.hive.metastore.ReplChangeManager: java.lang.String encodeFileUri(java.lang.String,java.lang.String,java.lang.String)>
+Start to analyze method: <org.apache.hadoop.hive.ql.io.orc.OrcRawRecordMerger$OriginalReaderPair: boolean nextFromCurrentFile(org.apache.hadoop.hive.ql.io.orc.OrcStruct)>
+Start to analyze method: <org.apache.hadoop.hive.ql.optimizer.QueryPlanPostProcessor: void collectFileSinkDescs(org.apache.hadoop.hive.ql.exec.Operator,java.util.Set)>
+Start to analyze method: <org.apache.hadoop.hive.ql.metadata.Hive: java.util.Set getValidPartitionsInPath(int,int,org.apache.hadoop.fs.Path,java.lang.Long,int,boolean,boolean)>
+Start to analyze method: <org.apache.hadoop.hive.llap.cache.LlapAllocatorBuffer: int releaseInvalidated()>
+Start to analyze method: <org.apache.hadoop.hive.metastore.txn.TxnHandler: org.apache.hadoop.hive.metastore.api.LockResponse checkLock(java.sql.Connection,long)>
+Start to analyze method: <org.apache.hadoop.hive.ql.optimizer.GenMapRedUtils: void createMRWorkForMergingFiles(org.apache.hadoop.hive.ql.exec.FileSinkOperator,org.apache.hadoop.fs.Path,org.apache.hadoop.hive.ql.exec.DependencyCollectionTask,java.util.List,org.apache.hadoop.hive.conf.HiveConf,org.apache.hadoop.hive.ql.exec.Task,org.apache.hadoop.hive.ql.session.LineageState)>
+Start to analyze method: <org.apache.hadoop.hive.ql.optimizer.calcite.RelOptHiveTable: void updateColStats(java.util.Set,boolean)>
+Start to analyze method: <org.apache.hadoop.hive.llap.io.api.impl.LlapRecordReader: org.apache.hadoop.hive.llap.io.api.impl.ColumnVectorBatch nextCvb()>
+Start to analyze method: <org.apache.hadoop.hive.ql.ppd.SyntheticJoinPredicate$JoinSynthetic: java.lang.Object process(org.apache.hadoop.hive.ql.lib.Node,java.util.Stack,org.apache.hadoop.hive.ql.lib.NodeProcessorCtx,java.lang.Object[])>
+Start to analyze method: <org.apache.hadoop.hive.ql.parse.SemanticAnalyzer: org.apache.hadoop.hive.ql.exec.Operator genPlan(org.apache.hadoop.hive.ql.parse.QB,boolean)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.vector.mapjoin.fast.VectorMapJoinFastBytesHashTable: void expandAndRehash()>
+Start to analyze method: <org.apache.hadoop.hive.metastore.security.HadoopThriftAuthBridge$Server$SaslDigestCallbackHandler: void handle(javax.security.auth.callback.Callback[])>
+Start to analyze method: <org.apache.hive.hcatalog.mapreduce.FileOutputCommitterContainer: void applyGroupAndPerms(org.apache.hadoop.fs.FileSystem,org.apache.hadoop.fs.Path,org.apache.hadoop.fs.permission.FsPermission,java.lang.String,boolean)>
+Start to analyze method: <org.apache.hadoop.hive.llap.io.encoded.SerDeEncodedDataReader: void logProcessOneSlice(int,java.lang.Object,org.apache.hadoop.hive.llap.cache.SerDeLowLevelCacheImpl$StripeData)>
+Start to analyze method: <org.apache.hadoop.hive.ql.optimizer.physical.LlapDecider$LlapDecisionDispatcher: boolean checkAggregator(org.apache.hadoop.hive.ql.plan.AggregationDesc)>
+Start to analyze method: <org.apache.hadoop.hive.llap.daemon.impl.TaskExecutorService: void killFragment(java.lang.String)>
+Start to analyze method: <org.apache.hadoop.hive.llap.cache.LowLevelCacheImpl: void getOverlappingRanges(long,org.apache.hadoop.hive.common.io.DiskRangeList,java.util.concurrent.ConcurrentSkipListMap,org.apache.hadoop.hive.common.io.DataCache$DiskRangeListFactory,org.apache.hadoop.hive.common.io.DataCache$BooleanRef)>
+Start to analyze method: <org.apache.hadoop.hive.ql.io.orc.OrcOutputFormat: org.apache.hadoop.hive.ql.io.orc.OrcFile$WriterOptions getOptions(org.apache.hadoop.mapred.JobConf,java.util.Properties)>
+Start to analyze method: <org.apache.hadoop.hive.druid.serde.DruidSerDe: void initialize(org.apache.hadoop.conf.Configuration,java.util.Properties)>
+Start to analyze method: <org.apache.hadoop.hive.ql.optimizer.ConstantPropagateProcFactory$ConstantPropagateReduceSinkProc: java.lang.Object process(org.apache.hadoop.hive.ql.lib.Node,java.util.Stack,org.apache.hadoop.hive.ql.lib.NodeProcessorCtx,java.lang.Object[])>
+Start to analyze method: <org.apache.hadoop.hive.ql.parse.SemanticAnalyzer: void replaceDefaultKeywordForUpdate(org.apache.hadoop.hive.ql.parse.ASTNode,org.apache.hadoop.hive.ql.metadata.Table)>
+Start to analyze method: <org.apache.hadoop.hive.ql.io.orc.OrcInputFormat: java.util.List generateSplitsInfo(org.apache.hadoop.conf.Configuration,org.apache.hadoop.hive.ql.io.orc.OrcInputFormat$Context)>
+Start to analyze method: <org.apache.hadoop.hive.ql.optimizer.ConstantPropagateProcFactory: org.apache.hadoop.hive.ql.plan.ExprNodeDesc foldExprFull(org.apache.hadoop.hive.ql.plan.ExprNodeDesc,java.util.Map,org.apache.hadoop.hive.ql.optimizer.ConstantPropagateProcCtx,org.apache.hadoop.hive.ql.exec.Operator,int,boolean)>
+Start to analyze method: <org.apache.hadoop.hive.ql.optimizer.physical.SerializeFilter$Serializer: void evaluateOperators(org.apache.hadoop.hive.ql.plan.BaseWork,org.apache.hadoop.hive.ql.optimizer.physical.PhysicalContext)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.vector.mapjoin.VectorMapJoinGenerateResultOperator: void closeOp(boolean)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.tez.TezTask: org.apache.tez.dag.api.DAG build(org.apache.hadoop.mapred.JobConf,org.apache.hadoop.hive.ql.plan.TezWork,org.apache.hadoop.fs.Path,org.apache.hadoop.hive.ql.Context,java.util.Map)>
+Start to analyze method: <org.apache.hive.streaming.AbstractRecordWriter$OrcMemoryPressureMonitor: void memoryUsageAboveThreshold(long,long)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.MapOperator: void setChildren(org.apache.hadoop.conf.Configuration)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.vector.mapjoin.VectorMapJoinInnerLongOperator: void process(java.lang.Object,int)>
+Start to analyze method: <org.apache.hadoop.hive.ql.log.PerfLogger: long PerfLogEnd(java.lang.String,java.lang.String,java.lang.String)>
+All overhead in <org.apache.hadoop.hive.ql.optimizer.stats.'annotation'.StatsRulesProcFactory$FilterStatsRule: long evaluateExpression(org.apache.hadoop.hive.ql.plan.Statistics,org.apache.hadoop.hive.ql.plan.ExprNodeDesc,org.apache.hadoop.hive.ql.optimizer.stats.'annotation'.AnnotateStatsProcCtx,java.util.List,org.apache.hadoop.hive.ql.exec.Operator,long)> are not found in our analysis!
+Start to analyze method: <org.apache.hadoop.hive.llap.tezplugins.LlapTaskSchedulerService: org.apache.hadoop.yarn.api.records.Resource getTotalResources()>
+Start to analyze method: <org.apache.hadoop.hive.llap.io.encoded.OrcEncodedDataReader$DataWrapperForOrc: org.apache.hadoop.hive.common.io.DiskRangeList getFileData(java.lang.Object,org.apache.hadoop.hive.common.io.DiskRangeList,long,org.apache.hadoop.hive.common.io.DataCache$DiskRangeListFactory,org.apache.hadoop.hive.common.io.DataCache$BooleanRef)>
+All overhead in <org.apache.hadoop.hive.ql.lockmgr.zookeeper.ZooKeeperHiveLockManager: org.apache.hadoop.hive.ql.lockmgr.zookeeper.ZooKeeperHiveLock lockPrimitive(org.apache.hadoop.hive.ql.lockmgr.HiveLockObject,org.apache.hadoop.hive.ql.lockmgr.HiveLockMode,boolean,boolean,java.util.Set)> are not found in our analysis!
+Start to analyze method: <org.apache.hadoop.hive.ql.io.orc.OrcFileFormatProxy: org.apache.hadoop.hive.metastore.Metastore$SplitInfos applySargToMetadata(org.apache.hadoop.hive.ql.io.sarg.SearchArgument,java.nio.ByteBuffer)>
+Start to analyze method: <org.apache.hadoop.hive.llap.daemon.impl.LlapTaskReporter$HeartbeatCallable: void maybeLogCounters()>
+Unit: $stack3 = this.<org.apache.hadoop.hive.llap.daemon.impl.LlapTaskReporter$HeartbeatCallable: java.util.concurrent.atomic.AtomicInteger nonOobHeartbeatCounter> AT LINE 369 is not found in our analysis.
+Unit: $stack4 = virtualinvoke $stack3.<java.util.concurrent.atomic.AtomicInteger: int get()>() AT LINE 369 is not found in our analysis.
+Unit: $stack5 = this.<org.apache.hadoop.hive.llap.daemon.impl.LlapTaskReporter$HeartbeatCallable: int nextHeartbeatNumToLog> AT LINE 369 is not found in our analysis.
+Unit: if $stack4 != $stack5 goto return AT LINE 369 is not found in our analysis.
+Unit: $stack14 = this.<org.apache.hadoop.hive.llap.daemon.impl.LlapTaskReporter$HeartbeatCallable: int nextHeartbeatNumToLog> AT LINE 371 is not found in our analysis.
+Unit: $stack15 = (float) $stack14 AT LINE 371 is not found in our analysis.
+Unit: $stack16 = $stack15 * 1.3F AT LINE 371 is not found in our analysis.
+Unit: $stack17 = (int) $stack16 AT LINE 371 is not found in our analysis.
+Unit: this.<org.apache.hadoop.hive.llap.daemon.impl.LlapTaskReporter$HeartbeatCallable: int nextHeartbeatNumToLog> = $stack17 AT LINE 371 is not found in our analysis.
+Start to analyze method: <org.apache.hadoop.hive.llap.io.encoded.OrcEncodedDataReader: void determineStripesToRead()>
+Start to analyze method: <org.apache.hadoop.hive.ql.io.CombineHiveInputFormat: org.apache.hadoop.mapred.InputSplit[] getSplits(org.apache.hadoop.mapred.JobConf,int)>
+Start to analyze method: <org.apache.hive.streaming.HiveStreamingConnection: void setHiveConf(org.apache.hadoop.hive.conf.HiveConf,org.apache.hadoop.hive.conf.HiveConf$ConfVars,boolean)>
+Start to analyze method: <org.apache.hadoop.hive.ql.optimizer.physical.Vectorizer$VectorizationDispatcher: boolean logExplainVectorization(org.apache.hadoop.hive.ql.plan.BaseWork,java.lang.String)>
+Start to analyze method: <org.apache.hadoop.hive.ql.ppd.OpProcFactory$DefaultPPD: void logExpr(org.apache.hadoop.hive.ql.lib.Node,org.apache.hadoop.hive.ql.ppd.ExprWalkerInfo)>
+Unit: return AT LINE 795 is not found in our analysis.
+Unit: $stack11 = virtualinvoke ewi.<org.apache.hadoop.hive.ql.ppd.ExprWalkerInfo: java.util.Map getFinalCandidates()>() AT LINE 797 is not found in our analysis.
+Unit: $stack12 = interfaceinvoke $stack11.<java.util.Map: java.util.Set entrySet()>() AT LINE 797 is not found in our analysis.
+Unit: l3 = interfaceinvoke $stack12.<java.util.Set: java.util.Iterator iterator()>() AT LINE 797 is not found in our analysis.
+Unit: $stack14 = interfaceinvoke l3.<java.util.Iterator: boolean hasNext()>() AT LINE 797 is not found in our analysis.
+Unit: if $stack14 == 0 goto return AT LINE 797 is not found in our analysis.
+Unit: $stack15 = interfaceinvoke l3.<java.util.Iterator: java.lang.Object next()>() AT LINE 810 is not found in our analysis.
+Unit: e = (java.util.Map$Entry) $stack15 AT LINE 810 is not found in our analysis.
+Unit: $stack24 = interfaceinvoke e.<java.util.Map$Entry: java.lang.Object getValue()>() AT LINE 801 is not found in our analysis.
+Unit: $stack25 = (java.util.List) $stack24 AT LINE 801 is not found in our analysis.
+Unit: l7 = interfaceinvoke $stack25.<java.util.List: java.util.Iterator iterator()>() AT LINE 801 is not found in our analysis.
+Unit: return AT LINE 810 is not found in our analysis.
+Start to analyze method: <org.apache.hadoop.hive.llap.tezplugins.LlapTaskCommunicator$EntityTracker: void registerContainer(org.apache.hadoop.yarn.api.records.ContainerId,java.lang.String,int)>
+Start to analyze method: <org.apache.hadoop.hive.metastore.security.TokenStoreDelegationTokenSecretManager: void stopThreads()>
+Start to analyze method: <org.apache.hadoop.hive.ql.io.orc.LocalCache: void getAndValidate(java.util.List,boolean,org.apache.orc.impl.OrcTail[],java.nio.ByteBuffer[])>
+Unit: if tfd != null goto $stack63 = "" AT LINE 103 is not found in our analysis.
+Unit: goto [?= $stack58 = virtualinvoke $stack57.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($stack63)] AT LINE 105 is not found in our analysis.
+Start to analyze method: <org.apache.hadoop.hive.llap.log.LlapRoutingAppenderPurgePolicy: void update(java.lang.String,org.apache.logging.log4j.core.LogEvent)>
+Start to analyze method: <org.apache.hadoop.hive.ql.parse.TezCompiler: long getCombinedKeyDomainCardinality(org.apache.hadoop.hive.ql.plan.ColStatistics,org.apache.hadoop.hive.ql.plan.ColStatistics,org.apache.hadoop.hive.ql.plan.ColStatistics)>
+Start to analyze method: <org.apache.hadoop.hive.llap.ext.LlapTaskUmbilicalExternalClient$LlapTaskUmbilicalExternalImpl: void nodeHeartbeat(org.apache.hadoop.io.Text,org.apache.hadoop.io.Text,int,org.apache.hadoop.hive.llap.protocol.LlapTaskUmbilicalProtocol$TezAttemptArray,org.apache.hadoop.hive.llap.protocol.LlapTaskUmbilicalProtocol$BooleanArray)>
+Start to analyze method: <org.apache.hadoop.hive.ql.parse.ParseDriver: org.apache.hadoop.hive.ql.parse.ASTNode parseSelect(java.lang.String,org.apache.hadoop.hive.ql.Context)>
+Start to analyze method: <org.apache.hive.service.cli.thrift.ThriftHttpServlet: java.lang.String validateCookie(javax.servlet.http.HttpServletRequest)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.FileSinkOperator$FSPaths: void <init>(org.apache.hadoop.hive.ql.exec.FileSinkOperator,org.apache.hadoop.fs.Path,boolean)>
+Start to analyze method: <org.apache.hadoop.hive.metastore.MetaStoreDirectSql: org.apache.hadoop.hive.metastore.api.Database getDatabase(java.lang.String,java.lang.String)>
+Start to analyze method: <org.apache.hadoop.hive.ql.parse.SemanticAnalyzer: org.apache.hadoop.hive.ql.exec.Operator genFileSinkPlan(java.lang.String,org.apache.hadoop.hive.ql.parse.QB,org.apache.hadoop.hive.ql.exec.Operator)>
+Start to analyze method: <org.apache.hadoop.hive.llap.daemon.impl.StatsRecordingThreadPool$WrappedCallable: void setupMDCFromNDC(java.util.concurrent.Callable)>
+Start to analyze method: <org.apache.hadoop.hive.llap.daemon.impl.LlapTaskReporter$HeartbeatCallable: boolean taskSucceeded(org.apache.tez.dag.records.TezTaskAttemptID)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.FileSinkOperator: void initializeSpecPath()>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.vector.mapjoin.VectorMapJoinLeftSemiStringOperator: void process(java.lang.Object,int)>
+Start to analyze method: <org.apache.hadoop.hive.serde2.avro.AvroSerDe: void initialize(org.apache.hadoop.conf.Configuration,java.util.Properties)>
+Start to analyze method: <org.apache.hadoop.hive.ql.io.orc.OrcNewInputFormat: java.util.List getSplits(org.apache.hadoop.mapreduce.JobContext)>
+Start to analyze method: <org.apache.hadoop.hive.llap.daemon.impl.QueryFragmentInfo: boolean canFinish()>
+Start to analyze method: <org.apache.hadoop.hive.llap.io.encoded.VectorDeserializeOrcWriter: void <init>(org.apache.hadoop.conf.Configuration,java.util.Properties,org.apache.hadoop.hive.serde2.objectinspector.StructObjectInspector,java.util.List,boolean[],int)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.vector.mapjoin.VectorMapJoinCommonOperator: void allocateOverflowBatchColumnVector(org.apache.hadoop.hive.ql.exec.vector.VectorizedRowBatch,int,java.lang.String)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.tez.TezTask: void setAccessControlsForCurrentUser(org.apache.tez.dag.api.DAG,java.lang.String,org.apache.hadoop.conf.Configuration)>
+Start to analyze method: <org.apache.hadoop.hive.metastore.tools.MetastoreSchemaTool$CommandBuilder: void logScript()>
+Unit: $stack9 = new java.io.BufferedReader AT LINE 1086 is not found in our analysis.
+Unit: $stack10 = new java.io.FileReader AT LINE 1086 is not found in our analysis.
+Unit: $stack11 = this.<org.apache.hadoop.hive.metastore.tools.MetastoreSchemaTool$CommandBuilder: java.lang.String sqlScriptFile> AT LINE 1086 is not found in our analysis.
+Unit: specialinvoke $stack10.<java.io.FileReader: void <init>(java.lang.String)>($stack11) AT LINE 1086 is not found in our analysis.
+Unit: specialinvoke $stack9.<java.io.BufferedReader: void <init>(java.io.Reader)>($stack10) AT LINE 1086 is not found in our analysis.
+Unit: reader = $stack9 AT LINE 1086 is not found in our analysis.
+Unit: l2 = null AT LINE 1086 is not found in our analysis.
+Unit: $stack12 = virtualinvoke reader.<java.io.BufferedReader: java.lang.String readLine()>() AT LINE 1088 is not found in our analysis.
+Unit: if reader == null goto return AT LINE 1091 is not found in our analysis.
+Unit: if l2 == null goto virtualinvoke reader.<java.io.BufferedReader: void close()>() AT LINE 1093 is not found in our analysis.
+Unit: virtualinvoke reader.<java.io.BufferedReader: void close()>() AT LINE 1093 is not found in our analysis.
+Unit: goto [?= return] AT LINE 1093 is not found in our analysis.
+Unit: virtualinvoke reader.<java.io.BufferedReader: void close()>() AT LINE 1093 is not found in our analysis.
+Unit: goto [?= return] AT LINE 1093 is not found in our analysis.
+Start to analyze method: <org.apache.hadoop.hive.ql.parse.SemanticAnalyzer: org.apache.hadoop.hive.ql.exec.Operator genSelectPlan(java.lang.String,org.apache.hadoop.hive.ql.parse.ASTNode,org.apache.hadoop.hive.ql.parse.QB,org.apache.hadoop.hive.ql.exec.Operator,org.apache.hadoop.hive.ql.exec.Operator,boolean)>
+Unit: $stack437 = virtualinvoke selExprList.<org.apache.hadoop.hive.ql.parse.ASTNode: java.lang.String toStringTree()>() AT LINE 4349 is not found in our analysis.
+Start to analyze method: <org.apache.hadoop.hive.ql.parse.SemanticAnalyzer: java.util.Map parseSemiJoinHint(java.util.List)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.persistence.BytesBytesMultiHashMap: int findKeySlotToWrite(long,int,int)>
+Start to analyze method: <org.apache.hadoop.hive.llap.io.encoded.SerDeEncodedDataReader$CacheWriter: org.apache.orc.PhysicalWriter$OutputReceiver createDataStream(org.apache.orc.impl.StreamName)>
+Start to analyze method: <org.apache.hadoop.hive.llap.io.api.impl.LlapRecordReader: void consumeData(org.apache.hadoop.hive.llap.io.api.impl.ColumnVectorBatch)>
+Start to analyze method: <org.apache.hadoop.hive.ql.parse.TaskCompiler: void setLoadFileLocation(org.apache.hadoop.hive.ql.parse.ParseContext,org.apache.hadoop.hive.ql.plan.LoadFileDesc)>
+Start to analyze method: <org.apache.hadoop.hive.llap.cli.LlapServiceDriver: int run(java.lang.String[])>
+Start to analyze method: <org.apache.hadoop.hive.llap.io.encoded.SerDeEncodedDataReader: java.lang.Boolean readFileWithCache(long)>
+Start to analyze method: <org.apache.hive.hcatalog.mapreduce.PartInfo: void dedupWithTableInfo()>
+Start to analyze method: <org.apache.hadoop.hive.ql.io.HiveInputFormat: org.apache.hadoop.mapred.InputFormat wrapForLlap(org.apache.hadoop.mapred.InputFormat,org.apache.hadoop.conf.Configuration,org.apache.hadoop.hive.ql.plan.PartitionDesc)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.tez.MapRecordProcessor: void setLlapOfFragmentId(org.apache.tez.runtime.api.ProcessorContext)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.spark.session.SparkSessionManagerImpl: org.apache.hadoop.hive.ql.exec.spark.session.SparkSession getSession(org.apache.hadoop.hive.ql.exec.spark.session.SparkSession,org.apache.hadoop.hive.conf.HiveConf,boolean)>
+Start to analyze method: <org.apache.hadoop.hive.ql.optimizer.calcite.translator.HiveOpConverter: org.apache.hadoop.hive.ql.optimizer.calcite.translator.HiveOpConverter$OpAttr visit(org.apache.hadoop.hive.ql.optimizer.calcite.reloperators.HiveUnion)>
+Start to analyze method: <org.apache.hadoop.hive.serde2.lazy.fast.LazySimpleDeserializeRead: void logExceptionMessage(byte[],int,int,java.lang.String)>
+Unit: $stack16 = new java.lang.Exception AT LINE 1247 is not found in our analysis.
+Unit: specialinvoke $stack16.<java.lang.Exception: void <init>(java.lang.String)>("For debugging purposes") AT LINE 1247 is not found in our analysis.
+Start to analyze method: <org.apache.hadoop.hive.llap.io.api.impl.LlapRecordReader: org.apache.hadoop.hive.ql.plan.MapWork findMapWork(org.apache.hadoop.mapred.JobConf)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.AppMasterEventOperator: void process(java.lang.Object,int)>
+Start to analyze method: <org.apache.hadoop.hive.metastore.txn.TxnHandler: org.apache.hadoop.hive.metastore.txn.TxnStore$MutexAPI$LockHandle acquireLock(java.lang.String)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.spark.SmallTableCache: void cache(org.apache.hadoop.fs.Path,org.apache.hadoop.hive.ql.exec.persistence.MapJoinTableContainer)>
+Start to analyze method: <org.apache.hadoop.hive.llap.log.LlapWrappedAppender: void setupAppenderIfRequired(org.apache.logging.log4j.core.LogEvent)>
+Start to analyze method: <org.apache.hadoop.hive.ql.log.PerfLogger: void PerfLogBegin(java.lang.String,java.lang.String)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.vector.mapjoin.VectorMapJoinOuterStringOperator: void process(java.lang.Object,int)>
+Start to analyze method: <org.apache.hive.streaming.HiveStreamingConnection: void setHiveConf(org.apache.hadoop.hive.conf.HiveConf,java.lang.String)>
+Start to analyze method: <org.apache.hadoop.hive.serde2.avro.AvroLazyObjectInspector: java.lang.Object deserializeStruct(java.lang.Object,java.lang.String)>
+Start to analyze method: <org.apache.hadoop.hive.ql.optimizer.SharedWorkOptimizer: org.apache.hadoop.hive.ql.parse.ParseContext transform(org.apache.hadoop.hive.ql.parse.ParseContext)>
+Start to analyze method: <org.apache.hadoop.hive.metastore.ObjectStore: java.util.Properties getDataSourceProps(org.apache.hadoop.conf.Configuration)>
+Unit: $stack15 = virtualinvoke prop.<java.util.Properties: java.util.Set entrySet()>() AT LINE 616 is not found in our analysis.
+Start to analyze method: <org.apache.hadoop.hive.ql.io.orc.OrcInputFormat: org.apache.hadoop.hive.ql.io.AcidInputFormat$RowReader getReader(org.apache.hadoop.mapred.InputSplit,org.apache.hadoop.hive.ql.io.AcidInputFormat$Options)>
+Start to analyze method: <org.apache.hadoop.hive.llap.tezplugins.LlapTaskCommunicator$EntityTracker: void registerTaskAttempt(org.apache.hadoop.yarn.api.records.ContainerId,org.apache.tez.dag.records.TezTaskAttemptID,java.lang.String,int)>
+Start to analyze method: <org.apache.hadoop.hive.llap.io.ChunkedInputStream: int read(byte[],int,int)>
+Start to analyze method: <org.apache.hadoop.hive.ql.optimizer.ConstantPropagateProcFactory: org.apache.hadoop.hive.ql.plan.ExprNodeConstantDesc typeCast(org.apache.hadoop.hive.ql.plan.ExprNodeDesc,org.apache.hadoop.hive.serde2.typeinfo.TypeInfo,boolean)>
+Start to analyze method: <org.apache.hadoop.hive.ql.optimizer.PointLookupOptimizer$FilterTransformer: java.lang.Object process(org.apache.hadoop.hive.ql.lib.Node,java.util.Stack,org.apache.hadoop.hive.ql.lib.NodeProcessorCtx,java.lang.Object[])>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.spark.SmallTableCache: void initialize(org.apache.hadoop.conf.Configuration)>
+Start to analyze method: <org.apache.hadoop.hive.ql.plan.mapper.MetastoreStatsConnector: void logException(java.lang.String,java.lang.Exception)>
+Unit: goto [?= return] AT LINE 161 is not found in our analysis.
+Start to analyze method: <org.apache.hadoop.hive.llap.tezplugins.LlapTaskSchedulerService$NodeInfo: boolean canAcceptTask()>
+Start to analyze method: <org.apache.hadoop.hive.llap.io.encoded.SerDeEncodedDataReader: java.lang.Void performDataRead()>
+Start to analyze method: <org.apache.hadoop.hive.llap.security.LlapServerSecurityInfo: org.apache.hadoop.security.token.TokenInfo getTokenInfo(java.lang.Class,org.apache.hadoop.conf.Configuration)>
+Start to analyze method: <org.apache.hadoop.hive.ql.parse.CalcitePlanner$CalcitePlannerAction: org.apache.calcite.rel.RelNode genLogicalPlan(org.apache.hadoop.hive.ql.parse.QB,boolean,com.google.common.collect.ImmutableMap,org.apache.hadoop.hive.ql.parse.RowResolver)>
+Start to analyze method: <org.apache.hadoop.hive.ql.plan.LoadTableDesc: void <init>(org.apache.hadoop.fs.Path,org.apache.hadoop.hive.ql.plan.TableDesc,org.apache.hadoop.hive.ql.plan.DynamicPartitionCtx,org.apache.hadoop.hive.ql.io.AcidUtils$Operation,boolean,java.lang.Long)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.vector.mapjoin.VectorMapJoinInnerBigOnlyMultiKeyOperator: void process(java.lang.Object,int)>
+Start to analyze method: <org.apache.hadoop.hive.ql.session.SessionState: void setupAuth()>
+Start to analyze method: <org.apache.hadoop.hive.registry.impl.ZkRegistryBase: java.util.Set getByHostInternal(java.lang.String)>
+Start to analyze method: <org.apache.hadoop.hive.llap.io.api.impl.LlapRecordReader: void close()>
+Start to analyze method: <org.apache.hadoop.hive.llap.daemon.impl.TaskRunnerCallable: org.apache.tez.runtime.task.TaskRunner2Result callInternal()>
+Start to analyze method: <org.apache.hadoop.hive.ql.optimizer.GenMapRedUtils: org.apache.hadoop.fs.Path createMoveTask(org.apache.hadoop.hive.ql.exec.Task,boolean,org.apache.hadoop.hive.ql.exec.FileSinkOperator,org.apache.hadoop.hive.ql.parse.ParseContext,java.util.List,org.apache.hadoop.hive.conf.HiveConf,org.apache.hadoop.hive.ql.exec.DependencyCollectionTask)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.vector.VectorizationContext: org.apache.hadoop.hive.common.type.HiveDecimal castConstantToDecimal(java.lang.Object,org.apache.hadoop.hive.serde2.typeinfo.TypeInfo)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.vector.mapjoin.VectorMapJoinInnerMultiKeyOperator: void process(java.lang.Object,int)>
+Start to analyze method: <org.apache.hadoop.hive.ql.optimizer.ppr.PartitionPruner: org.apache.hadoop.hive.ql.parse.PrunedPartitionList prune(org.apache.hadoop.hive.ql.metadata.Table,org.apache.hadoop.hive.ql.plan.ExprNodeDesc,org.apache.hadoop.hive.conf.HiveConf,java.lang.String,java.util.Map)>
+Start to analyze method: <org.apache.hadoop.hive.llap.cache.SerDeLowLevelCacheImpl: void mergeStripeInfos(org.apache.hadoop.hive.llap.cache.SerDeLowLevelCacheImpl$StripeData,org.apache.hadoop.hive.llap.cache.SerDeLowLevelCacheImpl$StripeData)>
+Start to analyze method: <org.apache.hadoop.hive.ql.optimizer.physical.LlapDecider$LlapDecisionDispatcher: boolean checkExpression(org.apache.hadoop.hive.ql.plan.ExprNodeDesc)>
+Start to analyze method: <org.apache.hadoop.hive.llap.tezplugins.LlapTaskCommunicator$LlapTaskUmbilicalProtocolImpl: void nodeHeartbeat(org.apache.hadoop.io.Text,org.apache.hadoop.io.Text,int,org.apache.hadoop.hive.llap.protocol.LlapTaskUmbilicalProtocol$TezAttemptArray,org.apache.hadoop.hive.llap.protocol.LlapTaskUmbilicalProtocol$BooleanArray)>
+Start to analyze method: <org.apache.hadoop.hive.ql.ppd.OpProcFactory: org.apache.hadoop.hive.ql.plan.ExprNodeGenericFuncDesc pushFilterToStorageHandler(org.apache.hadoop.hive.ql.exec.TableScanOperator,org.apache.hadoop.hive.ql.plan.ExprNodeGenericFuncDesc,org.apache.hadoop.hive.ql.ppd.OpWalkerInfo,org.apache.hadoop.hive.conf.HiveConf)>
+Start to analyze method: <org.apache.hadoop.hive.llap.cache.SerDeLowLevelCacheImpl: void getCacheDataForOneSlice(int,org.apache.hadoop.hive.llap.cache.SerDeLowLevelCacheImpl$FileData,org.apache.hadoop.hive.llap.cache.SerDeLowLevelCacheImpl$FileData,org.apache.hadoop.hive.common.io.DataCache$BooleanRef,boolean[],org.apache.hadoop.hive.llap.cache.LowLevelCacheCounters)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.tez.TezProcessor: void run(java.util.Map,java.util.Map)>
+Start to analyze method: <org.apache.hadoop.hive.metastore.tools.MetastoreSchemaTool: void runSqlLine(java.lang.String)>
+Unit: tmp = new java.io.ByteArrayOutputStream AT LINE 1021 is not found in our analysis.
+Unit: specialinvoke tmp.<java.io.ByteArrayOutputStream: void <init>()>() AT LINE 1021 is not found in our analysis.
+Unit: out = tmp AT LINE 1021 is not found in our analysis.
+Unit: goto [?= tmp = new java.io.PrintStream] AT LINE 1021 is not found in our analysis.
+Unit: tmp = new org.apache.commons.io.output.NullOutputStream AT LINE 1023 is not found in our analysis.
+Unit: specialinvoke tmp.<org.apache.commons.io.output.NullOutputStream: void <init>()>() AT LINE 1023 is not found in our analysis.
+Unit: out = tmp AT LINE 1023 is not found in our analysis.
+Start to analyze method: <org.apache.hadoop.hive.llap.cache.LlapAllocatorBuffer: int invalidate()>
+Start to analyze method: <org.apache.hadoop.hive.metastore.MetaStoreDirectSql: java.util.List getColStatsForAllTablePartitions(java.lang.String,java.lang.String,boolean)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.vector.mapjoin.VectorMapJoinOuterLongOperator: void process(java.lang.Object,int)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.vector.mapjoin.VectorMapJoinCommonOperator: void initializeOp(org.apache.hadoop.conf.Configuration)>
+Start to analyze method: <org.apache.hadoop.hive.ql.optimizer.GenMapRedUtils: org.apache.hadoop.hive.ql.exec.Task findMoveTaskForFsopOutput(java.util.List,org.apache.hadoop.fs.Path,boolean)>
+Start to analyze method: <org.apache.hadoop.hive.llap.cache.SimpleBufferManager: void unlockBuffer(org.apache.hadoop.hive.llap.cache.LlapAllocatorBuffer)>
+Start to analyze method: <org.apache.hadoop.hive.ql.metadata.Hive: com.google.common.collect.ImmutableMap dumpAndClearMetaCallTiming(java.lang.String)>
+Unit: phaseInfoLogged = specialinvoke this.<org.apache.hadoop.hive.ql.metadata.Hive: boolean logDumpPhase(java.lang.String)>(phase) AT LINE 4641 is not found in our analysis.
+Start to analyze method: <org.apache.hive.hcatalog.mapreduce.FileOutputCommitterContainer: org.apache.hadoop.fs.Path getFinalPath(org.apache.hadoop.fs.FileSystem,org.apache.hadoop.fs.Path,org.apache.hadoop.fs.Path,org.apache.hadoop.fs.Path,boolean)>
+Start to analyze method: <org.apache.hadoop.hive.llap.cache.LowLevelCacheImpl: long[] putFileData(java.lang.Object,org.apache.hadoop.hive.common.io.DiskRange[],org.apache.hadoop.hive.common.io.encoded.MemoryBuffer[],long,org.apache.hadoop.hive.llap.cache.LowLevelCache$Priority,org.apache.hadoop.hive.llap.cache.LowLevelCacheCounters,java.lang.String)>
+Start to analyze method: <org.apache.hadoop.hive.metastore.MetaStoreDirectSql: int loopJoinOrderedResult(java.util.TreeMap,java.lang.String,int,org.apache.hadoop.hive.metastore.MetaStoreDirectSql$ApplyFunc)>
+Start to analyze method: <org.apache.hadoop.hive.serde2.lazy.LazyBinary: byte[] decodeIfNeeded(byte[])>
+Start to analyze method: <org.apache.hadoop.hive.llap.io.encoded.OrcEncodedDataReader: boolean determineRgsToRead(int,java.util.ArrayList)>
+Unit: if stripeMetadata#23 == 0 goto (branch) AT LINE 791 is not found in our analysis.
+Unit: $stack53 = this.<org.apache.hadoop.hive.llap.io.encoded.OrcEncodedDataReader: org.apache.hadoop.hive.ql.io.orc.encoded.IoTrace trace> AT LINE 793 is not found in our analysis.
+Unit: virtualinvoke $stack53.<org.apache.hadoop.hive.ql.io.orc.encoded.IoTrace: void logSargResult(int,int)>(stripeIx, 0) AT LINE 793 is not found in our analysis.
+Unit: goto [?= $stack24 = <org.apache.hadoop.hive.llap.io.encoded.OrcEncodedDataReader: boolean $assertionsDisabled>] AT LINE 793 is not found in our analysis.
+Unit: if isAll != 0 goto $stack40 = <org.apache.hadoop.hive.llap.io.api.impl.LlapIoImpl: org.slf4j.Logger ORC_LOGGER> AT LINE 794 is not found in our analysis.
+Unit: $stack49 = this.<org.apache.hadoop.hive.llap.io.encoded.OrcEncodedDataReader: org.apache.hadoop.hive.ql.io.orc.encoded.IoTrace trace> AT LINE 797 is not found in our analysis.
+Unit: virtualinvoke $stack49.<org.apache.hadoop.hive.ql.io.orc.encoded.IoTrace: void logSargResult(int,boolean[])>(stripeIx, rgsToRead) AT LINE 797 is not found in our analysis.
+Unit: goto [?= $stack24 = <org.apache.hadoop.hive.llap.io.encoded.OrcEncodedDataReader: boolean $assertionsDisabled>] AT LINE 797 is not found in our analysis.
+Unit: $stack44 = this.<org.apache.hadoop.hive.llap.io.encoded.OrcEncodedDataReader: org.apache.hadoop.hive.ql.io.orc.encoded.IoTrace trace> AT LINE 800 is not found in our analysis.
+Unit: virtualinvoke $stack44.<org.apache.hadoop.hive.ql.io.orc.encoded.IoTrace: void logSargResult(int,int)>(stripeIx, rgCount) AT LINE 800 is not found in our analysis.
+Start to analyze method: <org.apache.hadoop.hive.ql.optimizer.calcite.translator.HiveOpConverter: org.apache.hadoop.hive.ql.exec.SelectOperator genReduceSinkAndBacktrackSelect(org.apache.hadoop.hive.ql.exec.Operator,org.apache.hadoop.hive.ql.plan.ExprNodeDesc[],int,java.util.ArrayList,java.lang.String,java.lang.String,int,org.apache.hadoop.hive.ql.io.AcidUtils$Operation,org.apache.hadoop.hive.conf.HiveConf,java.util.List)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.vector.VectorizationContext: org.apache.hadoop.hive.ql.exec.vector.expressions.VectorExpression getVectorExpression(org.apache.hadoop.hive.ql.plan.ExprNodeDesc,org.apache.hadoop.hive.ql.exec.vector.VectorExpressionDescriptor$Mode)>
+Start to analyze method: <org.apache.hadoop.hive.llap.daemon.impl.AMReporter$QueueLookupCallable: java.lang.Void callInternal()>
+Start to analyze method: <org.apache.hadoop.hive.llap.cache.SerDeLowLevelCacheImpl: void putFileData(org.apache.hadoop.hive.llap.cache.SerDeLowLevelCacheImpl$FileData,org.apache.hadoop.hive.llap.cache.LowLevelCache$Priority,org.apache.hadoop.hive.llap.cache.LowLevelCacheCounters,java.lang.String)>
+Start to analyze method: <org.apache.hadoop.hive.llap.cache.LlapAllocatorBuffer: java.lang.Boolean cancelDiscard()>
+Start to analyze method: <org.apache.hadoop.hive.llap.cache.SerDeLowLevelCacheImpl: org.apache.hadoop.hive.llap.cache.SerDeLowLevelCacheImpl$FileData getFileData(java.lang.Object,long,long,boolean[],org.apache.hadoop.hive.common.io.DataCache$DiskRangeListFactory,org.apache.hadoop.hive.llap.cache.LowLevelCacheCounters,org.apache.hadoop.hive.common.io.DataCache$BooleanRef)>
+Start to analyze method: <org.apache.hadoop.hive.ql.parse.TezCompiler$SemiJoinRemovalIfNoStatsProc: java.lang.Object process(org.apache.hadoop.hive.ql.lib.Node,java.util.Stack,org.apache.hadoop.hive.ql.lib.NodeProcessorCtx,java.lang.Object[])>
+Start to analyze method: <org.apache.hadoop.hive.ql.optimizer.physical.MemoryDecider$MemoryCalculator: void evaluateOperators(org.apache.hadoop.hive.ql.plan.BaseWork,org.apache.hadoop.hive.ql.optimizer.physical.PhysicalContext)>
+Start to analyze method: <org.apache.hadoop.hive.metastore.HiveClientCache$2: void onRemoval(com.google.common.cache.RemovalNotification)>
+Start to analyze method: <org.apache.hadoop.hive.hbase.HiveHBaseInputFormatUtil: void setupKeyRange(org.apache.hadoop.hbase.client.Scan,java.util.List,boolean)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.MapJoinOperator: void completeInitializationOp(java.lang.Object[])>
+Start to analyze method: <org.apache.hadoop.hive.serde2.lazy.LazyPrimitive: void logExceptionMessage(org.apache.hadoop.hive.serde2.lazy.ByteArrayRef,int,int,java.lang.String)>
+Unit: $stack17 = new java.lang.Exception AT LINE 81 is not found in our analysis.
+Unit: specialinvoke $stack17.<java.lang.Exception: void <init>(java.lang.String)>("For debugging purposes") AT LINE 81 is not found in our analysis.
+Start to analyze method: <org.apache.hadoop.hive.llap.cache.LowLevelLrfuCachePolicy: org.apache.hadoop.hive.llap.cache.LlapCacheableBuffer evictHeapElementUnderLock(long,int)>
+Start to analyze method: <org.apache.hadoop.hive.ql.parse.GenTezWork: java.lang.Object process(org.apache.hadoop.hive.ql.lib.Node,java.util.Stack,org.apache.hadoop.hive.ql.lib.NodeProcessorCtx,java.lang.Object[])>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.tez.LlapObjectCache: java.lang.Object retrieve(java.lang.String,java.util.concurrent.Callable)>
+Start to analyze method: <org.apache.hadoop.hive.ql.optimizer.TablePropertyEnrichmentOptimizer$WalkerCtx: void <init>(org.apache.hadoop.conf.Configuration)>
+Start to analyze method: <org.apache.hadoop.hive.ql.optimizer.calcite.translator.HiveOpConverter: org.apache.hadoop.hive.ql.exec.ReduceSinkOperator genReduceSink(org.apache.hadoop.hive.ql.exec.Operator,java.lang.String,org.apache.hadoop.hive.ql.plan.ExprNodeDesc[],int,java.util.ArrayList,java.lang.String,java.lang.String,int,org.apache.hadoop.hive.ql.io.AcidUtils$Operation,org.apache.hadoop.hive.conf.HiveConf)>
+Start to analyze method: <org.apache.hadoop.hive.registry.impl.ServiceInstanceBase: void <init>(org.apache.hadoop.registry.client.types.ServiceRecord,java.lang.String)>
+Start to analyze method: <org.apache.hadoop.hive.llap.io.encoded.SerDeEncodedDataReader: org.apache.hadoop.hive.llap.cache.SerDeLowLevelCacheImpl$StripeData createSliceToCache(org.apache.hadoop.hive.llap.io.encoded.SerDeEncodedDataReader$CacheWriter$CacheStripeData,org.apache.hadoop.hive.llap.cache.SerDeLowLevelCacheImpl$StripeData)>
+Start to analyze method: <org.apache.hadoop.hive.ql.optimizer.GenMapRedUtils: org.apache.hadoop.hive.ql.plan.MapWork createMergeTask(org.apache.hadoop.hive.ql.plan.FileSinkDesc,org.apache.hadoop.fs.Path,boolean,org.apache.hadoop.hive.ql.CompilationOpContext)>
+Start to analyze method: <org.apache.hadoop.hive.llap.daemon.impl.StatsRecordingThreadPool$WrappedCallable: void updateFileSystemCounters(java.util.List,java.util.concurrent.Callable)>
+Start to analyze method: <org.apache.hadoop.hive.metastore.metrics.PerfLogger: void PerfLogBegin(java.lang.String,java.lang.String)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.spark.session.SparkSessionManagerImpl: void closeSession(org.apache.hadoop.hive.ql.exec.spark.session.SparkSession)>
+Start to analyze method: <org.apache.hadoop.hive.ql.parse.SemanticAnalyzer: org.apache.hadoop.hive.ql.exec.Operator genLimitPlan(java.lang.String,org.apache.hadoop.hive.ql.parse.QB,org.apache.hadoop.hive.ql.exec.Operator,int,int)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.Operator: void defaultStartGroup()>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.spark.SmallTableCache: org.apache.hadoop.hive.ql.exec.persistence.MapJoinTableContainer get(org.apache.hadoop.fs.Path)>
+Start to analyze method: <org.apache.hadoop.hive.ql.optimizer.ConstantPropagateProcFactory: void propagate(org.apache.hadoop.hive.ql.udf.generic.GenericUDF,java.util.List,org.apache.hadoop.hive.ql.exec.RowSchema,java.util.Map)>
+Start to analyze method: <org.apache.hadoop.hive.ql.io.HiveInputFormat: boolean checkInputFormatForLlapEncode(org.apache.hadoop.conf.Configuration,java.lang.String)>
+Start to analyze method: <org.apache.hadoop.hive.ql.optimizer.stats.'annotation'.StatsRulesProcFactory$FilterStatsRule: java.lang.Object process(org.apache.hadoop.hive.ql.lib.Node,java.util.Stack,org.apache.hadoop.hive.ql.lib.NodeProcessorCtx,java.lang.Object[])>
+Start to analyze method: <org.apache.hadoop.hive.ql.io.orc.encoded.EncodedReaderImpl: void decompressChunk(java.nio.ByteBuffer,org.apache.orc.CompressionCodec,java.nio.ByteBuffer)>
+Start to analyze method: <org.apache.hive.service.cli.thrift.ThriftHttpServlet: javax.servlet.http.Cookie createCookie(java.lang.String)>
+Start to analyze method: <org.apache.hadoop.hive.ql.optimizer.DynamicPartitionPruningOptimization: void generateEventOperatorPlan(org.apache.hadoop.hive.ql.parse.GenTezUtils$DynamicListContext,org.apache.hadoop.hive.ql.parse.ParseContext,org.apache.hadoop.hive.ql.exec.TableScanOperator,java.lang.String,java.lang.String)>
+Start to analyze method: <org.apache.hadoop.hive.llap.io.encoded.SerDeEncodedDataReader: org.apache.hadoop.hive.llap.cache.SerDeLowLevelCacheImpl$LlapSerDeDataBuffer[][] createArrayToCache(org.apache.hadoop.hive.llap.cache.SerDeLowLevelCacheImpl$StripeData,int,java.util.List)>
+Start to analyze method: <org.apache.hive.service.cli.thrift.ThriftHttpServlet: java.lang.String getDoAsQueryParam(java.lang.String)>
+Start to analyze method: <org.apache.hadoop.hive.llap.log.LlapWrappedAppender: void <init>(java.lang.String,org.apache.logging.log4j.core.config.Node,org.apache.logging.log4j.core.config.Configuration,boolean,java.lang.String)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.DDLTask: java.util.List generateAddMmTasks(org.apache.hadoop.hive.ql.metadata.Table,java.lang.Long)>
+Start to analyze method: <org.apache.hadoop.hive.ql.optimizer.stats.'annotation'.StatsRulesProcFactory$DefaultStatsRule: java.lang.Object process(org.apache.hadoop.hive.ql.lib.Node,java.util.Stack,org.apache.hadoop.hive.ql.lib.NodeProcessorCtx,java.lang.Object[])>
+Start to analyze method: <org.apache.hadoop.hive.ql.optimizer.unionproc.UnionProcFactory$UnionNoProcessFile: void pushOperatorsAboveUnion(org.apache.hadoop.hive.ql.exec.UnionOperator,java.util.Stack,int)>
+Start to analyze method: <org.apache.hadoop.hive.llap.daemon.impl.AMReporter: org.apache.hadoop.hive.llap.daemon.impl.AMReporter$AMNodeInfo registerTask(java.lang.String,int,java.lang.String,org.apache.hadoop.security.token.Token,org.apache.hadoop.hive.llap.daemon.impl.QueryIdentifier,org.apache.tez.dag.records.TezTaskAttemptID,boolean)>
+Start to analyze method: <org.apache.hadoop.hive.llap.daemon.impl.TaskExecutorService$WaitQueueWorker: void run()>
+Start to analyze method: <org.apache.hive.service.cli.thrift.ThriftHttpServlet: java.lang.String getClientNameFromCookie(javax.servlet.http.Cookie[])>
+Start to analyze method: <org.apache.hadoop.hive.ql.optimizer.ConstantPropagateProcFactory$ConstantPropagateStopProc: java.lang.Object process(org.apache.hadoop.hive.ql.lib.Node,java.util.Stack,org.apache.hadoop.hive.ql.lib.NodeProcessorCtx,java.lang.Object[])>
+Start to analyze method: <org.apache.hadoop.hive.ql.parse.ImportSemanticAnalyzer: org.apache.hadoop.hive.ql.exec.Task loadTable(java.net.URI,org.apache.hadoop.hive.ql.metadata.Table,boolean,org.apache.hadoop.fs.Path,org.apache.hadoop.hive.ql.parse.ReplicationSpec,org.apache.hadoop.hive.ql.parse.EximUtil$SemanticAnalyzerWrapperContext,java.lang.Long,int)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.tez.ColumnarSplitSizeEstimator: long getEstimatedSize(org.apache.hadoop.mapred.InputSplit)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.SparkHashTableSinkOperator: void closeOp(boolean)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.FileSinkOperator: void jobCloseOp(org.apache.hadoop.conf.Configuration,boolean)>
+Start to analyze method: <org.apache.hadoop.hive.llap.daemon.impl.QueryTracker: org.apache.hadoop.hive.llap.daemon.impl.QueryInfo queryComplete(org.apache.hadoop.hive.llap.daemon.impl.QueryIdentifier,long,boolean)>
+Start to analyze method: <org.apache.hadoop.hive.llap.log.LlapWrappedAppender: void stop()>
+Start to analyze method: <org.apache.hadoop.hive.serde2.lazy.fast.LazySimpleDeserializeRead: boolean doReadField(org.apache.hadoop.hive.serde2.lazy.fast.LazySimpleDeserializeRead$Field)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.vector.VectorizationContext: org.apache.hadoop.hive.ql.exec.vector.expressions.VectorExpression getVectorExpressionForUdf(org.apache.hadoop.hive.ql.udf.generic.GenericUDF,java.lang.Class,java.util.List,org.apache.hadoop.hive.ql.exec.vector.VectorExpressionDescriptor$Mode,org.apache.hadoop.hive.serde2.typeinfo.TypeInfo)>
+Start to analyze method: <org.apache.hadoop.hive.metastore.MetaStoreDirectSql: int getNumPartitionsViaSqlFilter(org.apache.hadoop.hive.metastore.MetaStoreDirectSql$SqlFilterForPushdown)>
+Start to analyze method: <org.apache.hadoop.hive.metastore.ReplChangeManager: int recycle(org.apache.hadoop.fs.Path,org.apache.hadoop.hive.metastore.ReplChangeManager$RecycleType,boolean)>
+Start to analyze method: <org.apache.hadoop.hive.llap.daemon.impl.LlapTokenChecker: java.util.List getLlapTokens(org.apache.hadoop.security.UserGroupInformation,java.lang.String)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.MapredContext: org.apache.hadoop.hive.ql.exec.MapredContext init(boolean,org.apache.hadoop.mapred.JobConf)>
+Start to analyze method: <org.apache.hadoop.hive.ql.metadata.Hive: void constructOneLBLocationMap(org.apache.hadoop.fs.FileStatus,java.util.Map,org.apache.hadoop.fs.Path,org.apache.hadoop.hive.metastore.api.SkewedInfo)>
+Start to analyze method: <org.apache.hadoop.hive.ql.optimizer.PartitionColumnsSeparator$StructInTransformer: java.lang.Object process(org.apache.hadoop.hive.ql.lib.Node,java.util.Stack,org.apache.hadoop.hive.ql.lib.NodeProcessorCtx,java.lang.Object[])>
+Start to analyze method: <org.apache.hadoop.hive.llap.cache.LlapAllocatorBuffer: boolean startMoveOrDiscard(int,int,boolean)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.vector.mapjoin.VectorMapJoinInnerStringOperator: void process(java.lang.Object,int)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.DDLTask: int renamePartition(org.apache.hadoop.hive.ql.metadata.Hive,org.apache.hadoop.hive.ql.plan.RenamePartitionDesc)>
+Unit: $stack46 = new java.util.ArrayList AT LINE 1345 is not found in our analysis.
+Unit: $stack49 = virtualinvoke oldPartSpec.<java.util.LinkedHashMap: java.util.Set keySet()>() AT LINE 1347 is not found in our analysis.
+Unit: specialinvoke $stack46.<java.util.ArrayList: void <init>(java.util.Collection)>($stack49) AT LINE 1347 is not found in our analysis.
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.tez.SessionExpirationTracker: void addToExpirationQueue(org.apache.hadoop.hive.ql.exec.tez.TezSessionPoolSession)>
+Start to analyze method: <org.apache.hadoop.hive.llap.daemon.impl.LlapTaskReporter$HeartbeatCallable: org.apache.hadoop.hive.llap.daemon.impl.LlapTaskReporter$ResponseWrapper heartbeat(java.util.Collection)>
+Start to analyze method: <org.apache.hadoop.hive.llap.ext.LlapTaskUmbilicalExternalClient$LlapTaskUmbilicalExternalImpl: org.apache.tez.runtime.api.impl.TezHeartbeatResponse heartbeat(org.apache.tez.runtime.api.impl.TezHeartbeatRequest)>
+Start to analyze method: <org.apache.hadoop.hive.llap.io.encoded.SerDeEncodedDataReader: boolean processOneFileSplit(org.apache.hadoop.mapred.FileSplit,long,org.apache.hive.common.util.Ref,org.apache.hadoop.hive.llap.cache.SerDeLowLevelCacheImpl$StripeData)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.MapJoinOperator: void initializeOp(org.apache.hadoop.conf.Configuration)>
+Start to analyze method: <org.apache.hadoop.hive.ql.optimizer.DynamicPartitionPruningOptimization: java.lang.Object process(org.apache.hadoop.hive.ql.lib.Node,java.util.Stack,org.apache.hadoop.hive.ql.lib.NodeProcessorCtx,java.lang.Object[])>
+Unit: if plist == null goto (branch) AT LINE 176 is not found in our analysis.
+Unit: $stack225 = virtualinvoke plist.<org.apache.hadoop.hive.ql.parse.PrunedPartitionList: java.util.Set getPartitions()>() AT LINE 177 is not found in our analysis.
+Unit: colName = interfaceinvoke $stack225.<java.util.Set: java.util.Iterator iterator()>() AT LINE 177 is not found in our analysis.
+Start to analyze method: <org.apache.hadoop.hive.ql.optimizer.stats.'annotation'.StatsRulesProcFactory$TableScanStatsRule: java.lang.Object process(org.apache.hadoop.hive.ql.lib.Node,java.util.Stack,org.apache.hadoop.hive.ql.lib.NodeProcessorCtx,java.lang.Object[])>
+Start to analyze method: <org.apache.hadoop.hive.ql.optimizer.calcite.stats.HiveRelMdRowCount: java.lang.Double getRowCount(org.apache.calcite.rel.core.Join,org.apache.calcite.rel.metadata.RelMetadataQuery)>
+Start to analyze method: <org.apache.hadoop.hive.ql.optimizer.stats.'annotation'.StatsRulesProcFactory$JoinStatsRule: java.lang.Object process(org.apache.hadoop.hive.ql.lib.Node,java.util.Stack,org.apache.hadoop.hive.ql.lib.NodeProcessorCtx,java.lang.Object[])>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.mr.ObjectCache: void release(java.lang.String)>
+Start to analyze method: <org.apache.hadoop.hive.ql.parse.TezCompiler: void markSemiJoinForDPP(org.apache.hadoop.hive.ql.parse.OptimizeTezProcContext)>
+Start to analyze method: <org.apache.hadoop.hive.cli.CliDriver: void <init>()>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.tez.LlapObjectCache: void remove(java.lang.String)>
+Start to analyze method: <org.apache.hadoop.hive.llap.cache.LlapAllocatorBuffer: int invalidateAndRelease()>
+Start to analyze method: <org.apache.hadoop.hive.llap.daemon.impl.TaskExecutorService: void tryScheduleUnderLock(org.apache.hadoop.hive.llap.daemon.impl.TaskExecutorService$TaskWrapper)>
+Start to analyze method: <org.apache.hadoop.hive.llap.security.LlapServerSecurityInfo: org.apache.hadoop.security.KerberosInfo getKerberosInfo(java.lang.Class,org.apache.hadoop.conf.Configuration)>
+Start to analyze method: <org.apache.hadoop.hive.ql.parse.ParseDriver: org.apache.hadoop.hive.ql.parse.ASTNode parse(java.lang.String,org.apache.hadoop.hive.ql.Context,java.lang.String)>
+Start to analyze method: <org.apache.hadoop.hive.ql.parse.CalcitePlanner$CalcitePlannerAction: org.apache.calcite.rel.RelNode apply(org.apache.calcite.plan.RelOptCluster,org.apache.calcite.plan.RelOptSchema,org.apache.calcite.schema.SchemaPlus)>
+Start to analyze method: <org.apache.hadoop.hive.llap.io.encoded.SerDeEncodedDataReader: void processColumnCacheData(org.apache.hadoop.hive.llap.cache.SerDeLowLevelCacheImpl$LlapSerDeDataBuffer[][][],org.apache.hadoop.hive.ql.io.orc.encoded.Reader$OrcEncodedColumnBatch,int)>
+Start to analyze method: <org.apache.hadoop.hive.ql.optimizer.ConstantPropagateProcFactory: void foldOperator(org.apache.hadoop.hive.ql.exec.Operator,org.apache.hadoop.hive.ql.optimizer.ConstantPropagateProcCtx)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.mr.MapRedTask: int execute(org.apache.hadoop.hive.ql.DriverContext)>
+Start to analyze method: <org.apache.hadoop.hive.metastore.MetaStoreDirectSql: java.util.List getCheckConstraints(java.lang.String,java.lang.String,java.lang.String)>
+Start to analyze method: <org.apache.hadoop.hive.ql.parse.SemanticAnalyzer: java.lang.Integer genColListRegex(java.lang.String,java.lang.String,org.apache.hadoop.hive.ql.parse.ASTNode,java.util.ArrayList,java.util.HashSet,org.apache.hadoop.hive.ql.parse.RowResolver,org.apache.hadoop.hive.ql.parse.RowResolver,java.lang.Integer,org.apache.hadoop.hive.ql.parse.RowResolver,java.util.List,boolean)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.vector.reducesink.VectorReduceSinkObjectHashOperator: void process(java.lang.Object,int)>
+Start to analyze method: <org.apache.hadoop.hive.llap.daemon.impl.TaskExecutorService$InternalCompletionListener: void onFailure(java.lang.Throwable)>
+All overhead in <org.apache.hadoop.hive.ql.exec.vector.reducesink.VectorReduceSinkCommonOperator: void initializeOp(org.apache.hadoop.conf.Configuration)> are not found in our analysis!
+Start to analyze method: <org.apache.hadoop.hive.llap.io.encoded.SerDeEncodedDataReader$CacheOutputReceiver: void output(java.nio.ByteBuffer)>
+Start to analyze method: <org.apache.hadoop.hive.ql.optimizer.physical.Vectorizer$VectorizationDispatcher: boolean getOnlyStructObjectInspectors(org.apache.hadoop.hive.ql.plan.ReduceWork,org.apache.hadoop.hive.ql.optimizer.physical.Vectorizer$VectorTaskColumnInfo)>
+Start to analyze method: <org.apache.hadoop.hive.metastore.ObjectStore: java.util.List getTableMeta(java.lang.String,java.lang.String,java.lang.String,java.util.List)>
+Start to analyze method: <org.apache.hadoop.hive.ql.optimizer.calcite.translator.HiveOpConverter: org.apache.hadoop.hive.ql.optimizer.calcite.translator.HiveOpConverter$OpAttr visit(org.apache.hadoop.hive.ql.optimizer.calcite.reloperators.HiveSortLimit)>
+Start to analyze method: <org.apache.hadoop.hive.llap.io.encoded.SerDeEncodedDataReader: void returnData(org.apache.hadoop.hive.ql.io.orc.encoded.Reader$OrcEncodedColumnBatch)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.vector.mapjoin.VectorMapJoinCommonOperator: void determineCommonInfo(boolean)>
+Start to analyze method: <org.apache.hadoop.hive.ql.parse.SemanticAnalyzer: org.apache.hadoop.hive.ql.exec.Operator genBodyPlan(org.apache.hadoop.hive.ql.parse.QB,org.apache.hadoop.hive.ql.exec.Operator,java.util.Map)>
+Start to analyze method: <org.apache.hadoop.hive.ql.io.parquet.MapredParquetInputFormat: org.apache.hadoop.mapred.RecordReader getRecordReader(org.apache.hadoop.mapred.InputSplit,org.apache.hadoop.mapred.JobConf,org.apache.hadoop.mapred.Reporter)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.tez.Utils: org.apache.hadoop.mapred.split.SplitLocationProvider getSplitLocationProvider(org.apache.hadoop.conf.Configuration,boolean,org.slf4j.Logger)>
+Start to analyze method: <org.apache.hadoop.hive.metastore.MetaStoreDirectSql: java.util.List getPartitionsViaSqlFilterInternal(java.lang.String,java.lang.String,java.lang.String,java.lang.Boolean,java.lang.String,java.util.List,java.util.List,java.lang.Integer)>
+Start to analyze method: <org.apache.hadoop.hive.ql.stats.StatsUtils: java.util.List getTableColumnStats(org.apache.hadoop.hive.ql.metadata.Table,java.util.List,java.util.List,org.apache.hadoop.hive.ql.parse.ColumnStatsList)>
+Start to analyze method: <org.apache.hadoop.hive.ql.optimizer.TablePropertyEnrichmentOptimizer$Processor: java.lang.Object process(org.apache.hadoop.hive.ql.lib.Node,java.util.Stack,org.apache.hadoop.hive.ql.lib.NodeProcessorCtx,java.lang.Object[])>
+Start to analyze method: <org.apache.hadoop.hive.ql.metadata.HiveMaterializedViewsRegistry: org.apache.calcite.plan.RelOptMaterialization addMaterializedView(org.apache.hadoop.hive.conf.HiveConf,org.apache.hadoop.hive.ql.metadata.Table,org.apache.hadoop.hive.ql.metadata.HiveMaterializedViewsRegistry$OpType)>
+Start to analyze method: <org.apache.hadoop.hive.ql.parse.spark.SparkCompiler: void runCycleAnalysisForPartitionPruning(org.apache.hadoop.hive.ql.parse.spark.OptimizeSparkProcContext)>
+Start to analyze method: <org.apache.hadoop.hive.llap.io.encoded.OrcEncodedDataReader: void <init>(org.apache.hadoop.hive.llap.cache.LowLevelCache,org.apache.hadoop.hive.llap.cache.BufferUsageManager,org.apache.hadoop.hive.llap.io.metadata.MetadataCache,org.apache.hadoop.conf.Configuration,org.apache.hadoop.conf.Configuration,org.apache.hadoop.mapred.FileSplit,org.apache.hadoop.hive.llap.io.decode.ColumnVectorProducer$Includes,org.apache.hadoop.hive.ql.io.sarg.SearchArgument,org.apache.hadoop.hive.llap.io.decode.OrcEncodedDataConsumer,org.apache.hadoop.hive.llap.counters.QueryFragmentCounters,org.apache.hadoop.hive.llap.io.decode.ColumnVectorProducer$SchemaEvolutionFactory,org.apache.hadoop.hive.common.Pool)>
+Start to analyze method: <org.apache.hadoop.hive.llap.io.encoded.SerDeEncodedDataReader$CacheWriter: void finalizeStripe(org.apache.orc.OrcProto$StripeFooter$Builder,org.apache.orc.OrcProto$StripeInformation$Builder)>
+Start to analyze method: <org.apache.hive.service.CookieSigner: java.lang.String signCookie(java.lang.String)>
+Start to analyze method: <org.apache.hadoop.hive.llap.cache.SerDeLowLevelCacheImpl: void unlockBuffer(org.apache.hadoop.hive.llap.cache.SerDeLowLevelCacheImpl$LlapSerDeDataBuffer,boolean)>
+Start to analyze method: <org.apache.hadoop.hive.ql.optimizer.PartitionColumnsSeparator$StructInExprProcessor: java.lang.Object process(org.apache.hadoop.hive.ql.lib.Node,java.util.Stack,org.apache.hadoop.hive.ql.lib.NodeProcessorCtx,java.lang.Object[])>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.tez.HostAffinitySplitLocationProvider: java.lang.String[] getLocations(org.apache.hadoop.mapred.InputSplit)>
+Start to analyze method: <org.apache.hadoop.hive.llap.cli.LlapServiceDriver$1: java.lang.Void call()>
+Start to analyze method: <org.apache.hadoop.hive.llap.tezplugins.LlapTaskSchedulerService: org.apache.hadoop.yarn.api.records.Resource getAvailableResources()>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.AbstractFileMergeOperator: void fixTmpPath(org.apache.hadoop.fs.Path,int)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.Operator: void close(boolean)>
+Unit: $stack78 = this.<org.apache.hadoop.hive.ql.exec.Operator: org.slf4j.Logger LOG> AT LINE 726 is not found in our analysis.
+Unit: $stack77 = new java.lang.StringBuilder AT LINE 726 is not found in our analysis.
+Unit: specialinvoke $stack77.<java.lang.StringBuilder: void <init>()>() AT LINE 726 is not found in our analysis.
+Unit: $stack79 = virtualinvoke $stack77.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("Closing operator ") AT LINE 726 is not found in our analysis.
+Unit: $stack80 = virtualinvoke $stack79.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)>(this) AT LINE 726 is not found in our analysis.
+Unit: $stack81 = virtualinvoke $stack80.<java.lang.StringBuilder: java.lang.String toString()>() AT LINE 726 is not found in our analysis.
+Unit: interfaceinvoke $stack78.<org.slf4j.Logger: void info(java.lang.String)>($stack81) AT LINE 726 is not found in our analysis.
+Start to analyze method: <org.apache.hadoop.hive.ql.io.orc.encoded.EncodedTreeReaderFactory: org.apache.orc.impl.TreeReaderFactory$TreeReader createEncodedTreeReader(org.apache.orc.TypeDescription,java.util.List,org.apache.hadoop.hive.ql.io.orc.encoded.Reader$OrcEncodedColumnBatch,org.apache.orc.CompressionCodec,org.apache.orc.impl.TreeReaderFactory$Context,boolean)>
+Start to analyze method: <org.apache.hadoop.hive.ql.stats.StatsUtils: org.apache.hadoop.hive.ql.plan.Statistics collectStatistics(org.apache.hadoop.hive.conf.HiveConf,org.apache.hadoop.hive.ql.parse.PrunedPartitionList,org.apache.hadoop.hive.ql.metadata.Table,java.util.List,java.util.List,org.apache.hadoop.hive.ql.parse.ColumnStatsList,java.util.List,boolean,boolean)>
+Start to analyze method: <org.apache.hadoop.hive.llap.cache.LlapAllocatorBuffer: int decRef()>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.ReplCopyTask: int execute(org.apache.hadoop.hive.ql.DriverContext)>
+Start to analyze method: <org.apache.hadoop.hive.llap.daemon.impl.TaskExecutorService: void shutDown(boolean)>
+Start to analyze method: <org.apache.hadoop.hive.llap.tezplugins.LlapContainerLauncher: void stopContainer(org.apache.tez.serviceplugins.api.ContainerStopRequest)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.tez.TezSessionPool: void replaceSession(org.apache.hadoop.hive.ql.exec.tez.TezSessionPoolSession)>
+Start to analyze method: <org.apache.hive.service.CookieSigner: java.lang.String verifyAndExtract(java.lang.String)>
+Start to analyze method: <org.apache.hadoop.hive.llap.daemon.impl.LlapTaskReporter$HeartbeatCallable: boolean taskTerminated(org.apache.tez.dag.records.TezTaskAttemptID,boolean,org.apache.tez.runtime.api.TaskFailureType,java.lang.Throwable,java.lang.String,org.apache.tez.runtime.api.impl.EventMetaData)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.vector.mapjoin.VectorMapJoinLeftSemiMultiKeyOperator: void process(java.lang.Object,int)>
+Start to analyze method: <org.apache.hadoop.hive.ql.optimizer.calcite.translator.HiveOpConverter: org.apache.hadoop.hive.ql.optimizer.calcite.translator.HiveOpConverter$OpAttr visit(org.apache.hadoop.hive.ql.optimizer.calcite.reloperators.HiveSortExchange)>
+Start to analyze method: <org.apache.hadoop.hive.metastore.MaterializationsRebuildLockCleanerTask: void run()>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.tez.TezSessionState: org.apache.hadoop.yarn.api.records.LocalResource createJarLocalResource(java.lang.String)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.vector.reducesink.VectorReduceSinkUniformHashOperator: void process(java.lang.Object,int)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.AbstractFileMergeOperator: void updatePaths(org.apache.hadoop.fs.Path,org.apache.hadoop.fs.Path)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.tez.WorkloadManager: void processCurrentEvents(org.apache.hadoop.hive.ql.exec.tez.WorkloadManager$EventState,org.apache.hadoop.hive.ql.exec.tez.WorkloadManager$WmThreadSyncWork)>
+Unit: $stack121 = <org.apache.hadoop.hive.ql.exec.tez.WorkloadManager: org.slf4j.Logger LOG> AT LINE 697 is not found in our analysis.
+Unit: $stack120 = new java.lang.StringBuilder AT LINE 697 is not found in our analysis.
+Unit: specialinvoke $stack120.<java.lang.StringBuilder: void <init>()>() AT LINE 697 is not found in our analysis.
+Unit: $stack122 = virtualinvoke $stack120.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("Processing changes for pool ") AT LINE 697 is not found in our analysis.
+Unit: $stack123 = virtualinvoke $stack122.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(kr#81) AT LINE 697 is not found in our analysis.
+Unit: $stack124 = virtualinvoke $stack123.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(": ") AT LINE 697 is not found in our analysis.
+Unit: $stack125 = this.<org.apache.hadoop.hive.ql.exec.tez.WorkloadManager: java.util.Map pools> AT LINE 697 is not found in our analysis.
+Unit: $stack126 = interfaceinvoke $stack125.<java.util.Map: java.lang.Object get(java.lang.Object)>(kr#81) AT LINE 697 is not found in our analysis.
+Unit: $stack127 = virtualinvoke $stack124.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)>($stack126) AT LINE 697 is not found in our analysis.
+Unit: $stack128 = virtualinvoke $stack127.<java.lang.StringBuilder: java.lang.String toString()>() AT LINE 697 is not found in our analysis.
+Unit: interfaceinvoke $stack121.<org.slf4j.Logger: void info(java.lang.String)>($stack128) AT LINE 697 is not found in our analysis.
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.tez.RecordProcessor: void init(org.apache.tez.mapreduce.processor.MRTaskReporter,java.util.Map,java.util.Map)>
+Start to analyze method: <org.apache.hadoop.hive.llap.tezplugins.endpoint.LlapPluginSecurityInfo: org.apache.hadoop.security.KerberosInfo getKerberosInfo(java.lang.Class,org.apache.hadoop.conf.Configuration)>
+Start to analyze method: <org.apache.hadoop.hive.ql.io.orc.encoded.EncodedReaderImpl: void readEncodedColumns(int,org.apache.orc.StripeInformation,org.apache.orc.OrcProto$RowIndex[],java.util.List,java.util.List,boolean[],boolean[],org.apache.hadoop.hive.ql.io.orc.encoded.Consumer)>
+Start to analyze method: <org.apache.hadoop.hive.metastore.conf.MetastoreConf: org.apache.hadoop.conf.Configuration newMetastoreConf()>
+Start to analyze method: <org.apache.hadoop.hive.ql.metadata.Hive: void walkDirTree(org.apache.hadoop.fs.FileStatus,org.apache.hadoop.fs.FileSystem,java.util.Map,org.apache.hadoop.fs.Path,org.apache.hadoop.hive.metastore.api.SkewedInfo)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.Operator: void initialize(org.apache.hadoop.conf.Configuration,org.apache.hadoop.hive.serde2.objectinspector.ObjectInspector,int)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.tez.SplitGrouper: boolean schemaEvolved(org.apache.hadoop.mapred.InputSplit,org.apache.hadoop.mapred.InputSplit,boolean,org.apache.hadoop.hive.ql.plan.MapWork)>
+Start to analyze method: <org.apache.hadoop.hive.ql.stats.StatsUtils: void setUnknownRcDsToAverage(java.util.List,java.util.List,int)>
+Start to analyze method: <org.apache.hadoop.hive.llap.daemon.impl.QueryTracker: org.apache.hadoop.hive.llap.daemon.impl.QueryFragmentInfo registerFragment(org.apache.hadoop.hive.llap.daemon.impl.QueryIdentifier,java.lang.String,java.lang.String,java.lang.String,java.lang.String,int,java.lang.String,int,int,java.lang.String,org.apache.hadoop.hive.llap.daemon.rpc.LlapDaemonProtocolProtos$SignableVertexSpec,org.apache.hadoop.security.token.Token,java.lang.String,org.apache.hadoop.hive.llap.daemon.impl.LlapTokenChecker$LlapTokenInfo,org.apache.hadoop.hive.llap.LlapNodeId)>
+Start to analyze method: <org.apache.hadoop.hive.llap.io.encoded.SerDeEncodedDataReader: void processAsyncCacheData(org.apache.hadoop.hive.llap.io.encoded.SerDeEncodedDataReader$CacheWriter$CacheStripeData,boolean[])>
+Start to analyze method: <org.apache.hadoop.hive.ql.optimizer.ConvertJoinMapJoin: void removeCycleCreatingSemiJoinOps(org.apache.hadoop.hive.ql.exec.MapJoinOperator,org.apache.hadoop.hive.ql.exec.Operator,org.apache.hadoop.hive.ql.parse.ParseContext)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.tez.TezSessionPoolManager: void unregisterOpenSession(org.apache.hadoop.hive.ql.exec.tez.TezSessionPoolSession)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.vector.mapjoin.VectorMapJoinInnerBigOnlyLongOperator: void process(java.lang.Object,int)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.Utilities: boolean isEmptyPath(org.apache.hadoop.mapred.JobConf,org.apache.hadoop.fs.Path,org.apache.hadoop.hive.ql.Context)>
+Start to analyze method: <org.apache.hadoop.hive.llap.tezplugins.LlapTaskSchedulerService: void disableNode(org.apache.hadoop.hive.llap.tezplugins.LlapTaskSchedulerService$NodeInfo,boolean)>
+Start to analyze method: <org.apache.hadoop.hive.metastore.RetryingMetaStoreClient: boolean hasConnectionLifeTimeReached(java.lang.reflect.Method)>
+Start to analyze method: <org.apache.hadoop.hive.llap.io.encoded.SerDeEncodedDataReader: boolean processOneSlice(org.apache.hadoop.hive.llap.io.encoded.SerDeEncodedDataReader$CacheWriter$CacheStripeData,boolean[],int,org.apache.hadoop.hive.llap.cache.SerDeLowLevelCacheImpl$StripeData,long)>
+Start to analyze method: <org.apache.hadoop.hive.llap.tezplugins.LlapTaskSchedulerService: org.apache.hadoop.hive.llap.tezplugins.LlapTaskSchedulerService$SelectHostResult selectHost(org.apache.hadoop.hive.llap.tezplugins.LlapTaskSchedulerService$TaskInfo)>
+Unit: if requestedHosts == null goto $stack78 = "null" AT LINE 1483 is not found in our analysis.
+Start to analyze method: <org.apache.hadoop.hive.metastore.MetaStoreDirectSql: java.util.List aggrStatsUseDB(java.lang.String,java.lang.String,java.lang.String,java.util.List,java.util.List,boolean,boolean,double)>
+Start to analyze method: <org.apache.hadoop.hive.llap.io.encoded.SerDeEncodedDataReader: boolean processOneSlice(org.apache.hadoop.hive.llap.io.encoded.SerDeEncodedDataReader$Vectors,boolean[],int,org.apache.hadoop.hive.llap.cache.SerDeLowLevelCacheImpl$StripeData,long)>
+Start to analyze method: <org.apache.hadoop.hive.llap.cli.LlapStatusServiceDriver: org.apache.hadoop.hive.llap.cli.LlapStatusServiceDriver$ExitCode populateAppStatusFromLlapRegistry(org.apache.hadoop.hive.llap.cli.status.LlapStatusHelpers$AppStatusBuilder,long)>
+Start to analyze method: <org.apache.hadoop.hive.ql.optimizer.calcite.cost.HiveCostModel: org.apache.calcite.plan.RelOptCost getJoinCost(org.apache.hadoop.hive.ql.optimizer.calcite.reloperators.HiveJoin)>
+Start to analyze method: <org.apache.hadoop.hive.metastore.ReplChangeManager: java.lang.String[] decodeFileUri(java.lang.String)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.vector.mapjoin.VectorMapJoinCommonOperator: void commonSetup(org.apache.hadoop.hive.ql.exec.vector.VectorizedRowBatch)>
+Unit: virtualinvoke this.<org.apache.hadoop.hive.ql.exec.vector.mapjoin.VectorMapJoinCommonOperator: void displayBatchColumns(org.apache.hadoop.hive.ql.exec.vector.VectorizedRowBatch,java.lang.String)>(batch, "batch") AT LINE 562 is not found in our analysis.
+Unit: $stack23 = this.<org.apache.hadoop.hive.ql.exec.vector.mapjoin.VectorMapJoinCommonOperator: org.apache.hadoop.hive.ql.exec.vector.VectorizedRowBatch overflowBatch> AT LINE 563 is not found in our analysis.
+Unit: virtualinvoke this.<org.apache.hadoop.hive.ql.exec.vector.mapjoin.VectorMapJoinCommonOperator: void displayBatchColumns(org.apache.hadoop.hive.ql.exec.vector.VectorizedRowBatch,java.lang.String)>($stack23, "overflowBatch") AT LINE 563 is not found in our analysis.
+Start to analyze method: <org.apache.hive.http.Log4j2ConfiguratorServlet: void configureLogger(org.apache.hive.http.Log4j2ConfiguratorServlet$ConfLoggers)>
+Start to analyze method: <org.apache.hadoop.hive.ql.io.orc.OrcRecordUpdater: org.apache.orc.TypeDescription getTypeDescriptionFromTableProperties(java.util.Properties)>
+Start to analyze method: <org.apache.hadoop.hive.llap.daemon.impl.ContainerRunnerImpl: org.apache.hadoop.hive.llap.daemon.rpc.LlapDaemonProtocolProtos$SubmitWorkResponseProto submitWork(org.apache.hadoop.hive.llap.daemon.rpc.LlapDaemonProtocolProtos$SubmitWorkRequestProto)>
+Start to analyze method: <org.apache.hadoop.hive.llap.daemon.impl.QueryTracker: void handleFragmentCompleteExternalQuery(org.apache.hadoop.hive.llap.daemon.impl.QueryInfo)>
+Start to analyze method: <org.apache.hadoop.hive.ql.io.orc.encoded.EncodedReaderImpl: void readIndexStreams(org.apache.orc.impl.OrcIndex,org.apache.orc.StripeInformation,java.util.List,boolean[],boolean[])>
+Start to analyze method: <org.apache.hadoop.hive.ql.optimizer.calcite.translator.HiveOpConverter: org.apache.hadoop.hive.ql.exec.JoinOperator genJoin(org.apache.calcite.rel.RelNode,org.apache.hadoop.hive.ql.plan.ExprNodeDesc[][],java.util.List,java.util.List,java.lang.String[],java.lang.String)>
+Start to analyze method: <org.apache.hadoop.hive.ql.optimizer.GenMapRedUtils: org.apache.hadoop.hive.ql.exec.ConditionalTask createCondTask(org.apache.hadoop.hive.conf.HiveConf,org.apache.hadoop.hive.ql.exec.Task,org.apache.hadoop.hive.ql.plan.MoveWork,java.io.Serializable,org.apache.hadoop.fs.Path,org.apache.hadoop.fs.Path,org.apache.hadoop.hive.ql.exec.Task,org.apache.hadoop.hive.ql.exec.DependencyCollectionTask,org.apache.hadoop.hive.ql.session.LineageState)>
+Start to analyze method: <org.apache.hadoop.hive.metastore.ObjectStore: void debugLog(java.lang.String)>
+Start to analyze method: <org.apache.hadoop.hive.ql.parse.TypeCheckCtx: void setError(java.lang.String,org.apache.hadoop.hive.ql.parse.ASTNode)>
+Unit: if errorSrcNode != null goto $stack10 = virtualinvoke errorSrcNode.<org.apache.hadoop.hive.ql.parse.ASTNode: java.lang.String toStringTree()>() AT LINE 209 is not found in our analysis.
+Unit: goto [?= $stack11 = virtualinvoke $stack9.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>($stack10)] AT LINE 214 is not found in our analysis.
+Unit: $stack10 = virtualinvoke errorSrcNode.<org.apache.hadoop.hive.ql.parse.ASTNode: java.lang.String toStringTree()>() AT LINE 210 is not found in our analysis.
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.vector.reducesink.VectorReduceSinkEmptyKeyOperator: void process(java.lang.Object,int)>
+Start to analyze method: <org.apache.hadoop.hive.ql.parse.SemanticAnalyzer: org.apache.hadoop.hive.ql.exec.Operator genNotNullFilterForJoinSourcePlan(org.apache.hadoop.hive.ql.parse.QB,org.apache.hadoop.hive.ql.exec.Operator,org.apache.hadoop.hive.ql.parse.QBJoinTree,org.apache.hadoop.hive.ql.plan.ExprNodeDesc[])>
+Start to analyze method: <org.apache.hadoop.hive.llap.cli.LlapStatusServiceDriver: int run(org.apache.hadoop.hive.llap.cli.LlapStatusOptionsProcessor$LlapStatusOptions,long)>
+Start to analyze method: <org.apache.hadoop.hive.ql.parse.TezCompiler: double getBloomFilterBenefit(org.apache.hadoop.hive.ql.exec.SelectOperator,org.apache.hadoop.hive.ql.plan.ExprNodeDesc,org.apache.hadoop.hive.ql.exec.FilterOperator,org.apache.hadoop.hive.ql.plan.ExprNodeDesc)>
+Start to analyze method: <org.apache.hadoop.hive.ql.optimizer.calcite.translator.HiveOpConverter: org.apache.hadoop.hive.ql.optimizer.calcite.translator.HiveOpConverter$OpAttr visit(org.apache.hadoop.hive.ql.optimizer.calcite.reloperators.HiveFilter)>
+Start to analyze method: <org.apache.hadoop.hive.llap.io.encoded.SerDeEncodedDataReader$CacheWriter: void discardData()>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.tez.TezSessionPool: boolean returnSessionInternal(org.apache.hadoop.hive.ql.exec.tez.TezSessionPoolSession,boolean)>
+Start to analyze method: <org.apache.hadoop.hive.ql.optimizer.spark.SetSparkReducerParallelism: java.lang.Object process(org.apache.hadoop.hive.ql.lib.Node,java.util.Stack,org.apache.hadoop.hive.ql.lib.NodeProcessorCtx,java.lang.Object[])>
+Start to analyze method: <org.apache.hadoop.hive.llap.tezplugins.LlapTaskSchedulerService: void schedulePendingTasks()>
+Start to analyze method: <org.apache.hadoop.hive.llap.io.encoded.OrcEncodedDataReader: void returnData(org.apache.hadoop.hive.ql.io.orc.encoded.Reader$OrcEncodedColumnBatch)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.mr.ExecReducer: void reduce(java.lang.Object,java.util.Iterator,org.apache.hadoop.mapred.OutputCollector,org.apache.hadoop.mapred.Reporter)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.MoveTask: void logMessage(org.apache.hadoop.hive.ql.plan.LoadTableDesc)>
+Start to analyze method: <org.apache.hadoop.hive.ql.io.HiveInputFormat: org.apache.hadoop.mapred.RecordReader getRecordReader(org.apache.hadoop.mapred.InputSplit,org.apache.hadoop.mapred.JobConf,org.apache.hadoop.mapred.Reporter)>
+Start to analyze method: <org.apache.hadoop.hive.llap.io.ChunkedOutputStream: void writeChunk()>
+Start to analyze method: <org.apache.hadoop.hive.llap.LlapBaseRecordReader: void handleEvent(org.apache.hadoop.hive.llap.LlapBaseRecordReader$ReaderEvent)>
+Start to analyze method: <org.apache.hadoop.hive.ql.metadata.Hive: void cleanUpOneDirectoryForReplace(org.apache.hadoop.fs.Path,org.apache.hadoop.fs.FileSystem,org.apache.hadoop.fs.PathFilter,org.apache.hadoop.hive.conf.HiveConf,boolean,boolean)>
+Start to analyze method: <org.apache.hadoop.hive.ql.optimizer.stats.'annotation'.StatsRulesProcFactory$GroupByStatsRule: java.lang.Object process(org.apache.hadoop.hive.ql.lib.Node,java.util.Stack,org.apache.hadoop.hive.ql.lib.NodeProcessorCtx,java.lang.Object[])>
+Start to analyze method: <org.apache.hadoop.hive.llap.AsyncPbRpcProxy: java.lang.Object createProxy(org.apache.hadoop.hive.llap.LlapNodeId,org.apache.hadoop.security.token.Token)>
+Start to analyze method: <org.apache.hadoop.hive.hbase.HBaseSerDeHelper: void generateColumns(java.util.Properties,java.util.List,java.lang.StringBuilder)>
+Start to analyze method: <org.apache.hadoop.hive.ql.parse.TezCompiler: void runCycleAnalysisForPartitionPruning(org.apache.hadoop.hive.ql.parse.OptimizeTezProcContext,java.util.Set,java.util.Set)>
+Start to analyze method: <org.apache.hadoop.hive.llap.cli.LlapServiceDriver: void main(java.lang.String[])>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.DDLTask: int truncateTable(org.apache.hadoop.hive.ql.metadata.Hive,org.apache.hadoop.hive.ql.plan.TruncateTableDesc)>
+Unit: if driverCxt#5 != null goto $stack14 = new java.util.ArrayList AT LINE 5223 is not found in our analysis.
+Unit: goto [?= interfaceinvoke $stack15.<org.slf4j.Logger: void debug(java.lang.String,java.lang.Object,java.lang.Object)>("DDLTask: Truncate Table/Partition is skipped as table {} / partition {} is newer than update", truncateWork#4, $stack20)] AT LINE 5227 is not found in our analysis.
+Unit: $stack14 = new java.util.ArrayList AT LINE 5223 is not found in our analysis.
+Unit: $stack17 = interfaceinvoke driverCxt#5.<java.util.Map: java.util.Set keySet()>() AT LINE 5225 is not found in our analysis.
+Unit: specialinvoke $stack14.<java.util.ArrayList: void <init>(java.util.Collection)>($stack17) AT LINE 5225 is not found in our analysis.
+Start to analyze method: <org.apache.hadoop.hive.llap.tezplugins.LlapTaskSchedulerService: boolean deallocateTask(java.lang.Object,boolean,org.apache.tez.serviceplugins.api.TaskAttemptEndReason,java.lang.String)>
+Start to analyze method: <org.apache.hadoop.hive.metastore.ObjectStore$GetHelper: void handleDirectSqlError(java.lang.Exception)>
+Start to analyze method: <org.apache.hadoop.hive.llap.shufflehandler.ShuffleHandler$Shuffle: org.apache.hadoop.hive.llap.shufflehandler.ShuffleHandler$Shuffle$MapOutputInfo getMapOutputInfo(java.lang.String,int,java.lang.String,int,java.lang.String)>
+All overhead in <org.apache.hadoop.hive.ql.exec.spark.status.LocalSparkJobMonitor: int startMonitor()> are not found in our analysis!
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.GroupByOperator: boolean shouldBeFlushed(org.apache.hadoop.hive.ql.exec.KeyWrapper)>
+Start to analyze method: <org.apache.hadoop.hive.hbase.HBaseSerDe: void initialize(org.apache.hadoop.conf.Configuration,java.util.Properties)>
+Start to analyze method: <org.apache.hadoop.hive.llap.io.encoded.OrcEncodedDataReader$DataWrapperForOrc: org.apache.hadoop.hive.common.io.DiskRangeList readFileData(org.apache.hadoop.hive.common.io.DiskRangeList,long,boolean)>
+Start to analyze method: <org.apache.hadoop.hive.ql.optimizer.calcite.translator.HiveOpConverter: org.apache.hadoop.hive.ql.optimizer.calcite.translator.HiveOpConverter$OpAttr genPTF(org.apache.hadoop.hive.ql.optimizer.calcite.translator.HiveOpConverter$OpAttr,org.apache.hadoop.hive.ql.parse.WindowingSpec)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.AbstractFileMergeOperator: void fixTmpPath(org.apache.hadoop.fs.Path)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.Operator: void initialize(org.apache.hadoop.conf.Configuration,org.apache.hadoop.hive.serde2.objectinspector.ObjectInspector[])>
+Start to analyze method: <org.apache.hadoop.hive.ql.io.BatchToRowReader: void <init>(org.apache.hadoop.mapred.RecordReader,org.apache.hadoop.hive.ql.exec.vector.VectorizedRowBatchCtx,java.util.List)>
+Start to analyze method: <org.apache.hadoop.hive.llap.io.encoded.OrcEncodedDataReader: org.apache.orc.OrcProto$StripeFooter getStripeFooterFromCacheOrDisk(org.apache.orc.StripeInformation,org.apache.hadoop.hive.ql.io.orc.encoded.OrcBatchKey)>
+Start to analyze method: <org.apache.hadoop.hive.metastore.MetaStoreDirectSql: void executeNoResult(java.lang.String)>
+Start to analyze method: <org.apache.hadoop.hive.ql.optimizer.calcite.translator.PlanModifierForASTConv: org.apache.calcite.rel.RelNode convertOpTree(org.apache.calcite.rel.RelNode,java.util.List,boolean)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.FileSinkOperator: void createBucketForFileIdx(org.apache.hadoop.hive.ql.exec.FileSinkOperator$FSPaths,int)>
+Start to analyze method: <org.apache.hadoop.hive.ql.optimizer.ppr.PartitionPruner: boolean prunePartitionNames(java.util.List,java.util.List,org.apache.hadoop.hive.ql.plan.ExprNodeGenericFuncDesc,java.lang.String,java.util.List)>
+Start to analyze method: <org.apache.hadoop.hive.llap.cache.SimpleBufferManager: long[] putFileData(java.lang.Object,org.apache.hadoop.hive.common.io.DiskRange[],org.apache.hadoop.hive.common.io.encoded.MemoryBuffer[],long,org.apache.hadoop.hive.llap.cache.LowLevelCache$Priority,org.apache.hadoop.hive.llap.cache.LowLevelCacheCounters,java.lang.String)>
+Start to analyze method: <org.apache.hadoop.hive.ql.optimizer.stats.'annotation'.StatsRulesProcFactory$ReduceSinkStatsRule: java.lang.Object process(org.apache.hadoop.hive.ql.lib.Node,java.util.Stack,org.apache.hadoop.hive.ql.lib.NodeProcessorCtx,java.lang.Object[])>
+Start to analyze method: <org.apache.hadoop.hive.ql.parse.TezCompiler: void removeSemijoinOptimizationFromSMBJoins(org.apache.hadoop.hive.ql.parse.OptimizeTezProcContext)>
+Start to analyze method: <org.apache.hadoop.hive.llap.daemon.impl.TaskExecutorService$InternalCompletionListener: void onSuccess(org.apache.tez.runtime.task.TaskRunner2Result)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.vector.mapjoin.VectorMapJoinGenerateResultOperator: void reProcessBigTable(int)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.FunctionRegistry: org.apache.hadoop.hive.ql.udf.generic.GenericUDAFResolver getGenericUDAFResolver(java.lang.String)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.FileSinkOperator: void process(java.lang.Object,int)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.tez.LlapObjectCache: java.lang.Object retrieve(java.lang.String)>
+Start to analyze method: <org.apache.hadoop.hive.llap.tezplugins.endpoint.LlapPluginSecurityInfo: org.apache.hadoop.security.token.TokenInfo getTokenInfo(java.lang.Class,org.apache.hadoop.conf.Configuration)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.tez.DynamicPartitionPruner: void prunePartitionSingleSource(java.lang.String,org.apache.hadoop.hive.ql.exec.tez.DynamicPartitionPruner$SourceInfo)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.Operator: boolean allInitializedParentsAreClosed()>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.FunctionRegistry: java.lang.reflect.Method getMethodInternal(java.lang.Class,java.util.List,boolean,java.util.List)>
+Start to analyze method: <org.apache.hadoop.hive.llap.daemon.impl.TaskExecutorService: org.apache.hadoop.hive.llap.daemon.impl.Scheduler$SubmissionState schedule(org.apache.hadoop.hive.llap.daemon.impl.TaskRunnerCallable)>
+Start to analyze method: <org.apache.hadoop.hive.serde2.avro.AvroLazyObjectInspector: java.lang.Object getStructFieldData(java.lang.Object,org.apache.hadoop.hive.serde2.objectinspector.StructField)>
+Start to analyze method: <org.apache.hadoop.hive.serde2.avro.InstanceCache: java.lang.Object retrieve(java.lang.Object,java.util.Set)>
+Start to analyze method: <org.apache.hadoop.hive.ql.optimizer.calcite.translator.HiveOpConverter: org.apache.hadoop.hive.ql.optimizer.calcite.translator.HiveOpConverter$OpAttr visit(org.apache.hadoop.hive.ql.optimizer.calcite.reloperators.HiveTableScan)>
+Start to analyze method: <org.apache.hadoop.hive.metastore.txn.TxnHandler: org.apache.hadoop.hive.metastore.api.Materialization getMaterializationInvalidationInfo(org.apache.hadoop.hive.metastore.api.CreationMetadata,java.lang.String)>
+Start to analyze method: <org.apache.hadoop.hive.ql.stats.StatsUtils: long getNumRows(org.apache.hadoop.hive.conf.HiveConf,java.util.List,org.apache.hadoop.hive.ql.metadata.Table,long)>
+Start to analyze method: <org.apache.hadoop.hive.ql.io.orc.ExternalCache: void translateSargToTableColIndexes(org.apache.hadoop.hive.ql.io.sarg.SearchArgument,org.apache.hadoop.conf.Configuration,int)>
+Start to analyze method: <org.apache.hadoop.hive.ql.ppd.PredicatePushDown: org.apache.hadoop.hive.ql.parse.ParseContext transform(org.apache.hadoop.hive.ql.parse.ParseContext)>
+Start to analyze method: <org.apache.hadoop.hive.ql.metadata.Hive: java.util.List getValidMaterializedViews(java.lang.String,java.util.List,java.util.List,boolean)>
+Start to analyze method: <org.apache.hadoop.hive.ql.optimizer.calcite.translator.HiveOpConverter: org.apache.hadoop.hive.ql.optimizer.calcite.translator.HiveOpConverter$OpAttr translateJoin(org.apache.calcite.rel.RelNode)>
+All overhead in <org.apache.hadoop.hive.ql.exec.spark.status.RemoteSparkJobMonitor: int startMonitor()> are not found in our analysis!
+Start to analyze method: <org.apache.hadoop.hive.llap.cli.LlapStatusServiceDriver: void main(java.lang.String[])>
+Unit: $stack175 = runningNodesThreshold cmpl 1.0F AT LINE 746 is not found in our analysis.
+Unit: if $stack175 != 0 goto $stack176 = <org.apache.hadoop.hive.llap.cli.status.LlapStatusHelpers$State: org.apache.hadoop.hive.llap.cli.status.LlapStatusHelpers$State RUNNING_PARTIAL> AT LINE 746 is not found in our analysis.
+Unit: goto [?= $stack174[1] = $stack176] AT LINE 757 is not found in our analysis.
+Start to analyze method: <org.apache.hadoop.hive.ql.io.orc.OrcInputFormat: boolean[] pickStripesInternal(org.apache.hadoop.hive.ql.io.sarg.SearchArgument,int[],java.util.List,int,org.apache.hadoop.fs.Path,org.apache.orc.impl.SchemaEvolution)>
+Start to analyze method: <org.apache.hadoop.hive.ql.lockmgr.EmbeddedLockManager: java.util.List lock(java.util.List,int,long)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.GroupByOperator: void process(java.lang.Object,int)>
+Start to analyze method: <org.apache.hadoop.hive.llap.io.encoded.OrcEncodedDataReader: java.lang.Void performDataRead()>
+Start to analyze method: <org.apache.hive.streaming.HiveStreamingConnection: void setHiveConf(org.apache.hadoop.hive.conf.HiveConf,org.apache.hadoop.hive.conf.HiveConf$ConfVars,java.lang.String)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.tez.TriggerValidatorRunnable: void run()>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.mr.ExecReducer: void close()>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.spark.SparkDynamicPartitionPruner$SourceInfo: void <init>(org.apache.hadoop.hive.ql.plan.TableDesc,org.apache.hadoop.hive.ql.plan.ExprNodeDesc,java.lang.String,java.lang.String,org.apache.hadoop.mapred.JobConf)>
+Start to analyze method: <org.apache.hadoop.hive.ql.io.HiveInputFormat: void pushFilters(org.apache.hadoop.mapred.JobConf,org.apache.hadoop.hive.ql.exec.TableScanOperator,org.apache.hadoop.hive.ql.plan.MapWork)>
+Start to analyze method: <org.apache.hadoop.hive.ql.plan.LoadFileDesc: void <init>(org.apache.hadoop.fs.Path,org.apache.hadoop.fs.Path,boolean,java.lang.String,java.lang.String,org.apache.hadoop.hive.ql.io.AcidUtils$Operation,boolean)>
+Start to analyze method: <org.apache.hadoop.hive.ql.metadata.Hive: org.apache.hadoop.hive.ql.metadata.Partition loadPartition(org.apache.hadoop.fs.Path,org.apache.hadoop.hive.ql.metadata.Table,java.util.Map,org.apache.hadoop.hive.ql.plan.LoadTableDesc$LoadFileType,boolean,boolean,boolean,boolean,boolean,java.lang.Long,int,boolean)>
+Start to analyze method: <org.apache.hadoop.hive.ql.security.authorization.plugin.sqlstd.SQLStdHiveAuthorizationValidator: void checkPrivileges(org.apache.hadoop.hive.ql.security.authorization.plugin.HiveOperationType,java.util.List,java.util.List,org.apache.hadoop.hive.ql.security.authorization.plugin.HiveAuthzContext)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.vector.VectorExpressionDescriptor: java.lang.Class getVectorExpressionClass(java.lang.Class,org.apache.hadoop.hive.ql.exec.vector.VectorExpressionDescriptor$Descriptor,boolean)>
+Start to analyze method: <org.apache.hadoop.hive.ql.io.NullRowsInputFormat$NullRowsRecordReader: void <init>(org.apache.hadoop.conf.Configuration,org.apache.hadoop.mapred.InputSplit)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.vector.mapjoin.VectorMapJoinOuterGenerateResultOperator: void finishOuter(org.apache.hadoop.hive.ql.exec.vector.VectorizedRowBatch,int,int,boolean,boolean,int,int,int)>
+Start to analyze method: <org.apache.hadoop.hive.metastore.HiveMetaStore$HMSHandler: org.apache.hadoop.hive.metastore.api.Partition append_partition_with_environment_context(java.lang.String,java.lang.String,java.util.List,org.apache.hadoop.hive.metastore.api.EnvironmentContext)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.spark.HiveKVResultCache: void setupOutput()>
+Start to analyze method: <org.apache.hadoop.hive.metastore.security.HadoopThriftAuthBridge$Client$SaslClientCallbackHandler: void handle(javax.security.auth.callback.Callback[])>
+Start to analyze method: <org.apache.hadoop.hive.ql.plan.MoveWork: void <init>(java.util.HashSet,java.util.HashSet,org.apache.hadoop.hive.ql.plan.LoadTableDesc,org.apache.hadoop.hive.ql.plan.LoadFileDesc,boolean,boolean)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.tez.DynamicPartitionPruner: void applyFilterToPartitions(org.apache.hadoop.hive.serde2.objectinspector.ObjectInspectorConverters$Converter,org.apache.hadoop.hive.ql.exec.ExprNodeEvaluator,java.lang.String,java.util.Set)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.DemuxOperator: void process(java.lang.Object,int)>
+Unit: $stack19 = this.<org.apache.hadoop.hive.ql.exec.DemuxOperator: long[] cntrs> AT LINE 277 is not found in our analysis.
+Unit: $stack20 = $stack19[tag] AT LINE 277 is not found in our analysis.
+Unit: $stack21 = $stack20 + 1L AT LINE 277 is not found in our analysis.
+Unit: $stack19[tag] = $stack21 AT LINE 277 is not found in our analysis.
+Unit: $stack22 = this.<org.apache.hadoop.hive.ql.exec.DemuxOperator: long[] cntrs> AT LINE 278 is not found in our analysis.
+Unit: $stack25 = $stack22[tag] AT LINE 278 is not found in our analysis.
+Unit: $stack23 = this.<org.apache.hadoop.hive.ql.exec.DemuxOperator: long[] nextCntrs> AT LINE 278 is not found in our analysis.
+Unit: $stack24 = $stack23[tag] AT LINE 278 is not found in our analysis.
+Unit: $stack26 = $stack25 cmp $stack24 AT LINE 278 is not found in our analysis.
+Unit: if $stack26 != 0 goto $stack10 = this.<org.apache.hadoop.hive.ql.exec.DemuxOperator: org.apache.hadoop.hive.ql.exec.Operator[] childOperatorsArray> AT LINE 278 is not found in our analysis.
+Unit: $stack49 = this.<org.apache.hadoop.hive.ql.exec.DemuxOperator: long[] nextCntrs> AT LINE 281 is not found in our analysis.
+Unit: $stack47 = this.<org.apache.hadoop.hive.ql.exec.DemuxOperator: long[] cntrs> AT LINE 281 is not found in our analysis.
+Unit: $stack48 = $stack47[tag] AT LINE 281 is not found in our analysis.
+Unit: $stack50 = virtualinvoke this.<org.apache.hadoop.hive.ql.exec.DemuxOperator: long getNextCntr(long)>($stack48) AT LINE 281 is not found in our analysis.
+Unit: $stack49[tag] = $stack50 AT LINE 281 is not found in our analysis.
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.spark.RemoteHiveSparkClient$JobStatusJob: void logConfigurations(org.apache.hadoop.mapred.JobConf)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.mr.ObjectCache: java.lang.Object retrieve(java.lang.String,java.util.concurrent.Callable)>
+Start to analyze method: <org.apache.hadoop.hive.llap.daemon.impl.QueryTracker$FileCleanerCallable: java.lang.Void callInternal()>
+Start to analyze method: <org.apache.hadoop.hive.llap.LlapBaseInputFormat$LlapRecordReaderTaskUmbilicalExternalResponder: void sendOrQueueEvent(org.apache.hadoop.hive.llap.LlapBaseRecordReader$ReaderEvent)>
+Start to analyze method: <org.apache.hadoop.hive.ql.optimizer.ConstantPropagateProcFactory: org.apache.hadoop.hive.ql.plan.ExprNodeDesc evaluateFunction(org.apache.hadoop.hive.ql.udf.generic.GenericUDF,java.util.List,java.util.List)>
+Start to analyze method: <org.apache.hive.hcatalog.common.HiveClientCache$2: void onRemoval(com.google.common.cache.RemovalNotification)>
+Start to analyze method: <org.apache.hadoop.hive.llap.shufflehandler.ShuffleHandler: void registerDag(java.lang.String,int,org.apache.hadoop.security.token.Token,java.lang.String,java.lang.String[])>
+Start to analyze method: <org.apache.hadoop.hive.llap.daemon.impl.AMReporter$AMHeartbeatCallable: java.lang.Void callInternal()>
+Start to analyze method: <org.apache.hadoop.hive.llap.security.LlapTokenSelector: org.apache.hadoop.security.token.Token selectToken(org.apache.hadoop.io.Text,java.util.Collection)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.tez.InterruptibleProcessing: void addRowAndMaybeCheckAbort()>
+Start to analyze method: <org.apache.hadoop.hive.ql.parse.CalcitePlanner: org.apache.hadoop.hive.ql.exec.Operator genOPTree(org.apache.hadoop.hive.ql.parse.ASTNode,org.apache.hadoop.hive.ql.parse.SemanticAnalyzer$PlannerContext)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.MapOperator: void cleanUpInputFileChangedOp()>
+Start to analyze method: <org.apache.hive.jdbc.ZooKeeperHiveClientHelper: void configureConnParamsHA(org.apache.hive.jdbc.Utils$JdbcConnectionParams)>
+Start to analyze method: <org.apache.hadoop.hive.llap.shufflehandler.ShuffleHandler$Shuffle: void messageReceived(org.jboss.netty.channel.ChannelHandlerContext,org.jboss.netty.channel.MessageEvent)>
+All overhead in <org.apache.hadoop.hive.ql.io.orc.ExternalCache: java.util.List determineFileIdsToQuery(java.util.List,org.apache.orc.impl.OrcTail[],java.util.HashMap)> are not found in our analysis!
+Start to analyze method: <org.apache.hadoop.hive.ql.metadata.Hive: boolean moveFile(org.apache.hadoop.hive.conf.HiveConf,org.apache.hadoop.fs.Path,org.apache.hadoop.fs.Path,boolean,boolean,boolean)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.vector.mapjoin.fast.VectorMapJoinFastBytesHashTable: void add(byte[],int,int,org.apache.hadoop.io.BytesWritable)>
+Start to analyze method: <org.apache.hadoop.hive.llap.io.encoded.SerDeEncodedDataReader$FileReaderYieldReturn: org.apache.hadoop.hive.llap.io.encoded.SerDeEncodedDataReader$Vectors readNextSlice()>
+Start to analyze method: <org.apache.hadoop.hive.llap.LlapCacheAwareFs: void unregisterFile(org.apache.hadoop.fs.Path)>
+Start to analyze method: <org.apache.hadoop.hive.ql.lockmgr.DbTxnManager: void heartbeat()>
+Start to analyze method: <org.apache.hadoop.hive.ql.optimizer.pcr.PcrExprProcFactory$GenericFuncExprProcessor: java.lang.Object process(org.apache.hadoop.hive.ql.lib.Node,java.util.Stack,org.apache.hadoop.hive.ql.lib.NodeProcessorCtx,java.lang.Object[])>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.tez.TezTask: void logResources(java.util.List)>
+Unit: return AT LINE 346 is not found in our analysis.
+Unit: if additionalLr == null goto $stack6 = <org.apache.hadoop.hive.ql.exec.tez.TezTask: org.slf4j.Logger LOG> AT LINE 345 is not found in our analysis.
+Unit: return AT LINE 352 is not found in our analysis.
+Start to analyze method: <org.apache.hadoop.hive.ql.parse.SemanticAnalyzer: org.apache.hadoop.hive.ql.exec.Operator genTablePlan(java.lang.String,org.apache.hadoop.hive.ql.parse.QB)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.tez.SessionExpirationTracker: void runExpirationThread()>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.PartitionKeySampler: byte[][] toPartitionKeys(byte[][],int)>
+Unit: $stack27 = new org.apache.hadoop.io.BytesWritable AT LINE 107 is not found in our analysis.
+Unit: $stack28 = sorted[current] AT LINE 107 is not found in our analysis.
+Unit: specialinvoke $stack27.<org.apache.hadoop.io.BytesWritable: void <init>(byte[])>($stack28) AT LINE 107 is not found in our analysis.
+Start to analyze method: <org.apache.hadoop.hive.llap.daemon.impl.QueryTracker$ExternalQueryCleanerCallable: java.lang.Void callInternal()>
+Unit: $stack28 = staticinvoke <org.apache.hadoop.hive.llap.daemon.impl.QueryTracker: org.slf4j.Logger access$200()>() AT LINE 485 is not found in our analysis.
+Unit: $stack29 = this.<org.apache.hadoop.hive.llap.daemon.impl.QueryTracker$ExternalQueryCleanerCallable: java.lang.String queryIdString> AT LINE 485 is not found in our analysis.
+Unit: interfaceinvoke $stack28.<org.slf4j.Logger: void info(java.lang.String,java.lang.Object)>("QueryInfo found for {}. Expecting future cleanup", $stack29) AT LINE 485 is not found in our analysis.
+Start to analyze method: <org.apache.hadoop.hive.ql.io.orc.OrcInputFormat$Context: void <init>(org.apache.hadoop.conf.Configuration,int,org.apache.hadoop.hive.ql.io.orc.ExternalCache$ExternalFooterCachesByConf)>
+Start to analyze method: <org.apache.hadoop.hive.ql.optimizer.stats.'annotation'.StatsRulesProcFactory$LimitStatsRule: java.lang.Object process(org.apache.hadoop.hive.ql.lib.Node,java.util.Stack,org.apache.hadoop.hive.ql.lib.NodeProcessorCtx,java.lang.Object[])>
+Start to analyze method: <org.apache.hadoop.hive.ql.optimizer.calcite.translator.HiveOpConverter: org.apache.hadoop.hive.ql.optimizer.calcite.translator.HiveOpConverter$OpAttr visit(org.apache.hadoop.hive.ql.optimizer.calcite.reloperators.HiveProject)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.spark.SparkDynamicPartitionPruner: void applyFilterToPartitions(org.apache.hadoop.hive.ql.plan.MapWork,org.apache.hadoop.hive.serde2.objectinspector.ObjectInspectorConverters$Converter,org.apache.hadoop.hive.ql.exec.ExprNodeEvaluator,java.lang.String,java.util.Set)>
+Start to analyze method: <org.apache.hadoop.hive.ql.io.orc.OrcInputFormat: org.apache.orc.TypeDescription getDesiredRowTypeDescr(org.apache.hadoop.conf.Configuration,boolean,int)>
+Start to analyze method: <org.apache.hadoop.hive.ql.io.HiveInputFormat: org.apache.hadoop.mapred.InputSplit[] getSplits(org.apache.hadoop.mapred.JobConf,int)>
+Start to analyze method: <org.apache.hadoop.hive.llap.cache.LowLevelLrfuCachePolicy: void notifyUnlock(org.apache.hadoop.hive.llap.cache.LlapCacheableBuffer)>
+Start to analyze method: <org.apache.hadoop.hive.ql.parse.SemanticAnalyzer: void analyzeInternal(org.apache.hadoop.hive.ql.parse.ASTNode,org.apache.hadoop.hive.ql.parse.SemanticAnalyzer$PlannerContextFactory)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.ReduceSinkOperator: void initializeOp(org.apache.hadoop.conf.Configuration)>
+Start to analyze method: <org.apache.hadoop.hive.metastore.txn.TxnHandler: org.apache.hadoop.hive.metastore.api.LockResponse lockMaterializationRebuild(java.lang.String,java.lang.String,long)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.tez.monitoring.TezJobMonitor: int monitorExecution()>
+Start to analyze method: <org.apache.hadoop.hive.llap.daemon.impl.TaskExecutorService$InternalCompletionListener: void updatePreemptionListAndNotify(org.apache.tez.runtime.task.EndReason)>
+All overhead in <org.apache.hadoop.hive.ql.exec.ReduceSinkOperator: void closeOp(boolean)> are not found in our analysis!
+Start to analyze method: <org.apache.hadoop.hive.ql.optimizer.stats.'annotation'.StatsRulesProcFactory$JoinStatsRule: long inferPKFKRelationship(int,java.util.List,org.apache.hadoop.hive.ql.exec.CommonJoinOperator)>
+Unit: parentIds = staticinvoke <com.google.common.collect.Lists: java.util.ArrayList newArrayList()>() AT LINE 1885 is not found in our analysis.
+Unit: $stack30 = interfaceinvoke parentsWithPK.<java.util.Map: java.util.Set keySet()>() AT LINE 1888 is not found in our analysis.
+Unit: l11 = interfaceinvoke $stack30.<java.util.Set: java.util.Iterator iterator()>() AT LINE 1888 is not found in our analysis.
+Unit: $stack32 = interfaceinvoke l11.<java.util.Iterator: boolean hasNext()>() AT LINE 1888 is not found in our analysis.
+Unit: if $stack32 == 0 goto $stack33 = staticinvoke <org.apache.hadoop.hive.ql.optimizer.stats.'annotation'.StatsRulesProcFactory: org.slf4j.Logger access$100()>() AT LINE 1888 is not found in our analysis.
+Unit: $stack59 = interfaceinvoke l11.<java.util.Iterator: java.lang.Object next()>() AT LINE 1897 is not found in our analysis.
+Unit: i = (java.lang.Integer) $stack59 AT LINE 1897 is not found in our analysis.
+Unit: $stack60 = virtualinvoke i.<java.lang.Integer: int intValue()>() AT LINE 1889 is not found in our analysis.
+Unit: $stack61 = interfaceinvoke parents.<java.util.List: java.lang.Object get(int)>($stack60) AT LINE 1889 is not found in our analysis.
+Unit: $stack62 = (org.apache.hadoop.hive.ql.exec.Operator) $stack61 AT LINE 1889 is not found in our analysis.
+Unit: $stack63 = virtualinvoke $stack62.<org.apache.hadoop.hive.ql.exec.Operator: java.lang.String toString()>() AT LINE 1889 is not found in our analysis.
+Unit: interfaceinvoke parentIds.<java.util.List: boolean add(java.lang.Object)>($stack63) AT LINE 1889 is not found in our analysis.
+Unit: interfaceinvoke parentIds.<java.util.List: void clear()>() AT LINE 1892 is not found in our analysis.
+Unit: $stack41 = interfaceinvoke csFKs.<java.util.Map: java.util.Set keySet()>() AT LINE 1895 is not found in our analysis.
+Unit: l11 = interfaceinvoke $stack41.<java.util.Set: java.util.Iterator iterator()>() AT LINE 1895 is not found in our analysis.
+Unit: $stack43 = interfaceinvoke l11.<java.util.Iterator: boolean hasNext()>() AT LINE 1895 is not found in our analysis.
+Unit: if $stack43 == 0 goto $stack44 = staticinvoke <org.apache.hadoop.hive.ql.optimizer.stats.'annotation'.StatsRulesProcFactory: org.slf4j.Logger access$100()>() AT LINE 1895 is not found in our analysis.
+Unit: $stack52 = interfaceinvoke l11.<java.util.Iterator: java.lang.Object next()>() AT LINE 1901 is not found in our analysis.
+Unit: i = (java.lang.Integer) $stack52 AT LINE 1901 is not found in our analysis.
+Unit: $stack53 = virtualinvoke i.<java.lang.Integer: int intValue()>() AT LINE 1896 is not found in our analysis.
+Unit: $stack54 = interfaceinvoke parents.<java.util.List: java.lang.Object get(int)>($stack53) AT LINE 1896 is not found in our analysis.
+Unit: $stack55 = (org.apache.hadoop.hive.ql.exec.Operator) $stack54 AT LINE 1896 is not found in our analysis.
+Unit: $stack56 = virtualinvoke $stack55.<org.apache.hadoop.hive.ql.exec.Operator: java.lang.String toString()>() AT LINE 1896 is not found in our analysis.
+Unit: interfaceinvoke parentIds.<java.util.List: boolean add(java.lang.Object)>($stack56) AT LINE 1896 is not found in our analysis.
+Start to analyze method: <org.apache.hadoop.hive.ql.txn.compactor.Initiator: org.apache.hadoop.hive.metastore.api.CompactionType determineCompactionType(org.apache.hadoop.hive.metastore.txn.CompactionInfo,org.apache.hadoop.hive.common.ValidWriteIdList,org.apache.hadoop.hive.metastore.api.StorageDescriptor,java.util.Map)>
+Start to analyze method: <org.apache.hadoop.hive.ql.Driver: java.util.concurrent.locks.ReentrantLock tryAcquireCompileLock(boolean,java.lang.String)>
+Start to analyze method: <org.apache.hadoop.hive.llap.tezplugins.LlapTaskSchedulerService: java.lang.Object deallocateContainer(org.apache.hadoop.yarn.api.records.ContainerId)>
+Start to analyze method: <org.apache.hadoop.hive.ql.optimizer.ConstantPropagateProcFactory$ConstantPropagateFilterProc: java.lang.Object process(org.apache.hadoop.hive.ql.lib.Node,java.util.Stack,org.apache.hadoop.hive.ql.lib.NodeProcessorCtx,java.lang.Object[])>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.MoveTask: int execute(org.apache.hadoop.hive.ql.DriverContext)>
+Start to analyze method: <org.apache.hadoop.hive.metastore.metrics.PerfLogger: long PerfLogEnd(java.lang.String,java.lang.String,java.lang.String)>
+Start to analyze method: <org.apache.hadoop.hive.ql.parse.TezCompiler: void removeSemiJoinCyclesDueToMapsideJoins(org.apache.hadoop.hive.ql.parse.OptimizeTezProcContext)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.vector.mapjoin.VectorMapJoinGenerateResultOperator: void reloadHashTable(byte,int)>
+Start to analyze method: <org.apache.hadoop.hive.llap.io.metadata.MetadataCache: boolean lockOldVal(java.lang.Object,org.apache.hadoop.hive.llap.io.metadata.MetadataCache$LlapBufferOrBuffers,org.apache.hadoop.hive.llap.io.metadata.MetadataCache$LlapBufferOrBuffers)>
+Start to analyze method: <org.apache.hadoop.hive.llap.cache.LlapAllocatorBuffer: java.lang.Boolean endDiscard()>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.FetchOperator: org.apache.hadoop.mapred.RecordReader getRecordReader()>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.vector.VectorGroupByOperator$ProcessingModeHashAggregate: void computeMemoryLimits()>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.tez.CustomPartitionVertex: void onRootVertexInitialized(java.lang.String,org.apache.tez.dag.api.InputDescriptor,java.util.List)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.FileSinkOperator: void publishStats()>
+Start to analyze method: <org.apache.hadoop.hive.ql.parse.ImportSemanticAnalyzer: org.apache.hadoop.hive.ql.exec.Task addSinglePartition(java.net.URI,org.apache.hadoop.fs.FileSystem,org.apache.hadoop.hive.ql.plan.ImportTableDesc,org.apache.hadoop.hive.ql.metadata.Table,org.apache.hadoop.hive.metastore.Warehouse,org.apache.hadoop.hive.ql.plan.AddPartitionDesc,org.apache.hadoop.hive.ql.parse.ReplicationSpec,org.apache.hadoop.hive.ql.parse.EximUtil$SemanticAnalyzerWrapperContext,java.lang.Long,int)>
+Start to analyze method: <org.apache.hadoop.hive.ql.udf.generic.GenericUDTFGetSplits: org.apache.hadoop.mapred.InputSplit[] getSplits(org.apache.hadoop.mapred.JobConf,int,org.apache.hadoop.hive.ql.plan.TezWork,org.apache.hadoop.hive.llap.Schema,org.apache.hadoop.yarn.api.records.ApplicationId,boolean)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.vector.mapjoin.fast.VectorMapJoinFastLongHashTable: void add(long,org.apache.hadoop.io.BytesWritable)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.vector.mapjoin.VectorMapJoinCommonOperator: void setupVOutContext(java.util.List)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.MoveTask: org.apache.hadoop.hive.ql.hooks.LineageInfo$DataContainer handleStaticParts(org.apache.hadoop.hive.ql.metadata.Hive,org.apache.hadoop.hive.ql.metadata.Table,org.apache.hadoop.hive.ql.plan.LoadTableDesc,org.apache.hadoop.hive.ql.exec.MoveTask$TaskInformation)>
+Start to analyze method: <org.apache.hadoop.hive.ql.ppd.SimplePredicatePushDown: org.apache.hadoop.hive.ql.parse.ParseContext transform(org.apache.hadoop.hive.ql.parse.ParseContext)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.FileSinkOperator$FSPaths: void commitOneOutPath(int,org.apache.hadoop.fs.FileSystem,java.util.List)>
+Start to analyze method: <org.apache.hadoop.hive.ql.optimizer.calcite.stats.HiveRelMdRowCount: java.lang.Double getRowCount(org.apache.calcite.rel.core.SemiJoin,org.apache.calcite.rel.metadata.RelMetadataQuery)>
+Start to analyze method: <org.apache.hive.beeline.HiveSchemaTool$CommandBuilder: void logScript()>
+Unit: $stack9 = new java.io.BufferedReader AT LINE 1272 is not found in our analysis.
+Unit: $stack10 = new java.io.FileReader AT LINE 1272 is not found in our analysis.
+Unit: $stack11 = this.<org.apache.hive.beeline.HiveSchemaTool$CommandBuilder: java.lang.String sqlScriptFile> AT LINE 1272 is not found in our analysis.
+Unit: specialinvoke $stack10.<java.io.FileReader: void <init>(java.lang.String)>($stack11) AT LINE 1272 is not found in our analysis.
+Unit: specialinvoke $stack9.<java.io.BufferedReader: void <init>(java.io.Reader)>($stack10) AT LINE 1272 is not found in our analysis.
+Unit: reader = $stack9 AT LINE 1272 is not found in our analysis.
+Unit: l2 = null AT LINE 1272 is not found in our analysis.
+Unit: $stack12 = virtualinvoke reader.<java.io.BufferedReader: java.lang.String readLine()>() AT LINE 1274 is not found in our analysis.
+Unit: if reader == null goto return AT LINE 1277 is not found in our analysis.
+Unit: if l2 == null goto virtualinvoke reader.<java.io.BufferedReader: void close()>() AT LINE 1279 is not found in our analysis.
+Unit: virtualinvoke reader.<java.io.BufferedReader: void close()>() AT LINE 1279 is not found in our analysis.
+Unit: goto [?= return] AT LINE 1279 is not found in our analysis.
+Unit: virtualinvoke reader.<java.io.BufferedReader: void close()>() AT LINE 1279 is not found in our analysis.
+Unit: goto [?= return] AT LINE 1279 is not found in our analysis.
+Start to analyze method: <org.apache.hadoop.hive.ql.io.orc.OrcInputFormat: org.apache.hadoop.mapred.InputSplit[] getSplits(org.apache.hadoop.mapred.JobConf,int)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.vector.VectorGroupByOperator$ProcessingModeHashAggregate: void flush(boolean)>
+Start to analyze method: <org.apache.hadoop.hive.ql.io.orc.OrcRecordUpdater: void close(boolean)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.vector.mapjoin.VectorMapJoinInnerBigOnlyStringOperator: void process(java.lang.Object,int)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.FileSinkOperator: org.apache.hadoop.hive.ql.exec.FileSinkOperator$FSPaths createNewPaths(java.lang.String,java.lang.String)>
+Start to analyze method: <org.apache.hadoop.hive.ql.plan.LoadTableDesc: void <init>(org.apache.hadoop.fs.Path,org.apache.hadoop.hive.ql.plan.TableDesc,java.util.Map,org.apache.hadoop.hive.ql.plan.LoadTableDesc$LoadFileType,org.apache.hadoop.hive.ql.io.AcidUtils$Operation,java.lang.Long)>
+Start to analyze method: <org.apache.hadoop.hive.llap.cli.LlapServiceDriver$2: java.lang.Void call()>
+Start to analyze method: <org.apache.hadoop.hive.llap.LlapCacheAwareFs$CacheAwareInputStream: void copyDiskDataToCacheBuffer(byte[],int,int,java.nio.ByteBuffer,org.apache.hadoop.hive.common.io.DiskRange[],int,long)>
+Start to analyze method: <org.apache.hadoop.hive.ql.parse.MapReduceCompiler: void decideExecMode(java.util.List,org.apache.hadoop.hive.ql.Context,org.apache.hadoop.hive.ql.parse.GlobalLimitCtx)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.tez.TezSessionState: void setupSessionAcls(org.apache.hadoop.conf.Configuration,org.apache.hadoop.hive.conf.HiveConf)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.Operator: void defaultEndGroup()>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.vector.mapjoin.VectorMapJoinLeftSemiLongOperator: void process(java.lang.Object,int)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.MapOperator: void initOperatorContext(java.util.List)>
+Start to analyze method: <org.apache.hadoop.hive.ql.optimizer.stats.'annotation'.StatsRulesProcFactory$SelectStatsRule: java.lang.Object process(org.apache.hadoop.hive.ql.lib.Node,java.util.Stack,org.apache.hadoop.hive.ql.lib.NodeProcessorCtx,java.lang.Object[])>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.vector.mapjoin.fast.VectorMapJoinFastLongHashTable: void expandAndRehash()>
+Start to analyze method: <org.apache.hadoop.hive.llap.cache.LlapAllocatorBuffer: int incRefInternal(boolean)>
+Start to analyze method: <org.apache.hadoop.hive.llap.tezplugins.LlapContainerLauncher: void launchContainer(org.apache.tez.serviceplugins.api.ContainerLaunchRequest)>
+Start to analyze method: <org.apache.hadoop.hive.llap.io.decode.OrcEncodedDataConsumer: void createColumnReaders(org.apache.hadoop.hive.ql.io.orc.encoded.Reader$OrcEncodedColumnBatch,org.apache.hadoop.hive.llap.io.metadata.ConsumerStripeMetadata,org.apache.orc.TypeDescription)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.tez.SessionExpirationTracker: void <init>(long,long,org.apache.hadoop.hive.ql.exec.tez.SessionExpirationTracker$RestartImpl)>
+Start to analyze method: <org.apache.hadoop.hive.ql.parse.SemanticAnalyzer: org.apache.hadoop.hive.ql.exec.Operator genPTFPlan(org.apache.hadoop.hive.ql.parse.PTFInvocationSpec,org.apache.hadoop.hive.ql.exec.Operator)>
+Start to analyze method: <org.apache.hadoop.hive.llap.LlapBaseInputFormat: org.apache.hadoop.mapred.RecordReader getRecordReader(org.apache.hadoop.mapred.InputSplit,org.apache.hadoop.mapred.JobConf,org.apache.hadoop.mapred.Reporter)>
+Start to analyze method: <org.apache.hadoop.hive.ql.parse.SemanticAnalyzer: boolean doPhase1(org.apache.hadoop.hive.ql.parse.ASTNode,org.apache.hadoop.hive.ql.parse.QB,org.apache.hadoop.hive.ql.parse.SemanticAnalyzer$Phase1Ctx,org.apache.hadoop.hive.ql.parse.SemanticAnalyzer$PlannerContext)>
+Start to analyze method: <org.apache.hadoop.hive.ql.optimizer.ConstantPropagateProcFactory$ConstantPropagateSelectProc: java.lang.Object process(org.apache.hadoop.hive.ql.lib.Node,java.util.Stack,org.apache.hadoop.hive.ql.lib.NodeProcessorCtx,java.lang.Object[])>
+Start to analyze method: <org.apache.hadoop.hive.hbase.HBaseSerDeHelper: void generateColumnTypes(java.util.Properties,java.util.List,java.lang.StringBuilder,org.apache.hadoop.conf.Configuration)>
+Start to analyze method: <org.apache.hadoop.hive.ql.session.SessionState: void <init>(org.apache.hadoop.hive.conf.HiveConf,java.lang.String)>
+Start to analyze method: <org.apache.hadoop.hive.ql.exec.tez.HiveSplitGenerator: java.util.List initialize()>
+All overhead in <org.apache.hadoop.hive.ql.exec.ReduceSinkOperator: void collect(org.apache.hadoop.io.BytesWritable,org.apache.hadoop.io.Writable)> are not found in our analysis!
+Start to analyze method: <org.apache.hadoop.hive.ql.optimizer.ConstantPropagateProcFactory: org.apache.hadoop.hive.ql.plan.ExprNodeDesc foldExprShortcut(org.apache.hadoop.hive.ql.plan.ExprNodeDesc,java.util.Map,org.apache.hadoop.hive.ql.optimizer.ConstantPropagateProcCtx,org.apache.hadoop.hive.ql.exec.Operator,int,boolean)>
+Total units in benchmark: 8261
+Matched units in our result: 7980

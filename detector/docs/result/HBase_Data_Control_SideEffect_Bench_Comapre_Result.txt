@@ -1,0 +1,114 @@
+2021-03-25 15:27:36 [INFO] - start to calc Recall:
+Start to analyze method: <org.apache.hadoop.hbase.client.ScannerCallableWithReplicas: org.apache.hadoop.hbase.client.Result[] call(int)>
+Start to analyze method: <org.apache.hadoop.hbase.security.HBaseSaslRpcClient$WrappedInputStream: void readNextRpcPacket()>
+Start to analyze method: <org.apache.hadoop.hbase.ipc.NettyRpcDuplexHandler: void readResponse(org.apache.hbase.thirdparty.io.netty.channel.ChannelHandlerContext,org.apache.hbase.thirdparty.io.netty.buffer.ByteBuf)>
+Start to analyze method: <org.apache.hadoop.hbase.client.AsyncNonMetaRegionLocator: org.apache.hadoop.hbase.HRegionLocation lambda$addToCache$2(org.apache.hadoop.hbase.HRegionLocation,byte[],org.apache.hadoop.hbase.HRegionLocation)>
+Start to analyze method: <org.apache.hadoop.metrics2.impl.MetricsConfig: java.lang.Object getProperty(java.lang.String)>
+Start to analyze method: <org.apache.hadoop.hbase.util.ClassSize: long estimateBaseFromCoefficients(int[],boolean)>
+Start to analyze method: <org.apache.hadoop.metrics2.impl.MetricsSinkAdapter: void consume(org.apache.hadoop.metrics2.impl.MetricsBuffer)>
+Unit: tmp$1769577256 = new java.lang.StringBuilder AT LINE 183 is not found in our analysis.
+Unit: specialinvoke tmp$1769577256.<java.lang.StringBuilder: void <init>()>() AT LINE 183 is not found in our analysis.
+Unit: $stack43 = virtualinvoke tmp$1769577256.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("Pushing record ") AT LINE 183 is not found in our analysis.
+Start to analyze method: <org.apache.hadoop.hbase.client.AsyncNonMetaRegionLocator: org.apache.hadoop.hbase.HRegionLocation locateRowBeforeInCache(org.apache.hadoop.hbase.client.AsyncNonMetaRegionLocator$TableCache,org.apache.hadoop.hbase.TableName,byte[])>
+Start to analyze method: <org.apache.hadoop.hbase.ipc.BlockingRpcConnection: void run()>
+Start to analyze method: <org.apache.hadoop.hbase.client.ScannerCallableWithReplicas: void updateCurrentlyServingReplica(org.apache.hadoop.hbase.client.ScannerCallable,org.apache.hadoop.hbase.client.Result[],java.util.concurrent.atomic.AtomicBoolean,java.util.concurrent.ExecutorService)>
+Start to analyze method: <org.apache.hadoop.hbase.metrics.impl.GlobalMetricRegistriesAdapter: void doRun()>
+Start to analyze method: <org.apache.hadoop.hbase.zookeeper.ZKWatcher: boolean checkACLForSuperUsers(java.lang.String[],java.util.List)>
+Start to analyze method: <org.apache.hadoop.hbase.ipc.CoprocessorRpcUtils: org.apache.hadoop.hbase.shaded.com.google.protobuf.Message getResponse(org.apache.hadoop.hbase.shaded.protobuf.generated.ClientProtos$CoprocessorServiceResponse,org.apache.hadoop.hbase.shaded.com.google.protobuf.Message)>
+Start to analyze method: <org.apache.hadoop.hbase.io.compress.Compression$Algorithm: void returnDecompressor(org.apache.hadoop.io.compress.Decompressor)>
+Start to analyze method: <org.apache.hadoop.hbase.security.token.AuthenticationTokenSelector: org.apache.hadoop.security.token.Token selectToken(org.apache.hadoop.io.Text,java.util.Collection)>
+Start to analyze method: <org.apache.hadoop.hbase.client.AsyncRegionLocator: void clearCache(org.apache.hadoop.hbase.TableName)>
+Start to analyze method: <org.apache.hadoop.hbase.client.ClientScanner: boolean moveToNextRegion()>
+Start to analyze method: <org.apache.hadoop.metrics2.impl.MetricsConfig: java.lang.ClassLoader getPluginLoader()>
+Start to analyze method: <org.apache.hadoop.hbase.ipc.BlockingRpcConnection$1: java.lang.Object run()>
+Start to analyze method: <org.apache.hadoop.hbase.client.HBaseAdmin$71: org.apache.hadoop.hbase.shaded.com.google.protobuf.Message callExecService(org.apache.hadoop.hbase.shaded.com.google.protobuf.RpcController,org.apache.hadoop.hbase.shaded.com.google.protobuf.Descriptors$MethodDescriptor,org.apache.hadoop.hbase.shaded.com.google.protobuf.Message,org.apache.hadoop.hbase.shaded.com.google.protobuf.Message)>
+Start to analyze method: <org.apache.hadoop.hbase.zookeeper.ZKWatcher: boolean isBaseZnodeAclSetup(java.util.List)>
+Start to analyze method: <org.apache.hadoop.hbase.regionserver.MetricsRegionSourceImpl: void close()>
+Start to analyze method: <org.apache.hadoop.hbase.client.RegionCoprocessorRpcChannel: org.apache.hadoop.hbase.shaded.com.google.protobuf.Message callExecService(org.apache.hadoop.hbase.shaded.com.google.protobuf.RpcController,org.apache.hadoop.hbase.shaded.com.google.protobuf.Descriptors$MethodDescriptor,org.apache.hadoop.hbase.shaded.com.google.protobuf.Message,org.apache.hadoop.hbase.shaded.com.google.protobuf.Message)>
+Start to analyze method: <org.apache.hadoop.hbase.util.DynamicClassLoader: void loadNewJars()>
+Start to analyze method: <org.apache.hadoop.hbase.client.MetaCache: void clearCache(org.apache.hadoop.hbase.client.RegionInfo)>
+Start to analyze method: <org.apache.hadoop.hbase.client.HTableMultiplexer$FlushWorker: boolean resubmitFailedPut(org.apache.hadoop.hbase.client.HTableMultiplexer$PutStatus,org.apache.hadoop.hbase.HRegionLocation)>
+Start to analyze method: <org.apache.hadoop.hbase.util.CoprocessorClassLoader: java.net.URL getResource(java.lang.String)>
+Start to analyze method: <org.apache.hadoop.hbase.client.HTable: void lambda$batchCoprocessorService$0(org.apache.hadoop.hbase.shaded.com.google.protobuf.Descriptors$MethodDescriptor,org.apache.hadoop.hbase.shaded.com.google.protobuf.Message,org.apache.hadoop.hbase.client.coprocessor.Batch$Callback,java.util.List,java.util.List,java.util.Map,java.util.List,byte[],byte[],org.apache.hadoop.hbase.shaded.protobuf.generated.ClientProtos$CoprocessorServiceResult)>
+Start to analyze method: <org.apache.hadoop.hbase.zookeeper.ZKUtil: void logRetrievedMsg(org.apache.hadoop.hbase.zookeeper.ZKWatcher,java.lang.String,byte[],boolean)>
+Unit: return AT LINE 1986 is not found in our analysis.
+Unit: return AT LINE 1998 is not found in our analysis.
+Start to analyze method: <org.apache.hadoop.hbase.security.HBaseSaslRpcClient: boolean saslConnect(java.io.InputStream,java.io.OutputStream)>
+Start to analyze method: <org.apache.hadoop.hbase.client.AsyncMetaRegionLocator: void lambda$getRegionLocation$0(java.util.concurrent.CompletableFuture,org.apache.hadoop.hbase.RegionLocations,java.lang.Throwable)>
+Start to analyze method: <org.apache.hadoop.hbase.io.encoding.RowIndexEncoderV1: void flush()>
+Start to analyze method: <org.apache.hadoop.hbase.client.MetaCache: void clearCache(org.apache.hadoop.hbase.TableName,byte[])>
+Start to analyze method: <org.apache.hadoop.hbase.client.AsyncRequestFutureImpl: void updateResult(int,java.lang.Object)>
+Start to analyze method: <org.apache.hadoop.hbase.client.HTableMultiplexer$FlushWorker: void run()>
+Start to analyze method: <org.apache.hadoop.hbase.client.MetaCache: void clearCache(org.apache.hadoop.hbase.TableName,byte[],org.apache.hadoop.hbase.ServerName)>
+Start to analyze method: <org.apache.hadoop.hbase.client.MetaCache: void cacheLocation(org.apache.hadoop.hbase.TableName,org.apache.hadoop.hbase.ServerName,org.apache.hadoop.hbase.HRegionLocation)>
+Start to analyze method: <org.apache.hadoop.hbase.client.AsyncMetaRegionLocator: java.util.concurrent.CompletableFuture getRegionLocation(boolean)>
+Start to analyze method: <org.apache.hadoop.hbase.security.AbstractHBaseSaslRpcClient$SaslClientCallbackHandler: void handle(javax.security.auth.callback.Callback[])>
+Start to analyze method: <org.apache.hadoop.hbase.zookeeper.ZKUtil: void logZKTree(org.apache.hadoop.hbase.zookeeper.ZKWatcher,java.lang.String)>
+Unit: return AT LINE 2068 is not found in our analysis.
+Unit: prefix = "|-" AT LINE 2072 is not found in our analysis.
+Unit: staticinvoke <org.apache.hadoop.hbase.zookeeper.ZKUtil: void logZKTree(org.apache.hadoop.hbase.zookeeper.ZKWatcher,java.lang.String,java.lang.String)>(zkw, root, prefix) AT LINE 2075 is not found in our analysis.
+Unit: goto [?= return] AT LINE 2078 is not found in our analysis.
+Unit: return AT LINE 2079 is not found in our analysis.
+Start to analyze method: <org.apache.hadoop.hbase.client.AsyncNonMetaRegionLocator: boolean addToCache(org.apache.hadoop.hbase.client.AsyncNonMetaRegionLocator$TableCache,org.apache.hadoop.hbase.HRegionLocation)>
+Start to analyze method: <org.apache.hadoop.metrics2.sink.ganglia.GangliaSink30: void emitMetric(java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.apache.hadoop.metrics2.sink.ganglia.GangliaConf,org.apache.hadoop.metrics2.sink.ganglia.AbstractGangliaSink$GangliaSlope)>
+Start to analyze method: <org.apache.hadoop.hbase.zookeeper.DeletionListener: void nodeDeleted(java.lang.String)>
+Start to analyze method: <org.apache.hadoop.hbase.ChoreService: void printChoreServiceDetails(java.lang.String)>
+Start to analyze method: <org.apache.hadoop.hbase.client.AsyncNonMetaRegionLocator: void locateInMeta(org.apache.hadoop.hbase.TableName,org.apache.hadoop.hbase.client.AsyncNonMetaRegionLocator$LocateRequest)>
+Start to analyze method: <org.apache.hadoop.hbase.util.CommonFSUtils: void setStoragePolicy(org.apache.hadoop.fs.FileSystem,org.apache.hadoop.fs.Path,java.lang.String,boolean)>
+Start to analyze method: <org.apache.hadoop.hbase.client.MetaCache: void cacheLocation(org.apache.hadoop.hbase.TableName,org.apache.hadoop.hbase.RegionLocations)>
+Start to analyze method: <org.apache.hadoop.hbase.regionserver.MetricsTableSourceImpl: void close()>
+Start to analyze method: <org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: java.lang.Object getAttribute(java.lang.String)>
+Start to analyze method: <org.apache.hadoop.hbase.zookeeper.ZKLeaderManager: void waitToBecomeLeader()>
+Start to analyze method: <org.apache.hadoop.hbase.client.ClientScanner: void <init>(org.apache.hadoop.conf.Configuration,org.apache.hadoop.hbase.client.Scan,org.apache.hadoop.hbase.TableName,org.apache.hadoop.hbase.client.ClusterConnection,org.apache.hadoop.hbase.client.RpcRetryingCallerFactory,org.apache.hadoop.hbase.ipc.RpcControllerFactory,java.util.concurrent.ExecutorService,int)>
+Start to analyze method: <org.apache.hadoop.metrics2.sink.ganglia.GangliaSink31: void emitMetric(java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.apache.hadoop.metrics2.sink.ganglia.GangliaConf,org.apache.hadoop.metrics2.sink.ganglia.AbstractGangliaSink$GangliaSlope)>
+Start to analyze method: <org.apache.hadoop.hbase.ipc.RpcConnection: void <init>(org.apache.hadoop.conf.Configuration,org.apache.hbase.thirdparty.io.netty.util.HashedWheelTimer,org.apache.hadoop.hbase.ipc.ConnectionId,java.lang.String,boolean,org.apache.hadoop.hbase.codec.Codec,org.apache.hadoop.io.compress.CompressionCodec)>
+Unit: $stack47 = this.<org.apache.hadoop.hbase.ipc.RpcConnection: org.apache.hadoop.hbase.security.AuthMethod authMethod> AT LINE 142 is not found in our analysis.
+Start to analyze method: <org.apache.hadoop.hbase.util.CoprocessorClassLoader: java.lang.Class loadClass(java.lang.String,java.lang.String[])>
+Start to analyze method: <org.apache.hadoop.metrics2.impl.JmxCacheBuster: void clearJmxCache()>
+Unit: $stack20 = new java.lang.Exception AT LINE 59 is not found in our analysis.
+Unit: specialinvoke $stack20.<java.lang.Exception: void <init>()>() AT LINE 59 is not found in our analysis.
+Start to analyze method: <org.apache.hadoop.hbase.io.ByteBufferPool: java.nio.ByteBuffer getBuffer()>
+Start to analyze method: <org.apache.hadoop.hbase.io.compress.Compression$Algorithm: org.apache.hadoop.io.compress.Compressor getCompressor()>
+Start to analyze method: <org.apache.hadoop.hbase.io.compress.Compression$Algorithm: void returnCompressor(org.apache.hadoop.io.compress.Compressor)>
+Start to analyze method: <org.apache.hadoop.hbase.codec.BaseDecoder: void rethrowEofException(java.io.IOException)>
+Start to analyze method: <org.apache.hadoop.hbase.util.CommonFSUtils: org.apache.hadoop.fs.FSDataOutputStream create(org.apache.hadoop.fs.FileSystem,org.apache.hadoop.fs.Path,org.apache.hadoop.fs.permission.FsPermission,boolean)>
+Start to analyze method: <org.apache.hadoop.hbase.io.crypto.Encryption: org.apache.hadoop.hbase.io.crypto.KeyProvider getKeyProvider(org.apache.hadoop.conf.Configuration)>
+Start to analyze method: <org.apache.hadoop.hbase.AsyncMetaTableAccessor: java.util.concurrent.CompletableFuture scanMeta(org.apache.hadoop.hbase.client.AsyncTable,java.util.Optional,java.util.Optional,org.apache.hadoop.hbase.MetaTableAccessor$QueryType,int,org.apache.hadoop.hbase.MetaTableAccessor$Visitor)>
+Start to analyze method: <org.apache.hadoop.hbase.client.AsyncTableResultScanner: void resumePrefetch()>
+Start to analyze method: <org.apache.hadoop.hbase.ipc.AbstractRpcClient: org.apache.hadoop.hbase.ipc.RpcConnection getConnection(org.apache.hadoop.hbase.ipc.ConnectionId)>
+Start to analyze method: <org.apache.hadoop.hbase.client.MetaCache: void clearCache(org.apache.hadoop.hbase.TableName,byte[],int)>
+Start to analyze method: <org.apache.hadoop.hbase.ipc.NettyRpcDuplexHandler: void userEventTriggered(org.apache.hbase.thirdparty.io.netty.channel.ChannelHandlerContext,java.lang.Object)>
+Start to analyze method: <org.apache.hadoop.hbase.zookeeper.ZKUtil: org.apache.hadoop.hbase.zookeeper.RecoverableZooKeeper connect(org.apache.hadoop.conf.Configuration,java.lang.String,org.apache.zookeeper.Watcher,java.lang.String)>
+Start to analyze method: <org.apache.hadoop.hbase.ipc.CellBlockBuilder: boolean buildCellBlock(org.apache.hadoop.hbase.codec.Codec,org.apache.hadoop.io.compress.CompressionCodec,org.apache.hadoop.hbase.CellScanner,org.apache.hadoop.hbase.ipc.CellBlockBuilder$OutputStreamSupplier)>
+Start to analyze method: <org.apache.hadoop.hbase.client.ConnectionImplementation: boolean isTableAvailable(org.apache.hadoop.hbase.TableName,byte[][])>
+Start to analyze method: <org.apache.hadoop.hbase.client.MetaCache: void clearCache(org.apache.hadoop.hbase.ServerName)>
+Start to analyze method: <org.apache.hadoop.hbase.client.MetaCache: void clearCache(org.apache.hadoop.hbase.HRegionLocation)>
+Start to analyze method: <org.apache.hadoop.hbase.ipc.BlockingRpcConnection: void setupIOstreams()>
+All overhead in <org.apache.hadoop.hbase.MetaTableAccessor: void debugLogMutations(java.util.List)> are not found in our analysis!
+Start to analyze method: <org.apache.hadoop.hbase.client.AsyncTableResultScanner: void stopPrefetch(org.apache.hadoop.hbase.client.AdvancedScanResultConsumer$ScanController)>
+Start to analyze method: <org.apache.hadoop.hbase.client.HBaseAdmin$72: org.apache.hadoop.hbase.shaded.com.google.protobuf.Message callExecService(org.apache.hadoop.hbase.shaded.com.google.protobuf.RpcController,org.apache.hadoop.hbase.shaded.com.google.protobuf.Descriptors$MethodDescriptor,org.apache.hadoop.hbase.shaded.com.google.protobuf.Message,org.apache.hadoop.hbase.shaded.com.google.protobuf.Message)>
+Start to analyze method: <org.apache.hadoop.hbase.security.AbstractHBaseSaslRpcClient: void <init>(org.apache.hadoop.hbase.security.AuthMethod,org.apache.hadoop.security.token.Token,java.lang.String,boolean,java.lang.String)>
+Start to analyze method: <org.apache.hadoop.hbase.MetaTableAccessor: void scanMeta(org.apache.hadoop.hbase.client.Connection,byte[],byte[],org.apache.hadoop.hbase.MetaTableAccessor$QueryType,org.apache.hadoop.hbase.filter.Filter,int,org.apache.hadoop.hbase.MetaTableAccessor$Visitor)>
+Start to analyze method: <org.apache.hadoop.hbase.client.ResultBoundedCompletionService: org.apache.hadoop.hbase.client.ResultBoundedCompletionService$QueueingFuture pollForFirstSuccessfullyCompletedTask(long,java.util.concurrent.TimeUnit,int,int)>
+Start to analyze method: <org.apache.hadoop.hbase.io.compress.Compression$Algorithm: org.apache.hadoop.io.compress.Decompressor getDecompressor()>
+Start to analyze method: <org.apache.hadoop.metrics2.impl.JmxCacheBuster$JmxCacheBusterRunnable: void run()>
+Start to analyze method: <org.apache.hadoop.hbase.ipc.AbstractRpcClient: void cleanupIdleConnections()>
+Start to analyze method: <org.apache.hadoop.hbase.util.DynamicClassLoader: java.lang.Class tryRefreshClass(java.lang.String)>
+Start to analyze method: <org.apache.hadoop.hbase.ipc.FailedServers: void addToFailedServers(java.net.InetSocketAddress,java.lang.Throwable)>
+Start to analyze method: <org.apache.hadoop.hbase.client.AsyncRegionLocator: void updateCachedLocation(org.apache.hadoop.hbase.HRegionLocation,java.lang.Throwable,java.util.function.Function,java.util.function.Consumer,java.util.function.Consumer)>
+Start to analyze method: <org.apache.hadoop.hbase.ipc.BlockingRpcConnection: void processResponseForConnectionHeader()>
+Start to analyze method: <org.apache.hadoop.hbase.client.ConnectionImplementation: void updateCachedLocations(org.apache.hadoop.hbase.TableName,byte[],byte[],java.lang.Object,org.apache.hadoop.hbase.ServerName)>
+Start to analyze method: <org.apache.hadoop.hbase.client.AsyncNonMetaRegionLocator: boolean onScanNext(org.apache.hadoop.hbase.TableName,org.apache.hadoop.hbase.client.AsyncNonMetaRegionLocator$LocateRequest,org.apache.hadoop.hbase.client.Result)>
+Start to analyze method: <org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: javax.management.AttributeList getAttributes(java.lang.String[])>
+Start to analyze method: <org.apache.hadoop.hbase.client.AsyncNonMetaRegionLocator: org.apache.hadoop.hbase.HRegionLocation locateRowInCache(org.apache.hadoop.hbase.client.AsyncNonMetaRegionLocator$TableCache,org.apache.hadoop.hbase.TableName,byte[])>
+Start to analyze method: <org.apache.hadoop.hbase.client.MetaCache: void clearCache(org.apache.hadoop.hbase.TableName)>
+Start to analyze method: <org.apache.hadoop.hbase.ipc.AbstractRpcClient: void <init>(org.apache.hadoop.conf.Configuration,java.lang.String,java.net.SocketAddress,org.apache.hadoop.hbase.client.MetricsConnection)>
+Start to analyze method: <org.apache.hadoop.hbase.client.RawAsyncHBaseAdmin: void lambda$null$33(java.util.concurrent.CompletableFuture,org.apache.hadoop.hbase.TableName,java.util.Optional,java.util.List,java.lang.Throwable)>
+Start to analyze method: <org.apache.hadoop.hbase.ipc.AbstractRpcClient: void onCallFinished(org.apache.hadoop.hbase.ipc.Call,org.apache.hadoop.hbase.ipc.HBaseRpcController,java.net.InetSocketAddress,org.apache.hbase.thirdparty.com.google.protobuf.RpcCallback)>
+Start to analyze method: <org.apache.hadoop.hbase.ChoreService: void printChoreDetails(java.lang.String,org.apache.hadoop.hbase.ScheduledChore)>
+Start to analyze method: <org.apache.hadoop.hbase.util.ClassSize: int[] getSizeCoefficients(java.lang.Class,boolean)>
+Start to analyze method: <org.apache.hadoop.hbase.ipc.AbstractRpcClient: void close()>
+Start to analyze method: <org.apache.hadoop.hbase.security.HBaseSaslRpcClient$WrappedOutputStream: void write(byte[],int,int)>
+Start to analyze method: <org.apache.hadoop.hbase.util.CommonFSUtils: void invokeSetStoragePolicy(org.apache.hadoop.fs.FileSystem,org.apache.hadoop.fs.Path,java.lang.String)>
+Total units in benchmark: 1423
+Matched units in our result: 1402

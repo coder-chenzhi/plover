@@ -1,0 +1,279 @@
+2020-08-25 09:33:08 [INFO] - start to calc Recall:
+Start to analyze method: <org.apache.zookeeper.server.NettyServerCnxnFactory$CnxnChannelHandler: void messageReceived(org.jboss.netty.channel.ChannelHandlerContext,org.jboss.netty.channel.MessageEvent)>
+Unit: $stack16 = new java.lang.StringBuilder AT LINE 130 is not found in our analysis.
+Unit: specialinvoke $stack16.<java.lang.StringBuilder: void <init>()>() AT LINE 130 is not found in our analysis.
+Unit: $stack31 = new java.lang.StringBuilder AT LINE 126 is not found in our analysis.
+Unit: specialinvoke $stack31.<java.lang.StringBuilder: void <init>()>() AT LINE 126 is not found in our analysis.
+Start to analyze method: <org.apache.zookeeper.server.NettyServerCnxnFactory$CnxnChannelHandler: void processMessage(org.jboss.netty.channel.MessageEvent,org.apache.zookeeper.server.NettyServerCnxn)>
+Unit: $stack45 = new java.lang.StringBuilder AT LINE 216 is not found in our analysis.
+Unit: specialinvoke $stack45.<java.lang.StringBuilder: void <init>()>() AT LINE 216 is not found in our analysis.
+Unit: $stack153 = new java.lang.StringBuilder AT LINE 153 is not found in our analysis.
+Unit: specialinvoke $stack153.<java.lang.StringBuilder: void <init>()>() AT LINE 153 is not found in our analysis.
+Unit: $stack27 = new java.lang.StringBuilder AT LINE 221 is not found in our analysis.
+Unit: specialinvoke $stack27.<java.lang.StringBuilder: void <init>()>() AT LINE 221 is not found in our analysis.
+Unit: $stack34 = new java.lang.StringBuilder AT LINE 222 is not found in our analysis.
+Unit: specialinvoke $stack34.<java.lang.StringBuilder: void <init>()>() AT LINE 222 is not found in our analysis.
+Unit: $stack105 = new java.lang.StringBuilder AT LINE 186 is not found in our analysis.
+Unit: specialinvoke $stack105.<java.lang.StringBuilder: void <init>()>() AT LINE 186 is not found in our analysis.
+Unit: goto [?= return] AT LINE 186 is not found in our analysis.
+Unit: $stack123 = new java.lang.StringBuilder AT LINE 172 is not found in our analysis.
+Unit: specialinvoke $stack123.<java.lang.StringBuilder: void <init>()>() AT LINE 172 is not found in our analysis.
+Unit: $stack168 = new java.lang.StringBuilder AT LINE 145 is not found in our analysis.
+Unit: specialinvoke $stack168.<java.lang.StringBuilder: void <init>()>() AT LINE 145 is not found in our analysis.
+Unit: $stack84 = new java.lang.StringBuilder AT LINE 194 is not found in our analysis.
+Unit: specialinvoke $stack84.<java.lang.StringBuilder: void <init>()>() AT LINE 194 is not found in our analysis.
+Unit: $stack70 = new java.lang.StringBuilder AT LINE 200 is not found in our analysis.
+Unit: specialinvoke $stack70.<java.lang.StringBuilder: void <init>()>() AT LINE 200 is not found in our analysis.
+Start to analyze method: <org.apache.zookeeper.server.DataTree: void killSession(long,long)>
+Unit: $stack18 = new java.lang.StringBuilder AT LINE 892 is not found in our analysis.
+Unit: specialinvoke $stack18.<java.lang.StringBuilder: void <init>()>() AT LINE 892 is not found in our analysis.
+Start to analyze method: <org.apache.zookeeper.server.quorum.QuorumCnxManager: void testInitiateConnection(long)>
+Unit: $stack15 = new java.lang.StringBuilder AT LINE 251 is not found in our analysis.
+Unit: specialinvoke $stack15.<java.lang.StringBuilder: void <init>()>() AT LINE 251 is not found in our analysis.
+All overhead in <org.apache.zookeeper.server.ZooTrace: boolean isTraceEnabled(org.slf4j.Logger,long)> are not found in our analysis!
+Start to analyze method: <org.apache.zookeeper.server.quorum.LearnerHandler: void run()>
+Unit: $stack233 = new java.lang.StringBuilder AT LINE 617 is not found in our analysis.
+Unit: specialinvoke $stack233.<java.lang.StringBuilder: void <init>()>() AT LINE 617 is not found in our analysis.
+Unit: $stack277 = new java.lang.StringBuilder AT LINE 580 is not found in our analysis.
+Unit: specialinvoke $stack277.<java.lang.StringBuilder: void <init>()>() AT LINE 580 is not found in our analysis.
+Start to analyze method: <org.apache.zookeeper.server.upgrade.UpgradeSnapShotV1: long playLog(org.apache.jute.InputArchive)>
+Unit: $stack37 = new java.lang.StringBuilder AT LINE 136 is not found in our analysis.
+Unit: specialinvoke $stack37.<java.lang.StringBuilder: void <init>()>() AT LINE 136 is not found in our analysis.
+Unit: $stack70 = new java.lang.StringBuilder AT LINE 149 is not found in our analysis.
+Unit: specialinvoke $stack70.<java.lang.StringBuilder: void <init>()>() AT LINE 149 is not found in our analysis.
+Start to analyze method: <org.apache.zookeeper.client.ZooKeeperSaslClient: void sendSaslPacket(org.apache.zookeeper.ClientCnxn)>
+Unit: $stack12 = new java.lang.StringBuilder AT LINE 341 is not found in our analysis.
+Unit: specialinvoke $stack12.<java.lang.StringBuilder: void <init>()>() AT LINE 341 is not found in our analysis.
+Start to analyze method: <org.apache.zookeeper.server.NIOServerCnxnFactory: void run()>
+Unit: $stack32 = new java.lang.StringBuilder AT LINE 229 is not found in our analysis.
+Unit: specialinvoke $stack32.<java.lang.StringBuilder: void <init>()>() AT LINE 229 is not found in our analysis.
+Start to analyze method: <org.apache.zookeeper.ClientCnxnSocketNIO: void close()>
+Start to analyze method: <org.apache.zookeeper.server.SessionTrackerImpl: void removeSession(long)>
+Unit: $stack19 = new java.lang.StringBuilder AT LINE 212 is not found in our analysis.
+Unit: specialinvoke $stack19.<java.lang.StringBuilder: void <init>()>() AT LINE 212 is not found in our analysis.
+Start to analyze method: <org.apache.zookeeper.server.NettyServerCnxn: void close()>
+Unit: $stack9 = new java.lang.StringBuilder AT LINE 90 is not found in our analysis.
+Unit: specialinvoke $stack9.<java.lang.StringBuilder: void <init>()>() AT LINE 90 is not found in our analysis.
+Start to analyze method: <org.apache.zookeeper.server.quorum.Learner: void readPacket(org.apache.zookeeper.server.quorum.QuorumPacket)>
+Start to analyze method: <org.apache.zookeeper.ClientCnxn$SendThread: void readResponse(java.nio.ByteBuffer)>
+Unit: $stack167 = new java.lang.StringBuilder AT LINE 745 is not found in our analysis.
+Unit: specialinvoke $stack167.<java.lang.StringBuilder: void <init>()>() AT LINE 745 is not found in our analysis.
+Unit: $stack133 = new java.lang.StringBuilder AT LINE 769 is not found in our analysis.
+Unit: specialinvoke $stack133.<java.lang.StringBuilder: void <init>()>() AT LINE 769 is not found in our analysis.
+Unit: $stack150 = new java.lang.StringBuilder AT LINE 761 is not found in our analysis.
+Unit: specialinvoke $stack150.<java.lang.StringBuilder: void <init>()>() AT LINE 761 is not found in our analysis.
+Unit: $stack98 = new java.lang.StringBuilder AT LINE 791 is not found in our analysis.
+Unit: specialinvoke $stack98.<java.lang.StringBuilder: void <init>()>() AT LINE 791 is not found in our analysis.
+Unit: $stack41 = new java.lang.StringBuilder AT LINE 846 is not found in our analysis.
+Unit: specialinvoke $stack41.<java.lang.StringBuilder: void <init>()>() AT LINE 846 is not found in our analysis.
+Start to analyze method: <org.apache.zookeeper.ClientCnxnSocketNIO: org.apache.zookeeper.ClientCnxn$Packet findSendablePacket(java.util.LinkedList,boolean)>
+Unit: $stack23 = new java.lang.StringBuilder AT LINE 184 is not found in our analysis.
+Unit: specialinvoke $stack23.<java.lang.StringBuilder: void <init>()>() AT LINE 184 is not found in our analysis.
+Start to analyze method: <org.apache.zookeeper.server.PrepRequestProcessor: void run()>
+Start to analyze method: <org.apache.zookeeper.server.quorum.ObserverRequestProcessor: void run()>
+Start to analyze method: <org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger$WorkerReceiver: void run()>
+Unit: $stack90 = new java.lang.StringBuilder AT LINE 371 is not found in our analysis.
+Unit: specialinvoke $stack90.<java.lang.StringBuilder: void <init>()>() AT LINE 371 is not found in our analysis.
+Unit: $stack182 = new java.lang.StringBuilder AT LINE 274 is not found in our analysis.
+Unit: specialinvoke $stack182.<java.lang.StringBuilder: void <init>()>() AT LINE 274 is not found in our analysis.
+Start to analyze method: <org.apache.zookeeper.server.ZooKeeperServer: void revalidateSession(org.apache.zookeeper.server.ServerCnxn,long,int)>
+Unit: $stack10 = new java.lang.StringBuilder AT LINE 642 is not found in our analysis.
+Unit: specialinvoke $stack10.<java.lang.StringBuilder: void <init>()>() AT LINE 642 is not found in our analysis.
+Start to analyze method: <org.apache.zookeeper.server.NettyServerCnxnFactory$CnxnChannelHandler: void exceptionCaught(org.jboss.netty.channel.ChannelHandlerContext,org.jboss.netty.channel.ExceptionEvent)>
+Unit: $stack16 = new java.lang.StringBuilder AT LINE 115 is not found in our analysis.
+Unit: specialinvoke $stack16.<java.lang.StringBuilder: void <init>()>() AT LINE 115 is not found in our analysis.
+Start to analyze method: <org.apache.zookeeper.server.persistence.FileTxnSnapLog: void processTransaction(org.apache.zookeeper.txn.TxnHeader,org.apache.zookeeper.server.DataTree,java.util.Map,org.apache.jute.Record)>
+Unit: $stack53 = new java.lang.StringBuilder AT LINE 258 is not found in our analysis.
+Unit: specialinvoke $stack53.<java.lang.StringBuilder: void <init>()>() AT LINE 258 is not found in our analysis.
+Unit: $stack31 = new java.lang.StringBuilder AT LINE 246 is not found in our analysis.
+Unit: specialinvoke $stack31.<java.lang.StringBuilder: void <init>()>() AT LINE 246 is not found in our analysis.
+Start to analyze method: <org.apache.zookeeper.ZooKeeper: void close()>
+Unit: $stack16 = new java.lang.StringBuilder AT LINE 682 is not found in our analysis.
+Unit: specialinvoke $stack16.<java.lang.StringBuilder: void <init>()>() AT LINE 682 is not found in our analysis.
+Start to analyze method: <org.apache.zookeeper.client.ZooKeeperSaslClient: void sendSaslPacket(byte[],org.apache.zookeeper.ClientCnxn)>
+Unit: $stack12 = new java.lang.StringBuilder AT LINE 323 is not found in our analysis.
+Unit: specialinvoke $stack12.<java.lang.StringBuilder: void <init>()>() AT LINE 323 is not found in our analysis.
+Start to analyze method: <org.apache.zookeeper.server.NettyServerCnxnFactory: void closeSession(long)>
+Unit: $stack10 = new java.lang.StringBuilder AT LINE 288 is not found in our analysis.
+Unit: specialinvoke $stack10.<java.lang.StringBuilder: void <init>()>() AT LINE 288 is not found in our analysis.
+Start to analyze method: <org.apache.zookeeper.server.NettyServerCnxnFactory: void closeAll()>
+Unit: $stack18 = new java.lang.StringBuilder AT LINE 280 is not found in our analysis.
+Unit: specialinvoke $stack18.<java.lang.StringBuilder: void <init>()>() AT LINE 280 is not found in our analysis.
+Start to analyze method: <org.apache.zookeeper.server.NettyServerCnxn: void process(org.apache.zookeeper.WatchedEvent)>
+Unit: $stack9 = new java.lang.StringBuilder AT LINE 120 is not found in our analysis.
+Unit: specialinvoke $stack9.<java.lang.StringBuilder: void <init>()>() AT LINE 120 is not found in our analysis.
+Start to analyze method: <org.apache.zookeeper.server.util.SerializeUtils: void deserializeSnapshot(org.apache.zookeeper.server.DataTree,org.apache.jute.InputArchive,java.util.Map)>
+Unit: $stack16 = new java.lang.StringBuilder AT LINE 124 is not found in our analysis.
+Unit: specialinvoke $stack16.<java.lang.StringBuilder: void <init>()>() AT LINE 124 is not found in our analysis.
+Start to analyze method: <org.apache.zookeeper.server.NettyServerCnxn: void receiveMessage(org.jboss.netty.buffer.ChannelBuffer)>
+Unit: $stack76 = new java.lang.StringBuilder AT LINE 793 is not found in our analysis.
+Unit: specialinvoke $stack76.<java.lang.StringBuilder: void <init>()>() AT LINE 793 is not found in our analysis.
+Unit: $stack86 = this.<org.apache.zookeeper.server.NettyServerCnxn: java.nio.ByteBuffer bbLen> AT LINE 796 is not found in our analysis.
+Unit: dat = virtualinvoke $stack86.<java.nio.ByteBuffer: java.nio.ByteBuffer duplicate()>() AT LINE 796 is not found in our analysis.
+Unit: virtualinvoke dat.<java.nio.ByteBuffer: java.nio.Buffer flip()>() AT LINE 797 is not found in our analysis.
+Unit: $stack89 = new java.lang.StringBuilder AT LINE 798 is not found in our analysis.
+Unit: specialinvoke $stack89.<java.lang.StringBuilder: void <init>()>() AT LINE 798 is not found in our analysis.
+Unit: $stack52 = new java.lang.StringBuilder AT LINE 813 is not found in our analysis.
+Unit: specialinvoke $stack52.<java.lang.StringBuilder: void <init>()>() AT LINE 813 is not found in our analysis.
+Unit: $stack173 = new java.lang.StringBuilder AT LINE 740 is not found in our analysis.
+Unit: specialinvoke $stack173.<java.lang.StringBuilder: void <init>()>() AT LINE 740 is not found in our analysis.
+Unit: $stack186 = this.<org.apache.zookeeper.server.NettyServerCnxn: java.nio.ByteBuffer bb> AT LINE 742 is not found in our analysis.
+Unit: dat = virtualinvoke $stack186.<java.nio.ByteBuffer: java.nio.ByteBuffer duplicate()>() AT LINE 742 is not found in our analysis.
+Unit: virtualinvoke dat.<java.nio.ByteBuffer: java.nio.Buffer flip()>() AT LINE 743 is not found in our analysis.
+Unit: $stack189 = new java.lang.StringBuilder AT LINE 744 is not found in our analysis.
+Unit: specialinvoke $stack189.<java.lang.StringBuilder: void <init>()>() AT LINE 744 is not found in our analysis.
+Unit: $stack42 = new java.lang.StringBuilder AT LINE 820 is not found in our analysis.
+Unit: specialinvoke $stack42.<java.lang.StringBuilder: void <init>()>() AT LINE 820 is not found in our analysis.
+Unit: $stack135 = new java.lang.StringBuilder AT LINE 758 is not found in our analysis.
+Unit: specialinvoke $stack135.<java.lang.StringBuilder: void <init>()>() AT LINE 758 is not found in our analysis.
+Unit: $stack148 = this.<org.apache.zookeeper.server.NettyServerCnxn: java.nio.ByteBuffer bb> AT LINE 761 is not found in our analysis.
+Unit: dat = virtualinvoke $stack148.<java.nio.ByteBuffer: java.nio.ByteBuffer duplicate()>() AT LINE 761 is not found in our analysis.
+Unit: virtualinvoke dat.<java.nio.ByteBuffer: java.nio.Buffer flip()>() AT LINE 762 is not found in our analysis.
+Unit: $stack151 = new java.lang.StringBuilder AT LINE 763 is not found in our analysis.
+Unit: specialinvoke $stack151.<java.lang.StringBuilder: void <init>()>() AT LINE 763 is not found in our analysis.
+Start to analyze method: <org.apache.zookeeper.server.SessionTrackerImpl: void shutdown()>
+Start to analyze method: <org.apache.zookeeper.server.FinalRequestProcessor: void processRequest(org.apache.zookeeper.server.Request)>
+Unit: $stack276 = new java.lang.StringBuilder AT LINE 89 is not found in our analysis.
+Unit: specialinvoke $stack276.<java.lang.StringBuilder: void <init>()>() AT LINE 89 is not found in our analysis.
+Start to analyze method: <org.apache.zookeeper.server.quorum.Learner: void revalidate(org.apache.zookeeper.server.quorum.QuorumPacket)>
+Unit: $stack19 = new java.lang.StringBuilder AT LINE 531 is not found in our analysis.
+Unit: specialinvoke $stack19.<java.lang.StringBuilder: void <init>()>() AT LINE 531 is not found in our analysis.
+Start to analyze method: <org.apache.zookeeper.server.quorum.LearnerHandler: void sendPackets()>
+Start to analyze method: <org.apache.zookeeper.ClientCnxn: void close()>
+Unit: $stack7 = new java.lang.StringBuilder AT LINE 1374 is not found in our analysis.
+Unit: specialinvoke $stack7.<java.lang.StringBuilder: void <init>()>() AT LINE 1374 is not found in our analysis.
+Start to analyze method: <org.apache.zookeeper.server.quorum.CommitProcessor: void commit(org.apache.zookeeper.server.Request)>
+Unit: $stack7 = new java.lang.StringBuilder AT LINE 164 is not found in our analysis.
+Unit: specialinvoke $stack7.<java.lang.StringBuilder: void <init>()>() AT LINE 164 is not found in our analysis.
+Start to analyze method: <org.apache.zookeeper.ClientCnxn$SendThread: void primeConnection()>
+Unit: $stack60 = new java.lang.StringBuilder AT LINE 952 is not found in our analysis.
+Unit: specialinvoke $stack60.<java.lang.StringBuilder: void <init>()>() AT LINE 952 is not found in our analysis.
+Start to analyze method: <org.apache.zookeeper.server.SessionTrackerImpl: boolean touchSession(long,int)>
+Unit: $stack46 = new java.lang.StringBuilder AT LINE 168 is not found in our analysis.
+Unit: specialinvoke $stack46.<java.lang.StringBuilder: void <init>()>() AT LINE 168 is not found in our analysis.
+Start to analyze method: <org.apache.zookeeper.server.quorum.FastLeaderElection: void leaveInstance(org.apache.zookeeper.server.quorum.Vote)>
+Unit: $stack5 = new java.lang.StringBuilder AT LINE 546 is not found in our analysis.
+Unit: specialinvoke $stack5.<java.lang.StringBuilder: void <init>()>() AT LINE 546 is not found in our analysis.
+Start to analyze method: <org.apache.zookeeper.server.quorum.FollowerRequestProcessor: void run()>
+Start to analyze method: <org.apache.zookeeper.server.quorum.CommitProcessor: void processRequest(org.apache.zookeeper.server.Request)>
+Unit: $stack7 = new java.lang.StringBuilder AT LINE 174 is not found in our analysis.
+Unit: specialinvoke $stack7.<java.lang.StringBuilder: void <init>()>() AT LINE 174 is not found in our analysis.
+Start to analyze method: <org.apache.zookeeper.ClientCnxnSocket: void readConnectResult()>
+Unit: $stack18 = new java.lang.StringBuilder AT LINE 120 is not found in our analysis.
+Unit: specialinvoke $stack18.<java.lang.StringBuilder: void <init>(java.lang.String)>("0x[") AT LINE 120 is not found in our analysis.
+Unit: $stack19 = this.<org.apache.zookeeper.ClientCnxnSocket: java.nio.ByteBuffer incomingBuffer> AT LINE 121 is not found in our analysis.
+Unit: bbia = virtualinvoke $stack19.<java.nio.ByteBuffer: byte[] array()>() AT LINE 121 is not found in our analysis.
+Unit: conRsp = lengthof bbia AT LINE 121 is not found in our analysis.
+Unit: isRO = 0 AT LINE 121 is not found in our analysis.
+Unit: if isRO >= conRsp goto virtualinvoke buf.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("]") AT LINE 121 is not found in our analysis.
+Unit: $stack40 = new java.lang.StringBuilder AT LINE 122 is not found in our analysis.
+Unit: specialinvoke $stack40.<java.lang.StringBuilder: void <init>()>() AT LINE 122 is not found in our analysis.
+Unit: isRO = isRO + 1 AT LINE 121 is not found in our analysis.
+Unit: $stack22 = new java.lang.StringBuilder AT LINE 125 is not found in our analysis.
+Unit: specialinvoke $stack22.<java.lang.StringBuilder: void <init>()>() AT LINE 125 is not found in our analysis.
+All overhead in <org.apache.zookeeper.server.SessionTrackerImpl: void setSessionClosing(long)> are not found in our analysis!
+Start to analyze method: <org.apache.zookeeper.server.NettyServerCnxnFactory: void removeCnxn(org.apache.zookeeper.server.ServerCnxn)>
+Unit: $stack35 = new java.lang.StringBuilder AT LINE 405 is not found in our analysis.
+Unit: specialinvoke $stack35.<java.lang.StringBuilder: void <init>()>() AT LINE 405 is not found in our analysis.
+Unit: $stack19 = new java.lang.StringBuilder AT LINE 410 is not found in our analysis.
+Unit: specialinvoke $stack19.<java.lang.StringBuilder: void <init>()>() AT LINE 410 is not found in our analysis.
+Start to analyze method: <org.apache.zookeeper.server.quorum.Leader: void processAck(long,long,java.net.SocketAddress)>
+Start to analyze method: <org.apache.zookeeper.server.quorum.Learner: void validateSession(org.apache.zookeeper.server.ServerCnxn,long,int)>
+Unit: $stack25 = new java.lang.StringBuilder AT LINE 118 is not found in our analysis.
+Unit: specialinvoke $stack25.<java.lang.StringBuilder: void <init>()>() AT LINE 118 is not found in our analysis.
+Start to analyze method: <org.apache.zookeeper.server.NIOServerCnxn: void incrOutstandingRequests(org.apache.zookeeper.proto.RequestHeader)>
+Unit: $stack17 = new java.lang.StringBuilder AT LINE 405 is not found in our analysis.
+Unit: specialinvoke $stack17.<java.lang.StringBuilder: void <init>()>() AT LINE 405 is not found in our analysis.
+Start to analyze method: <org.apache.zookeeper.server.ZooTrace: void logTraceMessage(org.slf4j.Logger,long,java.lang.String)>
+Start to analyze method: <org.apache.zookeeper.server.ZooKeeperServer: void killSession(long,long)>
+Unit: $stack10 = new java.lang.StringBuilder AT LINE 344 is not found in our analysis.
+Unit: specialinvoke $stack10.<java.lang.StringBuilder: void <init>()>() AT LINE 344 is not found in our analysis.
+Start to analyze method: <org.apache.zookeeper.server.NettyServerCnxnFactory$CnxnChannelHandler: void writeComplete(org.jboss.netty.channel.ChannelHandlerContext,org.jboss.netty.channel.WriteCompletionEvent)>
+Unit: $stack7 = new java.lang.StringBuilder AT LINE 237 is not found in our analysis.
+Unit: specialinvoke $stack7.<java.lang.StringBuilder: void <init>()>() AT LINE 237 is not found in our analysis.
+Start to analyze method: <org.apache.zookeeper.server.quorum.QuorumCnxManager$SendWorker: boolean finish()>
+Unit: $stack32 = new java.lang.StringBuilder AT LINE 850 is not found in our analysis.
+Unit: specialinvoke $stack32.<java.lang.StringBuilder: void <init>()>() AT LINE 850 is not found in our analysis.
+Unit: $stack18 = new java.lang.StringBuilder AT LINE 870 is not found in our analysis.
+Unit: specialinvoke $stack18.<java.lang.StringBuilder: void <init>()>() AT LINE 870 is not found in our analysis.
+Start to analyze method: <org.apache.zookeeper.server.ZooTrace: void logRequest(org.slf4j.Logger,long,char,org.apache.zookeeper.server.Request,java.lang.String)>
+Unit: $stack7 = new java.lang.StringBuilder AT LINE 88 is not found in our analysis.
+Unit: specialinvoke $stack7.<java.lang.StringBuilder: void <init>()>() AT LINE 88 is not found in our analysis.
+Start to analyze method: <org.apache.zookeeper.server.ZooKeeperServer: void processPacket(org.apache.zookeeper.server.ServerCnxn,java.nio.ByteBuffer)>
+Unit: $stack52 = new java.lang.StringBuilder AT LINE 1004 is not found in our analysis.
+Unit: specialinvoke $stack52.<java.lang.StringBuilder: void <init>()>() AT LINE 1004 is not found in our analysis.
+Start to analyze method: <org.apache.zookeeper.server.ZooKeeperServer: void processConnectRequest(org.apache.zookeeper.server.ServerCnxn,java.nio.ByteBuffer)>
+Unit: $stack85 = new java.lang.StringBuilder AT LINE 891 is not found in our analysis.
+Unit: specialinvoke $stack85.<java.lang.StringBuilder: void <init>()>() AT LINE 891 is not found in our analysis.
+Start to analyze method: <org.apache.zookeeper.server.NettyServerCnxnFactory$CnxnChannelHandler: void channelClosed(org.jboss.netty.channel.ChannelHandlerContext,org.jboss.netty.channel.ChannelStateEvent)>
+Unit: $stack11 = new java.lang.StringBuilder AT LINE 72 is not found in our analysis.
+Unit: specialinvoke $stack11.<java.lang.StringBuilder: void <init>()>() AT LINE 72 is not found in our analysis.
+Start to analyze method: <org.apache.zookeeper.server.upgrade.UpgradeSnapShotV1: void deserializeSnapshot(org.apache.zookeeper.server.upgrade.DataTreeV1,org.apache.jute.InputArchive,java.util.Map)>
+Unit: $stack17 = new java.lang.StringBuilder AT LINE 93 is not found in our analysis.
+Unit: specialinvoke $stack17.<java.lang.StringBuilder: void <init>()>() AT LINE 93 is not found in our analysis.
+Start to analyze method: <org.apache.zookeeper.server.NettyServerCnxnFactory$CnxnChannelHandler: void channelConnected(org.jboss.netty.channel.ChannelHandlerContext,org.jboss.netty.channel.ChannelStateEvent)>
+Unit: $stack18 = new java.lang.StringBuilder AT LINE 82 is not found in our analysis.
+Unit: specialinvoke $stack18.<java.lang.StringBuilder: void <init>()>() AT LINE 82 is not found in our analysis.
+Start to analyze method: <org.apache.zookeeper.server.DataTree: void deleteNode(java.lang.String,long)>
+Unit: $stack53 = new java.lang.StringBuilder AT LINE 500 is not found in our analysis.
+Unit: specialinvoke $stack53.<java.lang.StringBuilder: void <init>()>() AT LINE 500 is not found in our analysis.
+Unit: $stack59 = new java.lang.StringBuilder AT LINE 502 is not found in our analysis.
+Unit: specialinvoke $stack59.<java.lang.StringBuilder: void <init>()>() AT LINE 502 is not found in our analysis.
+Start to analyze method: <org.apache.zookeeper.client.ZooKeeperSaslClient: javax.security.sasl.SaslClient createSaslClient(java.lang.String,java.lang.String)>
+Unit: $stack21 = new java.lang.StringBuilder AT LINE 212 is not found in our analysis.
+Unit: specialinvoke $stack21.<java.lang.StringBuilder: void <init>()>() AT LINE 212 is not found in our analysis.
+Start to analyze method: <org.apache.zookeeper.server.ZooTrace: void logQuorumPacket(org.slf4j.Logger,long,char,org.apache.zookeeper.server.quorum.QuorumPacket)>
+Unit: $stack6 = new java.lang.StringBuilder AT LINE 79 is not found in our analysis.
+Unit: specialinvoke $stack6.<java.lang.StringBuilder: void <init>()>() AT LINE 79 is not found in our analysis.
+Start to analyze method: <org.apache.zookeeper.server.NIOServerCnxn: void internalSendBuffer(java.nio.ByteBuffer)>
+Unit: $stack21 = new java.lang.StringBuilder AT LINE 183 is not found in our analysis.
+Unit: specialinvoke $stack21.<java.lang.StringBuilder: void <init>()>() AT LINE 183 is not found in our analysis.
+Start to analyze method: <org.apache.zookeeper.server.WatchManager: java.util.Set triggerWatch(java.lang.String,org.apache.zookeeper.Watcher$Event$EventType,java.util.Set)>
+Unit: $stack19 = new java.lang.StringBuilder AT LINE 103 is not found in our analysis.
+Unit: specialinvoke $stack19.<java.lang.StringBuilder: void <init>()>() AT LINE 103 is not found in our analysis.
+Start to analyze method: <org.apache.zookeeper.server.quorum.FastLeaderElection: void updateProposal(long,long,long)>
+Unit: $stack9 = new java.lang.StringBuilder AT LINE 714 is not found in our analysis.
+Unit: specialinvoke $stack9.<java.lang.StringBuilder: void <init>()>() AT LINE 714 is not found in our analysis.
+Start to analyze method: <org.apache.zookeeper.server.SessionTrackerImpl: void addSession(long,int)>
+Unit: $stack33 = new java.lang.StringBuilder AT LINE 247 is not found in our analysis.
+Unit: specialinvoke $stack33.<java.lang.StringBuilder: void <init>()>() AT LINE 247 is not found in our analysis.
+Unit: $stack15 = new java.lang.StringBuilder AT LINE 253 is not found in our analysis.
+Unit: specialinvoke $stack15.<java.lang.StringBuilder: void <init>()>() AT LINE 253 is not found in our analysis.
+Start to analyze method: <org.apache.zookeeper.server.quorum.FastLeaderElection: org.apache.zookeeper.server.quorum.Vote lookForLeader()>
+Unit: $stack301 = new java.lang.StringBuilder AT LINE 871 is not found in our analysis.
+Unit: specialinvoke $stack301.<java.lang.StringBuilder: void <init>()>() AT LINE 871 is not found in our analysis.
+Unit: goto [?= (branch)] AT LINE 871 is not found in our analysis.
+Unit: $stack267 = new java.lang.StringBuilder AT LINE 883 is not found in our analysis.
+Unit: specialinvoke $stack267.<java.lang.StringBuilder: void <init>()>() AT LINE 883 is not found in our analysis.
+Start to analyze method: <org.apache.zookeeper.server.upgrade.DataTreeV1: void killSession(long)>
+Unit: $stack16 = new java.lang.StringBuilder AT LINE 444 is not found in our analysis.
+Unit: specialinvoke $stack16.<java.lang.StringBuilder: void <init>()>() AT LINE 444 is not found in our analysis.
+Start to analyze method: <org.apache.zookeeper.ClientCnxn: void <clinit>()>
+Unit: $stack6 = new java.lang.StringBuilder AT LINE 120 is not found in our analysis.
+Unit: specialinvoke $stack6.<java.lang.StringBuilder: void <init>()>() AT LINE 120 is not found in our analysis.
+Start to analyze method: <org.apache.zookeeper.server.NettyServerCnxn: org.jboss.netty.channel.ChannelFuture disableRecvNoWait()>
+Unit: $stack5 = new java.lang.StringBuilder AT LINE 851 is not found in our analysis.
+Unit: specialinvoke $stack5.<java.lang.StringBuilder: void <init>()>() AT LINE 851 is not found in our analysis.
+Start to analyze method: <org.apache.zookeeper.server.NIOServerCnxn: void process(org.apache.zookeeper.WatchedEvent)>
+Unit: $stack8 = new java.lang.StringBuilder AT LINE 1158 is not found in our analysis.
+Unit: specialinvoke $stack8.<java.lang.StringBuilder: void <init>()>() AT LINE 1158 is not found in our analysis.
+Start to analyze method: <org.apache.zookeeper.server.NettyServerCnxn: void enableRecv()>
+Unit: $stack8 = new java.lang.StringBuilder AT LINE 197 is not found in our analysis.
+Unit: specialinvoke $stack8.<java.lang.StringBuilder: void <init>()>() AT LINE 197 is not found in our analysis.
+Start to analyze method: <org.apache.zookeeper.server.quorum.Leader: org.apache.zookeeper.server.quorum.Leader$Proposal propose(org.apache.zookeeper.server.Request)>
+Unit: $stack26 = new java.lang.StringBuilder AT LINE 784 is not found in our analysis.
+Unit: specialinvoke $stack26.<java.lang.StringBuilder: void <init>()>() AT LINE 784 is not found in our analysis.
+Start to analyze method: <org.apache.zookeeper.server.quorum.FastLeaderElection: void sendNotifications()>
+Unit: $stack25 = new java.lang.StringBuilder AT LINE 584 is not found in our analysis.
+Unit: specialinvoke $stack25.<java.lang.StringBuilder: void <init>()>() AT LINE 584 is not found in our analysis.
+Start to analyze method: <org.apache.zookeeper.server.quorum.ReadOnlyRequestProcessor: void run()>
+Start to analyze method: <org.apache.zookeeper.server.NettyServerCnxnFactory$CnxnChannelHandler: void channelDisconnected(org.jboss.netty.channel.ChannelHandlerContext,org.jboss.netty.channel.ChannelStateEvent)>
+Unit: $stack12 = new java.lang.StringBuilder AT LINE 101 is not found in our analysis.
+Unit: specialinvoke $stack12.<java.lang.StringBuilder: void <init>()>() AT LINE 101 is not found in our analysis.
+Unit: $stack19 = new java.lang.StringBuilder AT LINE 96 is not found in our analysis.
+Unit: specialinvoke $stack19.<java.lang.StringBuilder: void <init>()>() AT LINE 96 is not found in our analysis.
+Start to analyze method: <org.apache.zookeeper.ClientCnxn: void disconnect()>
+Unit: $stack5 = new java.lang.StringBuilder AT LINE 1358 is not found in our analysis.
+Unit: specialinvoke $stack5.<java.lang.StringBuilder: void <init>()>() AT LINE 1358 is not found in our analysis.
+Total units in benchmark: 1059
+Matched units in our result: 841

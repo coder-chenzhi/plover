@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Configuration status="info">
+	<Appenders>
+		<Console name="Console" target="SYSTEM_OUT">
+			<PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} [%level] - %m%n" />
+		</Console>
+		<RollingFile name="MyRollingFile" fileName="logs/app.log"
+					 filePattern="logs/$${date:yyyy-MM}/app-%d{MM-dd-yyyy}-%i.log.gz">
+			<PatternLayout>
+				<Pattern>%d %p %c{1.} [%t] %m%n</Pattern>
+			</PatternLayout>
+			<Policies>
+				<TimeBasedTriggeringPolicy />
+				<SizeBasedTriggeringPolicy size="250 MB"/>
+			</Policies>
+		</RollingFile>
+
+		<File name="IDFile" fileName="logs/logging_id.log" append="false">
+			<PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} [%level] - %m%n" />
+		</File>
+		<File name="CallJDKFile" fileName="logs/call_jdk_methods.log" append="false">
+			<PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} [%level] - %m%n" />
+		</File>
+		<File name="MetricsFile" fileName="logs/metrics.log" append="false">
+			<PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} [%level] - %m%n" />
+		</File>
+	</Appenders>
+
+	<Loggers>
+		<Root level="debug">
+			<AppenderRef ref="Console" />
+			<AppenderRef ref="MyRollingFile" />
+		</Root>
+
+		<Logger name="edu.zju.ccnt.sootex.sideeffect" level="debug" additivity="false">
+			<appender-ref ref="Console" level="debug" />
+		</Logger>
+
+		<Logger name="LoggingCallsID" level="debug" additivity="false">
+			<appender-ref ref="IDFile" level="debug" />
+		</Logger>
+
+		<Logger name="CallJDKMethod" level="debug" additivity="false">
+			<appender-ref ref="CallJDKFile" level="debug" />
+		</Logger>
+
+		<Logger name="Metrics" level="debug" additivity="false">
+			<appender-ref ref="MetricsFile" level="debug" />
+		</Logger>
+
+	</Loggers>
+</Configuration>

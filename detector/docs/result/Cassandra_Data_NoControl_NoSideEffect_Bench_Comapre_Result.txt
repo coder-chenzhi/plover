@@ -1,0 +1,198 @@
+2020-08-25 11:04:57 [INFO] - start to calc Recall:
+Start to analyze method: <org.apache.cassandra.service.StorageService: void handleStateMoving(java.net.InetAddress,java.lang.String[])>
+Start to analyze method: <org.apache.cassandra.db.lifecycle.LogReplicaSet: void maybeCreateReplica(java.io.File,java.lang.String,java.util.Set)>
+Start to analyze method: <org.apache.cassandra.db.compaction.LeveledManifest: void logDistribution()>
+Unit: i = 0 AT LINE 526 is not found in our analysis.
+Unit: $stack4 = this.<org.apache.cassandra.db.compaction.LeveledManifest: java.util.List[] generations> AT LINE 526 is not found in our analysis.
+Unit: $stack5 = lengthof $stack4 AT LINE 526 is not found in our analysis.
+Unit: if i >= $stack5 goto return AT LINE 526 is not found in our analysis.
+Unit: $stack6 = virtualinvoke this.<org.apache.cassandra.db.compaction.LeveledManifest: java.util.List getLevel(int)>(i) AT LINE 528 is not found in our analysis.
+Unit: $stack7 = interfaceinvoke $stack6.<java.util.List: boolean isEmpty()>() AT LINE 528 is not found in our analysis.
+Unit: if $stack7 != 0 goto i = i + 1 AT LINE 528 is not found in our analysis.
+Unit: i = i + 1 AT LINE 526 is not found in our analysis.
+Start to analyze method: <org.apache.cassandra.service.ReadCallback: org.apache.cassandra.db.partitions.PartitionIterator get()>
+Start to analyze method: <org.apache.cassandra.gms.FailureDetector: void interpret(java.net.InetAddress)>
+Unit: $stack42 = this.<org.apache.cassandra.gms.FailureDetector: double PHI_FACTOR> AT LINE 319 is not found in our analysis.
+Unit: $stack43 = $stack42 * phi AT LINE 319 is not found in our analysis.
+Unit: $stack44 = $stack43 * 80.0 AT LINE 319 is not found in our analysis.
+Unit: $stack45 = $stack44 / 100.0 AT LINE 319 is not found in our analysis.
+Unit: $stack46 = virtualinvoke this.<org.apache.cassandra.gms.FailureDetector: double getPhiConvictThreshold()>() AT LINE 319 is not found in our analysis.
+Unit: $stack47 = $stack45 cmpl $stack46 AT LINE 319 is not found in our analysis.
+Unit: if $stack47 <= 0 goto $stack33 = <org.apache.cassandra.gms.FailureDetector: org.slf4j.Logger logger> AT LINE 319 is not found in our analysis.
+Unit: goto [?= return] AT LINE 312 is not found in our analysis.
+Unit: return AT LINE 319 is not found in our analysis.
+Start to analyze method: <org.apache.cassandra.utils.memory.BufferPool: java.nio.ByteBuffer takeFromPool(int,boolean)>
+Start to analyze method: <org.apache.cassandra.service.StorageService: void handleStateLeft(java.net.InetAddress,java.lang.String[])>
+Start to analyze method: <org.apache.cassandra.db.lifecycle.LifecycleTransaction: java.lang.Throwable doAbort(java.lang.Throwable)>
+Start to analyze method: <org.apache.cassandra.db.commitlog.CommitLog: void discardCompletedSegments(java.util.UUID,org.apache.cassandra.db.commitlog.CommitLogPosition,org.apache.cassandra.db.commitlog.CommitLogPosition)>
+Unit: $stack22 = interfaceinvoke iter.<java.util.Iterator: boolean hasNext()>() AT LINE 324 is not found in our analysis.
+Unit: if $stack22 == 0 goto $stack27 = " active" AT LINE 324 is not found in our analysis.
+Unit: goto [?= $stack18[0] = $stack27] AT LINE 329 is not found in our analysis.
+All overhead in <org.apache.cassandra.cql3.functions.JavaBasedUDFunction: java.lang.String generateArguments(com.google.common.reflect.TypeToken[],java.util.List,boolean)> are not found in our analysis!
+Start to analyze method: <org.apache.cassandra.db.lifecycle.Tracker: java.lang.Throwable updateSizeTracking(java.lang.Iterable,java.lang.Iterable,java.lang.Throwable)>
+Start to analyze method: <org.apache.cassandra.gms.Gossiper$GossipTask: void run()>
+Start to analyze method: <org.apache.cassandra.db.lifecycle.LogTransaction$TransactionTidier: void run()>
+Start to analyze method: <org.apache.cassandra.locator.TokenMetadata: void calculatePendingRanges(org.apache.cassandra.locator.AbstractReplicationStrategy,java.lang.String)>
+Unit: $stack41 = this.<org.apache.cassandra.locator.TokenMetadata: java.util.concurrent.ConcurrentMap pendingRanges> AT LINE 852 is not found in our analysis.
+Unit: $stack44 = interfaceinvoke $stack41.<java.util.concurrent.ConcurrentMap: boolean isEmpty()>() AT LINE 852 is not found in our analysis.
+Unit: if $stack44 == 0 goto $stack45 = specialinvoke this.<org.apache.cassandra.locator.TokenMetadata: java.lang.String printPendingRanges()>() AT LINE 852 is not found in our analysis.
+Unit: goto [?= interfaceinvoke $stack42.<org.slf4j.Logger: void trace(java.lang.String,java.lang.Object,java.lang.Object)>("Calculated pending ranges for {}:\n{}", keyspaceName, $stack45)] AT LINE 854 is not found in our analysis.
+Start to analyze method: <org.apache.cassandra.service.DigestResolver: org.apache.cassandra.db.partitions.PartitionIterator resolve()>
+Start to analyze method: <org.apache.cassandra.service.StorageService: void clearSnapshot(java.lang.String,java.lang.String[])>
+Start to analyze method: <org.apache.cassandra.dht.RangeStreamer: void addRanges(java.lang.String,java.util.Collection)>
+Unit: $stack25 = interfaceinvoke entry.<java.util.Map$Entry: java.lang.Object getValue()>() AT LINE 189 is not found in our analysis.
+Unit: $stack26 = (java.util.Collection) $stack25 AT LINE 189 is not found in our analysis.
+Unit: l6 = interfaceinvoke $stack26.<java.util.Collection: java.util.Iterator iterator()>() AT LINE 189 is not found in our analysis.
+Unit: $stack28 = interfaceinvoke l6.<java.util.Iterator: boolean hasNext()>() AT LINE 189 is not found in our analysis.
+Unit: if $stack28 == 0 goto $stack22 = this.<org.apache.cassandra.dht.RangeStreamer: com.google.common.collect.Multimap toFetch> AT LINE 189 is not found in our analysis.
+Unit: $stack40 = interfaceinvoke rangesForKeyspace.<com.google.common.collect.Multimap: java.util.Collection entries()>() AT LINE 181 is not found in our analysis.
+Unit: l4 = interfaceinvoke $stack40.<java.util.Collection: java.util.Iterator iterator()>() AT LINE 181 is not found in our analysis.
+Unit: $stack42 = interfaceinvoke l4.<java.util.Iterator: boolean hasNext()>() AT LINE 181 is not found in our analysis.
+Unit: if $stack42 == 0 goto $stack13 = this.<org.apache.cassandra.dht.RangeStreamer: java.util.Set sourceFilters> AT LINE 181 is not found in our analysis.
+Start to analyze method: <org.apache.cassandra.net.MessagingService: void sendOneWay(org.apache.cassandra.net.MessageOut,int,java.net.InetAddress)>
+Start to analyze method: <org.apache.cassandra.service.StorageProxy: void asyncRemoveFromBatchlog(java.util.Collection,java.util.UUID)>
+Start to analyze method: <org.apache.cassandra.db.monitoring.MonitoringTask: boolean logFailedOperations(long)>
+Start to analyze method: <org.apache.cassandra.service.StorageService: void handleStateNormal(java.net.InetAddress,java.lang.String)>
+Start to analyze method: <org.apache.cassandra.service.StorageService: void handleStateBootstrap(java.net.InetAddress)>
+Start to analyze method: <org.apache.cassandra.io.sstable.format.SSTableReader$InstanceTidier$1: void run()>
+Start to analyze method: <org.apache.cassandra.thrift.ThriftSessionManager: void connectionComplete(java.net.SocketAddress)>
+Start to analyze method: <org.apache.cassandra.gms.GossipDigestAckVerbHandler: void doVerb(org.apache.cassandra.net.MessageIn,int)>
+Start to analyze method: <org.apache.cassandra.gms.Gossiper: void realMarkAlive(java.net.InetAddress,org.apache.cassandra.gms.EndpointState)>
+Start to analyze method: <org.apache.cassandra.gms.Gossiper: boolean sendGossip(org.apache.cassandra.net.MessageOut,java.util.Set)>
+Start to analyze method: <org.apache.cassandra.cql3.QueryProcessor: org.apache.cassandra.transport.messages.ResultMessage processPrepared(org.apache.cassandra.cql3.CQLStatement,org.apache.cassandra.service.QueryState,org.apache.cassandra.cql3.QueryOptions,long)>
+Unit: i = 0 AT LINE 525 is not found in our analysis.
+Unit: $stack17 = interfaceinvoke variables.<java.util.List: int size()>() AT LINE 525 is not found in our analysis.
+Unit: if i >= $stack17 goto $stack14 = <org.apache.cassandra.cql3.QueryProcessor: org.apache.cassandra.metrics.CQLMetrics metrics> AT LINE 525 is not found in our analysis.
+Unit: i = i + 1 AT LINE 525 is not found in our analysis.
+Start to analyze method: <org.apache.cassandra.db.lifecycle.LifecycleTransaction: java.lang.Throwable doCommit(java.lang.Throwable)>
+Start to analyze method: <org.apache.cassandra.service.StorageService: void restoreReplicaCount(java.net.InetAddress,java.net.InetAddress)>
+Start to analyze method: <org.apache.cassandra.net.RateBasedBackPressure: void apply(java.util.Set,long,java.util.concurrent.TimeUnit)>
+Start to analyze method: <org.apache.cassandra.gms.Gossiper: void applyStateLocally(java.util.Map)>
+Start to analyze method: <org.apache.cassandra.gms.Gossiper: void applyNewStates(java.net.InetAddress,org.apache.cassandra.gms.EndpointState,org.apache.cassandra.gms.EndpointState)>
+Start to analyze method: <org.apache.cassandra.service.StorageService: void joinTokenRing(int)>
+Start to analyze method: <org.apache.cassandra.db.lifecycle.LogReplicaSet: void addReplica(java.io.File)>
+Start to analyze method: <org.apache.cassandra.gms.Gossiper: void addSavedEndpoint(java.net.InetAddress)>
+Start to analyze method: <org.apache.cassandra.service.PendingRangeCalculatorService$PendingRangeTask: void run()>
+Start to analyze method: <org.apache.cassandra.gms.GossipDigestAck2VerbHandler: void doVerb(org.apache.cassandra.net.MessageIn,int)>
+Start to analyze method: <org.apache.cassandra.gms.Gossiper: org.apache.cassandra.gms.EndpointState getStateForVersionBiggerThan(java.net.InetAddress,int)>
+Start to analyze method: <org.apache.cassandra.service.StorageService: void handleStateLeaving(java.net.InetAddress)>
+Start to analyze method: <org.apache.cassandra.db.compaction.LeveledManifest: org.apache.cassandra.db.compaction.LeveledManifest$CompactionCandidate getCompactionCandidates()>
+Start to analyze method: <org.apache.cassandra.db.lifecycle.LifecycleTransaction: java.lang.Throwable checkpoint(java.lang.Throwable)>
+Start to analyze method: <org.apache.cassandra.db.ConsistencyLevel: void assureSufficientLiveNodes(org.apache.cassandra.db.Keyspace,java.lang.Iterable)>
+Unit: $stack40 = new java.lang.StringBuilder AT LINE 304 is not found in our analysis.
+Unit: specialinvoke $stack40.<java.lang.StringBuilder: void <init>(java.lang.String)>("Local replicas [") AT LINE 304 is not found in our analysis.
+Unit: entry = interfaceinvoke liveEndpoints.<java.lang.Iterable: java.util.Iterator iterator()>() AT LINE 305 is not found in our analysis.
+Unit: $stack42 = interfaceinvoke entry.<java.util.Iterator: boolean hasNext()>() AT LINE 305 is not found in our analysis.
+Unit: if $stack42 == 0 goto $stack43 = virtualinvoke builder.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("] are insufficient to satisfy LOCAL_QUORUM requirement of ") AT LINE 305 is not found in our analysis.
+Unit: $stack54 = interfaceinvoke entry.<java.util.Iterator: java.lang.Object next()>() AT LINE 313 is not found in our analysis.
+Unit: endpoint = (java.net.InetAddress) $stack54 AT LINE 313 is not found in our analysis.
+Unit: $stack55 = virtualinvoke this.<org.apache.cassandra.db.ConsistencyLevel: boolean isLocal(java.net.InetAddress)>(endpoint) AT LINE 307 is not found in our analysis.
+Unit: if $stack55 == 0 goto (branch) AT LINE 307 is not found in our analysis.
+Start to analyze method: <org.apache.cassandra.db.Memtable$FlushRunnable: void writeSortedContents()>
+Unit: $stack58 = virtualinvoke partition.<org.apache.cassandra.db.partitions.AtomicBTreePartition: boolean usePessimisticLocking()>() AT LINE 482 is not found in our analysis.
+Unit: if $stack58 == 0 goto $stack53 = virtualinvoke partition.<org.apache.cassandra.db.partitions.AtomicBTreePartition: boolean isEmpty()>() AT LINE 482 is not found in our analysis.
+Unit: heavilyContendedRowCount = heavilyContendedRowCount + 1 AT LINE 473 is not found in our analysis.
+Start to analyze method: <org.apache.cassandra.transport.Server$EventNotifier: void send(java.net.InetAddress,org.apache.cassandra.transport.Event$NodeEvent)>
+Start to analyze method: <org.apache.cassandra.net.IncomingTcpConnection: void close()>
+Start to analyze method: <org.apache.cassandra.service.StorageService: void unbootstrap(java.lang.Runnable)>
+Start to analyze method: <org.apache.cassandra.service.StorageService: void move(org.apache.cassandra.dht.Token)>
+Start to analyze method: <org.apache.cassandra.io.sstable.format.big.BigTableWriter: void afterAppend(org.apache.cassandra.db.DecoratedKey,long,org.apache.cassandra.db.RowIndexEntry,java.nio.ByteBuffer)>
+Start to analyze method: <org.apache.cassandra.service.StorageService: void handleStateRemoving(java.net.InetAddress,java.lang.String[])>
+Start to analyze method: <org.apache.cassandra.db.lifecycle.LogTransaction: void <init>(org.apache.cassandra.db.compaction.OperationType,org.apache.cassandra.db.lifecycle.Tracker)>
+Start to analyze method: <org.apache.cassandra.index.SecondaryIndexManager: void indexPartition(org.apache.cassandra.db.DecoratedKey,java.util.Set,int)>
+Start to analyze method: <org.apache.cassandra.service.ReadCallback: void <init>(org.apache.cassandra.service.ResponseResolver,org.apache.cassandra.db.ConsistencyLevel,int,org.apache.cassandra.db.ReadCommand,org.apache.cassandra.db.Keyspace,java.util.List,long)>
+Start to analyze method: <org.apache.cassandra.gms.Gossiper: void markDead(java.net.InetAddress,org.apache.cassandra.gms.EndpointState)>
+Start to analyze method: <org.apache.cassandra.db.ColumnFamilyStore: org.apache.cassandra.utils.concurrent.Refs getSnapshotSSTableReader(java.lang.String)>
+Start to analyze method: <org.apache.cassandra.io.sstable.format.big.BigTableWriter$IndexWriter: void append(org.apache.cassandra.db.DecoratedKey,org.apache.cassandra.db.RowIndexEntry,long,java.nio.ByteBuffer)>
+Start to analyze method: <org.apache.cassandra.gms.GossipDigestSynVerbHandler: void doVerb(org.apache.cassandra.net.MessageIn,int)>
+Unit: $stack42 = new java.lang.StringBuilder AT LINE 91 is not found in our analysis.
+Unit: specialinvoke $stack42.<java.lang.StringBuilder: void <init>()>() AT LINE 91 is not found in our analysis.
+Unit: deltaEpStateMap = interfaceinvoke gDigestList.<java.util.List: java.util.Iterator iterator()>() AT LINE 92 is not found in our analysis.
+Unit: $stack44 = interfaceinvoke deltaEpStateMap.<java.util.Iterator: boolean hasNext()>() AT LINE 92 is not found in our analysis.
+Unit: if $stack44 == 0 goto $stack45 = <org.apache.cassandra.gms.GossipDigestSynVerbHandler: org.slf4j.Logger logger> AT LINE 92 is not found in our analysis.
+Start to analyze method: <org.apache.cassandra.tracing.TraceStateImpl: void traceImpl(java.lang.String)>
+Start to analyze method: <org.apache.cassandra.db.monitoring.MonitoringTask: boolean logSlowOperations(long)>
+All overhead in <org.apache.cassandra.io.sstable.format.big.BigTableReader: org.apache.cassandra.db.RowIndexEntry getPosition(org.apache.cassandra.db.PartitionPosition,org.apache.cassandra.io.sstable.format.SSTableReader$Operator,boolean,boolean,org.apache.cassandra.io.sstable.format.SSTableReadsListener)> are not found in our analysis!
+Start to analyze method: <org.apache.cassandra.db.compaction.CompactionManager: void doCleanupOne(org.apache.cassandra.db.ColumnFamilyStore,org.apache.cassandra.db.lifecycle.LifecycleTransaction,org.apache.cassandra.db.compaction.CompactionManager$CleanupStrategy,java.util.Collection,boolean)>
+Start to analyze method: <org.apache.cassandra.gms.Gossiper: void addExpireTimeForEndpoint(java.net.InetAddress,long)>
+Start to analyze method: <org.apache.cassandra.gms.FailureDetector: void report(java.net.InetAddress)>
+Unit: if heartbeatWindow == null goto return AT LINE 274 is not found in our analysis.
+Start to analyze method: <org.apache.cassandra.transport.Server$EventNotifier: void onTopologyChange(java.net.InetAddress,org.apache.cassandra.transport.Event$TopologyChange)>
+Start to analyze method: <org.apache.cassandra.gms.Gossiper: void doStatusCheck()>
+Start to analyze method: <org.apache.cassandra.streaming.StreamSession: java.lang.Iterable lambda$getSSTableSectionsForRanges$0(java.util.List,boolean,org.apache.cassandra.db.lifecycle.View)>
+Start to analyze method: <org.apache.cassandra.gms.Gossiper: void evictFromMembership(java.net.InetAddress)>
+Start to analyze method: <org.apache.cassandra.db.lifecycle.LogTransaction: void delete(java.io.File)>
+Start to analyze method: <org.apache.cassandra.db.compaction.CompactionManager: org.apache.cassandra.utils.MerkleTrees createMerkleTrees(java.lang.Iterable,java.util.Collection,org.apache.cassandra.db.ColumnFamilyStore)>
+Start to analyze method: <org.apache.cassandra.db.compaction.CompactionManager: void doValidationCompaction(org.apache.cassandra.db.ColumnFamilyStore,org.apache.cassandra.repair.Validator)>
+Start to analyze method: <org.apache.cassandra.io.sstable.format.SSTableReader$InstanceTidier: void tidy()>
+Start to analyze method: <org.apache.cassandra.service.StorageService: void handleStateBootreplacing(java.net.InetAddress,java.lang.String[])>
+Start to analyze method: <org.apache.cassandra.service.StorageService: java.util.List getAllRanges(java.util.List)>
+Start to analyze method: <org.apache.cassandra.gms.Gossiper: void removeEndpoint(java.net.InetAddress)>
+Start to analyze method: <org.apache.cassandra.tracing.TraceStateImpl: void waitForPendingEvents()>
+Start to analyze method: <org.apache.cassandra.repair.Validator: void complete()>
+Unit: $stack12 = this.<org.apache.cassandra.repair.Validator: org.apache.cassandra.utils.MerkleTrees trees> AT LINE 241 is not found in our analysis.
+Unit: $stack11 = <org.apache.cassandra.repair.Validator: org.slf4j.Logger logger> AT LINE 241 is not found in our analysis.
+Unit: virtualinvoke $stack12.<org.apache.cassandra.utils.MerkleTrees: void logRowCountPerLeaf(org.slf4j.Logger)>($stack11) AT LINE 241 is not found in our analysis.
+Unit: $stack20 = this.<org.apache.cassandra.repair.Validator: org.apache.cassandra.utils.MerkleTrees trees> AT LINE 243 is not found in our analysis.
+Unit: $stack19 = <org.apache.cassandra.repair.Validator: org.slf4j.Logger logger> AT LINE 243 is not found in our analysis.
+Unit: virtualinvoke $stack20.<org.apache.cassandra.utils.MerkleTrees: void logRowSizePerLeaf(org.slf4j.Logger)>($stack19) AT LINE 243 is not found in our analysis.
+Start to analyze method: <org.apache.cassandra.cache.AutoSavingCache: int loadSaved()>
+Start to analyze method: <org.apache.cassandra.db.commitlog.CommitLogReader: void readSection(org.apache.cassandra.db.commitlog.CommitLogReadHandler,org.apache.cassandra.io.util.FileDataInput,org.apache.cassandra.db.commitlog.CommitLogPosition,int,org.apache.cassandra.db.commitlog.CommitLogReader$ReadStatusTracker,org.apache.cassandra.db.commitlog.CommitLogDescriptor)>
+Start to analyze method: <org.apache.cassandra.service.DigestResolver: void compareResponses()>
+Start to analyze method: <org.apache.cassandra.service.StorageService: void sendReplicationNotification(java.net.InetAddress)>
+Start to analyze method: <org.apache.cassandra.net.OutboundTcpConnection: void expireMessages(long)>
+Start to analyze method: <org.apache.cassandra.db.ColumnFamilyStore: java.util.Set snapshotWithoutFlush(java.lang.String,com.google.common.base.Predicate,boolean)>
+Start to analyze method: <org.apache.cassandra.transport.Server$EventNotifier: void onStatusChange(java.net.InetAddress,org.apache.cassandra.transport.Event$StatusChange)>
+Start to analyze method: <org.apache.cassandra.service.CassandraDaemon: void setup()>
+Start to analyze method: <org.apache.cassandra.service.StorageService: void decommission()>
+Start to analyze method: <org.apache.cassandra.streaming.ReplicationFinishedVerbHandler: void doVerb(org.apache.cassandra.net.MessageIn,int)>
+Start to analyze method: <org.apache.cassandra.service.StorageService: void setTokens(java.util.Collection)>
+Start to analyze method: <org.apache.cassandra.utils.memory.BufferPool: java.nio.ByteBuffer maybeTakeFromPool(int,boolean)>
+Start to analyze method: <org.apache.cassandra.gms.Gossiper: void start(int,java.util.Map)>
+Start to analyze method: <org.apache.cassandra.gms.Gossiper: void makeRandomGossipDigest(java.util.List)>
+Unit: $stack17 = new java.lang.StringBuilder AT LINE 510 is not found in our analysis.
+Unit: specialinvoke $stack17.<java.lang.StringBuilder: void <init>()>() AT LINE 510 is not found in our analysis.
+Unit: endpoint#6 = interfaceinvoke gDigests.<java.util.List: java.util.Iterator iterator()>() AT LINE 511 is not found in our analysis.
+Unit: $stack19 = interfaceinvoke endpoint#6.<java.util.Iterator: boolean hasNext()>() AT LINE 511 is not found in our analysis.
+Unit: if $stack19 == 0 goto $stack20 = <org.apache.cassandra.gms.Gossiper: org.slf4j.Logger logger> AT LINE 511 is not found in our analysis.
+Start to analyze method: <org.apache.cassandra.service.LoadBroadcaster$1: void run()>
+Start to analyze method: <org.apache.cassandra.service.StorageService: com.google.common.collect.Multimap getChangedRangesForLeaving(java.lang.String,java.net.InetAddress)>
+Unit: $stack39 = interfaceinvoke newReplicaEndpoints.<java.util.Collection: boolean isEmpty()>() AT LINE 2750 is not found in our analysis.
+Unit: if $stack39 == 0 goto $stack40 = <org.apache.cassandra.service.StorageService: org.slf4j.Logger logger> AT LINE 2750 is not found in our analysis.
+Unit: goto [?= interfaceinvoke range.<com.google.common.collect.Multimap: boolean putAll(java.lang.Object,java.lang.Iterable)>(range, newReplicaEndpoints)] AT LINE 2751 is not found in our analysis.
+Start to analyze method: <org.apache.cassandra.locator.PropertyFileSnitch: void reloadConfiguration(boolean)>
+Unit: $stack33 = new java.lang.StringBuilder AT LINE 206 is not found in our analysis.
+Unit: specialinvoke $stack33.<java.lang.StringBuilder: void <init>()>() AT LINE 206 is not found in our analysis.
+Unit: $stack34 = virtualinvoke reloadedMap.<java.util.HashMap: java.util.Set entrySet()>() AT LINE 207 is not found in our analysis.
+Unit: newDefault#28 = interfaceinvoke $stack34.<java.util.Set: java.util.Iterator iterator()>() AT LINE 207 is not found in our analysis.
+Unit: $stack36 = interfaceinvoke newDefault#28.<java.util.Iterator: boolean hasNext()>() AT LINE 207 is not found in our analysis.
+Unit: if $stack36 == 0 goto $stack37 = <org.apache.cassandra.locator.PropertyFileSnitch: org.slf4j.Logger logger> AT LINE 207 is not found in our analysis.
+Start to analyze method: <org.apache.cassandra.db.compaction.LeveledManifest: java.util.Collection getOverlappingStarvedSSTables(int,java.util.Collection)>
+Unit: i = 0 AT LINE 462 is not found in our analysis.
+Unit: $stack59 = this.<org.apache.cassandra.db.compaction.LeveledManifest: int[] compactionCounter> AT LINE 462 is not found in our analysis.
+Unit: $stack60 = lengthof $stack59 AT LINE 462 is not found in our analysis.
+Unit: if i >= $stack60 goto $stack18 = this.<org.apache.cassandra.db.compaction.LeveledManifest: java.util.List[] generations> AT LINE 462 is not found in our analysis.
+Unit: i = i + 1 AT LINE 462 is not found in our analysis.
+Start to analyze method: <org.apache.cassandra.service.ReadCallback: void awaitResults()>
+Unit: $stack29 = this.<org.apache.cassandra.service.ReadCallback: int received> AT LINE 131 is not found in our analysis.
+Unit: if $stack29 <= 0 goto $stack48 = "" AT LINE 131 is not found in our analysis.
+Unit: $stack46 = this.<org.apache.cassandra.service.ReadCallback: org.apache.cassandra.service.ResponseResolver resolver> AT LINE 136 is not found in our analysis.
+Unit: $stack47 = virtualinvoke $stack46.<org.apache.cassandra.service.ResponseResolver: boolean isDataPresent()>() AT LINE 136 is not found in our analysis.
+Unit: if $stack47 == 0 goto $stack48 = " (only digests)" AT LINE 136 is not found in our analysis.
+Unit: goto [?= gotData = $stack48] AT LINE 132 is not found in our analysis.
+Unit: goto [?= gotData = $stack48] AT LINE 136 is not found in our analysis.
+Unit: if failed == 0 goto $stack40 = "Timed out" AT LINE 132 is not found in our analysis.
+Unit: goto [?= $stack30[0] = $stack40] AT LINE 136 is not found in our analysis.
+Start to analyze method: <org.apache.cassandra.gms.Gossiper: void requestAll(org.apache.cassandra.gms.GossipDigest,java.util.List,int)>
+Start to analyze method: <org.apache.cassandra.io.util.FileUtils: void renameWithConfirm(java.io.File,java.io.File)>
+Start to analyze method: <org.apache.cassandra.service.GCInspector: void handleNotification(javax.management.Notification,java.lang.Object)>
+Start to analyze method: <org.apache.cassandra.db.commitlog.CommitLogReader: void readMutation(org.apache.cassandra.db.commitlog.CommitLogReadHandler,byte[],int,org.apache.cassandra.db.commitlog.CommitLogPosition,int,org.apache.cassandra.db.commitlog.CommitLogDescriptor)>
+Unit: $stack35 = new java.lang.StringBuilder AT LINE 481 is not found in our analysis.
+Unit: specialinvoke $stack35.<java.lang.StringBuilder: void <init>()>() AT LINE 481 is not found in our analysis.
+Start to analyze method: <org.apache.cassandra.db.compaction.LeveledManifest: void replace(java.util.Collection,java.util.Collection)>
+Start to analyze method: <org.apache.cassandra.dht.RangeStreamer: org.apache.cassandra.streaming.StreamResultFuture fetchAsync()>
+Start to analyze method: <org.apache.cassandra.io.sstable.format.SSTableReader: void markSuspect()>
+Start to analyze method: <org.apache.cassandra.io.sstable.format.SSTableReader: void markObsolete(java.lang.Runnable)>
+Start to analyze method: <org.apache.cassandra.gms.Gossiper: void handleMajorStateChange(java.net.InetAddress,org.apache.cassandra.gms.EndpointState)>
+Total units in benchmark: 816
+Matched units in our result: 698

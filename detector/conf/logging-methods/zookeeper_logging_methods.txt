@@ -1,0 +1,3 @@
+org.apache.zookeeper.server.ZooTrace.logTraceMessage
+org.apache.zookeeper.server.ZooTrace.logRequest
+org.apache.zookeeper.server.ZooTrace.logQuorumPacket

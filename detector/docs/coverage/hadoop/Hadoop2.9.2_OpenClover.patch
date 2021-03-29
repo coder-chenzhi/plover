@@ -1,0 +1,342 @@
+diff --git a/BUILDING.txt b/BUILDING.txt
+index bf1172b..3812b84 100644
+--- a/BUILDING.txt
++++ b/BUILDING.txt
+@@ -113,7 +113,7 @@ Maven build goals:
+  * Run checkstyle            : mvn compile checkstyle:checkstyle
+  * Install JAR in M2 cache   : mvn install
+  * Deploy JAR to Maven repo  : mvn deploy
+- * Run clover                : mvn test -Pclover [-DcloverLicenseLocation=${user.name}/.clover.license]
++ * Run clover                : mvn test -Pclover -Dmaven.test.failure.ignore=true
+  * Run Rat                   : mvn apache-rat:check
+  * Build javadocs            : mvn javadoc:javadoc
+  * Build distribution        : mvn package [-Pdist][-Pdocs][-Psrc][-Pnative][-Dtar][-Preleasedocs][-Pyarn-ui]
+diff --git a/dev-support/docker/Dockerfile b/dev-support/docker/Dockerfile
+index 026109f..ff76c3d 100644
+--- a/dev-support/docker/Dockerfile
++++ b/dev-support/docker/Dockerfile
+@@ -42,7 +42,6 @@ RUN apt-get -q update && apt-get -q install --no-install-recommends -y \
+     git \
+     gnupg-agent \
+     make \
+-    maven \
+     libbz2-dev \
+     libcurl4-openssl-dev \
+     libfuse-dev \
+@@ -74,7 +73,7 @@ RUN mkdir -p /opt/maven && \
+          -o /opt/maven.tar.gz && \
+     tar xzf /opt/maven.tar.gz --strip-components 1 -C /opt/maven
+ ENV MAVEN_HOME /opt/maven
+-
++ENV PATH="${MAVEN_HOME}/bin:${PATH}"
+ 
+ #######
+ # Java OpenJDK
+@@ -93,41 +92,41 @@ RUN apt-get -q install --no-install-recommends -y openjdk-7-jdk
+ ######
+ # Install spotbugs (successor of findbugs)
+ ######
+-RUN mkdir -p /opt/spotbugs && \
+-    curl -L -s -S \
+-         http://repo.maven.apache.org/maven2/com/github/spotbugs/spotbugs/3.1.2/spotbugs-3.1.2.tgz \
+-         -o /opt/spotbugs.tar.gz && \
+-    tar xzf /opt/spotbugs.tar.gz --strip-components 1 -C /opt/spotbugs
++#RUN mkdir -p /opt/spotbugs && \
++#    curl -L -s -S \
++#         https://repo.maven.apache.org/maven2/com/github/spotbugs/spotbugs/3.1.2/spotbugs-3.1.2.tgz \
++#         -o /opt/spotbugs.tar.gz && \
++#    tar xzf /opt/spotbugs.tar.gz --strip-components 1 -C /opt/spotbugs
+ # Hadoop uses FINDBUGS_HOME to run spotbugs
+-ENV FINDBUGS_HOME /opt/spotbugs
++#ENV FINDBUGS_HOME /opt/spotbugs
+ 
+ ####
+ # Install shellcheck
+ ####
+-RUN apt-get -q install -y cabal-install
+-RUN mkdir /root/.cabal
+-RUN echo "remote-repo: hackage.fpcomplete.com:http://hackage.fpcomplete.com/" >> /root/.cabal/config
++#RUN apt-get -q install -y cabal-install
++#RUN mkdir /root/.cabal
++#RUN echo "remote-repo: hackage.fpcomplete.com:http://hackage.fpcomplete.com/" >> /root/.cabal/config
+ #RUN echo "remote-repo: hackage.haskell.org:http://hackage.haskell.org/" > /root/.cabal/config
+-RUN echo "remote-repo-cache: /root/.cabal/packages" >> /root/.cabal/config
+-RUN cabal update
+-RUN cabal install shellcheck --global
++#RUN echo "remote-repo-cache: /root/.cabal/packages" >> /root/.cabal/config
++#RUN cabal update
++#RUN cabal install shellcheck --global
+ 
+ ####
+ # Install bats
+ ####
+-RUN add-apt-repository -y ppa:duggan/bats
+-RUN apt-get -q update
+-RUN apt-get -q install --no-install-recommends -y bats
++#RUN add-apt-repository -y ppa:duggan/bats
++#RUN apt-get -q update
++#RUN apt-get -q install --no-install-recommends -y bats
+ 
+ ####
+ # Install pylint
+ ####
+-RUN pip install pylint==1.9.2
++#RUN pip install pylint==1.9.2
+ 
+ ####
+ # Install dateutil.parser
+ ####
+-RUN pip install python-dateutil
++#RUN pip install python-dateutil
+ 
+ ###
+ # Avoid out of memory errors in builds
+@@ -137,12 +136,12 @@ ENV MAVEN_OPTS -Xms256m -Xmx1536m
+ ###
+ # Install node js tools for web UI frameowkr
+ ###
+-RUN apt-get -y install nodejs && \
+-    ln -s /usr/bin/nodejs /usr/bin/node && \
+-    apt-get -y install npm && \
+-    npm config set strict-ssl false && \
+-    npm install -g bower && \
+-    npm install -g ember-cli
++#RUN apt-get -y install nodejs && \
++#    ln -s /usr/bin/nodejs /usr/bin/node && \
++#    apt-get -y install npm && \
++#    npm config set strict-ssl false && \
++#    npm install -g bower && \
++#    npm install -g ember-cli
+ 
+ ###
+ # Everything past this point is either not needed for testing or breaks Yetus.
+@@ -153,10 +152,10 @@ RUN apt-get -y install nodejs && \
+ ####
+ # Install Forrest (for Apache Hadoop website)
+ ###
+-RUN mkdir -p /usr/local/apache-forrest ; \
+-    curl -s -S -O http://archive.apache.org/dist/forrest/0.8/apache-forrest-0.8.tar.gz ; \
+-    tar xzf *forrest* --strip-components 1 -C /usr/local/apache-forrest ; \
+-    echo 'forrest.home=/usr/local/apache-forrest' > build.properties
++#RUN mkdir -p /usr/local/apache-forrest ; \
++#    curl -s -S -O http://archive.apache.org/dist/forrest/0.8/apache-forrest-0.8.tar.gz ; \
++#    tar xzf *forrest* --strip-components 1 -C /usr/local/apache-forrest ; \
++#    echo 'forrest.home=/usr/local/apache-forrest' > build.properties
+ 
+ # Add a welcome message and environment checks.
+ ADD hadoop_env_checks.sh /root/hadoop_env_checks.sh
+diff --git a/hadoop-common-project/hadoop-annotations/pom.xml b/hadoop-common-project/hadoop-annotations/pom.xml
+index e103226..fb76905 100644
+--- a/hadoop-common-project/hadoop-annotations/pom.xml
++++ b/hadoop-common-project/hadoop-annotations/pom.xml
+@@ -71,4 +71,20 @@
+     </profile>
+   </profiles>
+ 
++  <build>
++    <plugins>
++      <!--
++      Skip Clover instrumentation for this module to prevent error finding Clover
++      classes during plugin execution when running a build with Clover enabled.
++      -->
++      <plugin>
++        <groupId>org.openclover</groupId>
++        <artifactId>clover-maven-plugin</artifactId>
++        <configuration>
++          <skip>true</skip>
++        </configuration>
++      </plugin>
++    </plugins>
++  </build>
++
+ </project>
+diff --git a/hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-jobclient/pom.xml b/hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-jobclient/pom.xml
+index da685fe..25617e1 100644
+--- a/hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-jobclient/pom.xml
++++ b/hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-jobclient/pom.xml
+@@ -118,23 +118,6 @@
+     </dependency>
+   </dependencies>
+ 
+- <profiles>
+-  <profile>
+-    <id>clover</id>
+-    <activation>
+-      <activeByDefault>false</activeByDefault>
+-      <property>
+-        <name>clover</name>
+-      </property>
+-    </activation>
+-    <dependencies>
+-      <dependency>
+-        <groupId>com.cenqua.clover</groupId>
+-        <artifactId>clover</artifactId>
+-      </dependency>
+-    </dependencies>
+-  </profile>
+-</profiles>
+   <build>
+     <plugins>
+       <plugin>
+diff --git a/hadoop-maven-plugins/pom.xml b/hadoop-maven-plugins/pom.xml
+index 2eef251..21f3a9c 100644
+--- a/hadoop-maven-plugins/pom.xml
++++ b/hadoop-maven-plugins/pom.xml
+@@ -77,8 +77,8 @@
+       classes during plugin execution when running a build with Clover enabled.
+       -->
+       <plugin>
+-        <groupId>com.atlassian.maven.plugins</groupId>
+-        <artifactId>maven-clover2-plugin</artifactId>
++        <groupId>org.openclover</groupId>
++        <artifactId>clover-maven-plugin</artifactId>
+         <configuration>
+           <skip>true</skip>
+         </configuration>
+diff --git a/hadoop-tools/hadoop-aws/pom.xml b/hadoop-tools/hadoop-aws/pom.xml
+index 9a43d82..2302177 100644
+--- a/hadoop-tools/hadoop-aws/pom.xml
++++ b/hadoop-tools/hadoop-aws/pom.xml
+@@ -52,6 +52,14 @@
+ 
+   </properties>
+ 
++  <repositories>
++    <repository>
++       <id>dynamodb-local-oregon</id>
++       <name>DynamoDB Local Release Repository</name>
++       <url>https://s3.ap-northeast-1.amazonaws.com/dynamodb-local-tokyo/release</url>
++    </repository>
++  </repositories>
++
+   <profiles>
+     <profile>
+       <id>tests-off</id>
+diff --git a/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-applications/pom.xml b/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-applications/pom.xml
+index 4a71a82..b70f456 100644
+--- a/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-applications/pom.xml
++++ b/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-applications/pom.xml
+@@ -39,21 +39,4 @@
+     <module>hadoop-yarn-applications-unmanaged-am-launcher</module>
+   </modules>
+ 
+- <profiles>
+-  <profile>
+-    <id>clover</id>
+-    <activation>
+-      <activeByDefault>false</activeByDefault>
+-      <property>
+-        <name>clover</name>
+-      </property>
+-    </activation>
+-    <dependencies>
+-      <dependency>
+-        <groupId>com.cenqua.clover</groupId>
+-        <artifactId>clover</artifactId>
+-      </dependency>
+-    </dependencies>
+-  </profile>
+-</profiles>
+ </project>
+diff --git a/pom.xml b/pom.xml
+index 28bf4eb..86287e8 100644
+--- a/pom.xml
++++ b/pom.xml
+@@ -23,17 +23,6 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
+   <name>Apache Hadoop Main</name>
+   <packaging>pom</packaging>
+ 
+-  <dependencyManagement>
+-    <dependencies>
+-      <dependency>
+-        <groupId>com.cenqua.clover</groupId>
+-        <artifactId>clover</artifactId>
+-        <!-- Use the version needed by maven-clover-plugin -->
+-        <version>3.0.2</version>
+-      </dependency>
+-    </dependencies>
+-  </dependencyManagement>
+-
+   <distributionManagement>
+     <repository>
+       <id>${distMgmtStagingId}</id>
+@@ -102,7 +91,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
+     <maven-gpg-plugin.version>1.5</maven-gpg-plugin.version>
+     <apache-rat-plugin.version>0.10</apache-rat-plugin.version>
+     <wagon-ssh.version>1.0</wagon-ssh.version>
+-    <maven-clover2-plugin.version>3.3.0</maven-clover2-plugin.version>
++    <clover-maven-plugin.version>4.2.0</clover-maven-plugin.version>
+     <maven-bundle-plugin.version>2.5.0</maven-bundle-plugin.version>
+     <maven-checkstyle-plugin.version>2.15</maven-checkstyle-plugin.version>
+     <checkstyle.version>6.6</checkstyle.version>
+@@ -184,10 +173,10 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
+           </dependencies>
+         </plugin>
+         <plugin>
+-          <groupId>com.atlassian.maven.plugins</groupId>
+-          <artifactId>maven-clover2-plugin</artifactId>
+-          <version>${maven-clover2-plugin.version}</version>
+-        </plugin>
++          <groupId>org.openclover</groupId>
++          <artifactId>clover-maven-plugin</artifactId>
++          <version>${clover-maven-plugin.version}</version>
++    </plugin>
+         <plugin>
+           <groupId>org.apache.felix</groupId>
+           <artifactId>maven-bundle-plugin</artifactId>
+@@ -265,7 +254,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
+             <exclude>.gitignore</exclude>
+             <exclude>.git/**</exclude>
+             <exclude>.idea/**</exclude>
+-	    <exclude>**/build/**</exclude>
++        <exclude>**/build/**</exclude>
+             <exclude>**/patchprocess/**</exclude>
+          </excludes>
+        </configuration>
+@@ -467,43 +456,21 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
+     <profile>
+       <id>clover</id>
+       <activation>
+-        <activeByDefault>false</activeByDefault>
++        <activeByDefault>true</activeByDefault>
+         <property>
+           <name>clover</name>
+         </property>
+       </activation>
+-      <properties>
+-        <cloverLicenseLocation>${user.home}/.clover.license</cloverLicenseLocation>
+-        <cloverDatabase>${project.build.directory}/clover/hadoop-coverage.db</cloverDatabase>
+-        <!-- NB: This additional parametrization is made in order
+-             to be able to re-define these properties with "-Dk=v" maven options.
+-             By some reason the expressions declared in clover
+-             docs like "${maven.clover.generateHtml}" do not work in that way.
+-             However, the below properties are confirmed to work: e.g.
+-             -DcloverGenHtml=false switches off the Html generation.
+-             The default values provided here exactly correspond to Clover defaults, so
+-             the behavior is 100% backwards compatible. -->
+-        <cloverAlwaysReport>true</cloverAlwaysReport>
+-        <cloverGenHtml>true</cloverGenHtml>
+-        <cloverGenXml>true</cloverGenXml>
+-        <cloverGenHistorical>false</cloverGenHistorical>
+-      </properties>
+       <build>
+         <plugins>
+           <plugin>
+-            <groupId>com.atlassian.maven.plugins</groupId>
+-            <artifactId>maven-clover2-plugin</artifactId>
++            <groupId>org.openclover</groupId>
++            <artifactId>clover-maven-plugin</artifactId>
+             <configuration>
+               <includesAllSourceRoots>false</includesAllSourceRoots>
+               <includesTestSourceRoots>true</includesTestSourceRoots>
+-              <licenseLocation>${cloverLicenseLocation}</licenseLocation>
+-              <cloverDatabase>${cloverDatabase}</cloverDatabase>
+               <targetPercentage>50%</targetPercentage>
+               <outputDirectory>${project.build.directory}/clover</outputDirectory>
+-              <alwaysReport>${cloverAlwaysReport}</alwaysReport>
+-              <generateHtml>${cloverGenHtml}</generateHtml>
+-              <generateXml>${cloverGenXml}</generateXml>
+-              <generateHistorical>${cloverGenHistorical}</generateHistorical>
+               <excludes>
+                 <exclude>**/examples/**/*.java</exclude>
+                 <exclude>**/hamlet/*.java</exclude>

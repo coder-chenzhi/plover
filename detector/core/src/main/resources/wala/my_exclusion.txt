@@ -1,0 +1,5 @@
+sun\/swing\/.*
+javax\/swing\/.*
+javafx\/.*
+java\/applet\/.*
+java\/awt\/.*
