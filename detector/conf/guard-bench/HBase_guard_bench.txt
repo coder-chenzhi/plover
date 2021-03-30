@@ -1,17 +1,6 @@
-Cannot find config of guard-methods file for project: {hbase}, just use default guard methods. Please check the config in edu.zju.ccnt.utils.RunConfig.java and re-run mvn install in the utils module.
-Cannot find config of logging-methods file for project: {hbase}, just use default guard methods. Please check the config in edu.zju.ccnt.utils.RunConfig.java and re-run mvn install in the utils module.
 2021-03-25 14:46:41 [WARN] - Can not find method <org.apache.hadoop.metrics2.lib.MutableMetricsFactory: org.apache.hadoop.metrics2.lib.MutableMetric newForMethod(java.lang.Object,java.lang.reflect.Method,org.apache.hadoop.metrics2.annotation.Metric,org.apache.hadoop.metrics2.lib.MetricsRegistry)>
 
-java.lang.RuntimeException: No method org.apache.hadoop.metrics2.lib.MutableMetric newForMethod(java.lang.Object,java.lang.reflect.Method,org.apache.hadoop.metrics2.annotation.Metric,org.apache.hadoop.metrics2.lib.MetricsRegistry) in class org.apache.hadoop.metrics2.lib.MutableMetricsFactory
-	at soot.SootClass.getMethod(SootClass.java:427) ~[soot-4.0.0.jar:?]
-	at edu.zju.ccnt.utils.SootExecutorUtil.setSootEntryPoints(SootExecutorUtil.java:76) [classes/:?]
-	at edu.zju.ccnt.soot.SootMainEntry.main(SootMainEntry.java:49) [classes/:?]
 2021-03-25 14:46:42 [WARN] - Can not find method <org.apache.hadoop.metrics2.lib.MutableMetricsFactory: org.apache.hadoop.metrics2.lib.MutableMetric newForField(java.lang.reflect.Field,org.apache.hadoop.metrics2.annotation.Metric,org.apache.hadoop.metrics2.lib.MetricsRegistry)>
-
-java.lang.RuntimeException: No method org.apache.hadoop.metrics2.lib.MutableMetric newForField(java.lang.reflect.Field,org.apache.hadoop.metrics2.annotation.Metric,org.apache.hadoop.metrics2.lib.MetricsRegistry) in class org.apache.hadoop.metrics2.lib.MutableMetricsFactory
-	at soot.SootClass.getMethod(SootClass.java:427) ~[soot-4.0.0.jar:?]
-	at edu.zju.ccnt.utils.SootExecutorUtil.setSootEntryPoints(SootExecutorUtil.java:76) [classes/:?]
-	at edu.zju.ccnt.soot.SootMainEntry.main(SootMainEntry.java:49) [classes/:?]
 2021-03-25 14:47:58 [INFO] - [Call Graph] Refine call graph in 2.7s , new call graph has 3211675  edges (original : 5607074)
 2021-03-25 14:47:58 [INFO] - Start to analyze <org.apache.hadoop.hbase.client.ScannerCallableWithReplicas: org.apache.hadoop.hbase.client.Result[] call(int)>
 2021-03-25 14:47:58 [INFO] - Find guard at method <org.apache.hadoop.hbase.client.ScannerCallableWithReplicas: org.apache.hadoop.hbase.client.Result[] call(int)> line 133 has 9 units and 1 lines

@@ -32,7 +32,7 @@
 			<AppenderRef ref="MyRollingFile" />
 		</Root>
 
-		<Logger name="edu.zju.ccnt.sootex.sideeffect" level="debug" additivity="false">
+		<Logger name="plover.sootex.sideeffect" level="debug" additivity="false">
 			<appender-ref ref="Console" level="debug" />
 		</Logger>
 

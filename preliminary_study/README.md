@@ -1,6 +1,12 @@
 ## Preliminary study
 
-### Directory structure 
-- `guard_addition_collector.py`: code used to collect supplementary logging guards
-- `raw_data`: the collected raw data for the five studied projects
-- `Summary.xlsx`: the analysis result on the raw data
+### How to run
+Change following line in `guard_addition_collector.py`
+```python
+
+if __name__ == "__main__":
+    collect("zookeeper", "E:\OSS\zookeeper", "E:\OSS\zookeeper")
+
+
+```
+The second parameter is the path to your local git repository, and the third parameter is the output path.

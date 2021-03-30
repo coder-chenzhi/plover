@@ -1,5 +1,3 @@
-Cannot find config of guard-methods file for project: {cassandra}, just use default guard methods. Please check the config in edu.zju.ccnt.utils.RunConfig.java and re-run mvn install in the utils module.
-Cannot find config of logging-methods file for project: {cassandra}, just use default guard methods. Please check the config in edu.zju.ccnt.utils.RunConfig.java and re-run mvn install in the utils module.
 2020-05-18 22:34:43 [INFO] - [Spark] Starting analysis ...
 2020-05-18 22:39:05 [INFO] - [Spark] Done!
 2020-05-18 22:39:05 [INFO] - [Call Graph] Refine call graph in 0.2s , new call graph has 227809  edges (original : 610294)
