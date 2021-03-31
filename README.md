@@ -20,6 +20,17 @@ PLOVER is short for Pre-Logging OVERhead.
 ```
 
 ## How to run the detector
-
+- install JDK and Maven
+- run `mvn install` to install the detector
+- if you run the detector on the stuided five projects
+    - change the paths in `RunConfig.java` in `detector/commons` to the right paths, including the paths to files containning the signatures of entry-points, the paths to files containning classpaths (used by Soot), the root path to the source code of projects, the paths to files containning the signatures of user-defined guards methods (can be empty file), and the paths to files containning the signatures of user-defined logging methods (can be empty file).
+- if you run the detector on new projects
+    - you also need to add new configuration files to `detector/conf`. Please follow the naming convention of existing configuration files. The benchmark of guards can be extracted by running `guards-bench-extractor`, and the entry-points can be extracted by running `log-entries-extractor`.
+- run `MainEntry.java` in `detector/core`
 
 ## How to run the prioritation
+- install Jupyter Notebook (recommend to install anaconda to ease the management of dependencies)
+- if you run the detector on the stuided five projects
+    - just run the code in `ltr` sequently
+- if you run the detector on new projects
+    - you also need to run the code in `pre-processing` sequently

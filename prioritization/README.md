@@ -12,15 +12,15 @@
 |              |-- 2.1 CountOfInstructions.ipynb: process the NOS
 |              |-- 2.1 CountOfMethodCalls.ipynb: process the NOMC
 |              |-- 2.1 ProcessMetricsDataInLog.ipynb: process the metrics data (NOPS/NOPMC) collected by static analysis
-|              |-- 3. PrepareLRTData.ipynb: prepare the final LtR data
-|         |-- Data: data used to train Lrt
+|              |-- 3. PrepareLtRData.ipynb: prepare the final LtR data
+|         |-- Data: data used to train LtR
 |              |-- [PROJECT]FullData.csv: the final LtR data
 |              |-- [PROJECT]NewProfileStatSummary.xlsx: the final profile data
 |              |-- [PROJECT]_Count_Of_Instructions.txt: the final NOS
 |              |-- [PROJECT]_Count_Of_Method_Calls.txt: the final NOMC
 |              |-- [PROJECT]_Method_Frequency.txt: the final FREQM
 |              |-- [PROJECT]_Metrics_Data.txt: the final NOPS/NOPMC
-|    |-- lrt: code, data and the results of LrT
+|    |-- ltr: code, data and the results of LtR
 |         |-- 4.1 LearnToRankTestRankers.ipynb: test the LtR models with all metrics
 |         |-- 4.2 LearnToRankBaseline.ipynb: test the direct-ranking approach
 |         |-- 4.3 LearnToRankTestFeatures.ipynb: test the LtR models with FREQS
