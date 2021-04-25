@@ -8,6 +8,7 @@ PLOVER is short for Pre-Logging OVERhead.
 |    |-- raw_data: the collected raw data for the five studied Apache projects
 |    |-- Summary.xlsx: the analysis result on the raw data
 |-- detector: the code and data for the static analysis
+|    |-- ImplementationDetails: implementation details
 |    |-- core: core of our static analysis
 |    |-- guards-bench-extractor: the code used to collect benchmark of guards
 |    |-- log-entries-extractor: the code used to collect entry-points of static analysis
