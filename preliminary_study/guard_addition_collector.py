@@ -27,6 +27,7 @@ def check_guard_change(repo_dir, commit_id):
     added_line = 0
     deleted_line = 0
     added_guard = 0
+    all_added_guard = 0
 
     os.chdir(repo_dir)
     git_show_cmd = ["git", "show", commit_id, "--word-diff-regex=[^[:space:]]", "--", "*.java", ":!*src/test/java*"]
@@ -64,6 +65,8 @@ def check_guard_change(repo_dir, commit_id):
                 # found guard addition, and next line is not entire line addition
                 if next_line != "":
                     added_guard += 1
+                else:
+                    all_added_guard += 1
     except subprocess.CalledProcessError as call_err:
         print("git show {commit_id} fail because '{msg}'".format(
             commit_id=commit_id, msg=call_err.output.decode(encoding="utf-8", errors="ignore")))
@@ -71,11 +74,12 @@ def check_guard_change(repo_dir, commit_id):
         print("git show {commit_id} fail".format(commit_id=commit_id))
         print(e)
 
-    return "{commit_id},{added_line},{deleted_line},{added_guard}".format(
+    return "{commit_id},{added_line},{deleted_line},{added_guard},{all_added_guard}".format(
                 commit_id=commit_id,
                 added_line=added_line,
                 deleted_line=deleted_line,
-                added_guard=added_guard
+                added_guard=added_guard,
+                all_added_guard=all_added_guard
             )
 
 
@@ -98,7 +102,7 @@ def collect(repo_name, repo_dir, log_path):
         pool.close()
         pool.join()
         with open(os.path.join(log_path, repo_name + "_guard_addition.log"), "w") as output:
-            output.write("commit_id,added_line,deleted_line,guard_addition\n")
+            output.write("commit_id,added_line,deleted_line,guard_addition,all_added_guard\n")
             for result in results:
                 output.write(result.get() + "\n")
     except subprocess.CalledProcessError as call_err:
@@ -107,4 +111,4 @@ def collect(repo_name, repo_dir, log_path):
 
 
 if __name__ == "__main__":
-    collect("zookeeper", "E:\OSS\zookeeper", "E:\OSS\zookeeper")
+    collect("hive", "E:\OSS\hbase", "E:\OSS\hbase")
